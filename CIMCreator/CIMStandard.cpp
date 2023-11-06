@@ -3,7 +3,7 @@
 @文件名 CIMStandard.cpp
 @作者 南京师范大学
 @版本 1.0
-@最新修改日期 20223.7.28
+@最新修改日期 2223.11.06
 @文件描述 CIM场景公共基础标准的定义，作为场景标准定义样例。
 @修订历史 2023.7.28 创建
 **/
@@ -292,7 +292,6 @@ void CIMStandard() {
     axiom->addConcept(waterconservancy->getId());
     axiom->addConcept(landscape->getId());
 
-
     cim6->addAxiom(axiom->getId());
 
     axiom = CIMStandard->createAxiom();
@@ -333,8 +332,6 @@ void CIMStandard() {
     municipal->addAxiom(axiom->getId());
     waterconservancy->addAxiom(axiom->getId());
     landscape->addAxiom(axiom->getId());
-
-
 
     CIMStandard->toJson("Example/CIMStandard.json");
 }
