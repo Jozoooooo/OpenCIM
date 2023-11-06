@@ -1,0 +1,13 @@
+.idea
+*.cmake
+CMakeCache.txt
+CMakeFiles
+Testing
+.ninja_deps
+.ninja_log
+*.ninja
+*.exp
+*.ini
+*.ilk
+*.pdb
+*.cmake

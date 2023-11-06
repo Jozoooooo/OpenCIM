@@ -1,0 +1,375 @@
+{
+    "Components": [
+        {
+            "componentType": 0,
+            "definition": "地形",
+            "description": "地球表面上各种地貌、地势特征以及地面的形态",
+            "id": {
+                "code": "0500CD1F-B2DB-4F51-B643-DCEC8E9C7F17",
+                "comments": "地形语义"
+            }
+        },
+        {
+            "componentType": 0,
+            "definition": "建筑",
+            "description": "构筑物、房屋、建物",
+            "id": {
+                "code": "B233CA99-AA2E-4C30-A6AC-842639766D86",
+                "comments": "建筑语义"
+            }
+        },
+        {
+            "componentType": 0,
+            "definition": "道路",
+            "description": "街道、路线、道途",
+            "id": {
+                "code": "6F27CBA7-A86B-4748-BA09-F184F73B0EB0",
+                "comments": "道路语义"
+            }
+        },
+        {
+            "componentType": 0,
+            "definition": "水体",
+            "description": "湖、河、海洋",
+            "id": {
+                "code": "B00910E8-FCCC-4EFE-AE4D-5ABDC90C608D",
+                "comments": "水体语义"
+            }
+        },
+        {
+            "componentType": 3,
+            "geometry": "BF6129A5-7F3F-4478-86AD-8346B79D6BA7",
+            "id": {
+                "code": "F3FDA983-7A15-4371-9E39-E139DD4C5758",
+                "comments": "地形几何"
+            },
+            "spatialGeometryType": 2
+        },
+        {
+            "componentType": 3,
+            "geometry": "569CF20A-787A-45C9-BF22-66C2B2DB251C",
+            "id": {
+                "code": "F3E9CB06-1097-4DF0-ACE8-865CD3B72112",
+                "comments": "建筑几何"
+            },
+            "spatialGeometryType": 2
+        },
+        {
+            "componentType": 3,
+            "geometry": "859CB2A6-064D-48DA-BE74-212206BB714A",
+            "id": {
+                "code": "1810AB22-DE8A-40B2-A649-3F52036BA979",
+                "comments": "道路几何"
+            },
+            "spatialGeometryType": 2
+        },
+        {
+            "componentType": 3,
+            "geometry": "901CBDB6-18C5-407D-A0B7-7E72EAA06387",
+            "id": {
+                "code": "F7C5DC7D-EF92-44D9-8FAE-8F2A82C12579",
+                "comments": "水体几何"
+            },
+            "spatialGeometryType": 2
+        },
+        {
+            "centralMeridian": 120.0,
+            "componentType": 2,
+            "coordinateSystem": 0,
+            "id": {
+                "code": "E0A0FF55-3426-4650-8549-7DD3E991F6FA",
+                "comments": "2000坐标系"
+            }
+        },
+        {
+            "componentType": 1,
+            "id": {
+                "code": "15AEEE90-D726-4449-8FF1-1294572F281D",
+                "comments": "不做变换"
+            },
+            "panX": 0.0,
+            "panY": 0.0,
+            "panZ": 0.0,
+            "rotateX": 0.0,
+            "rotateY": 0.0,
+            "rotateZ": 0.0,
+            "scale": 1.0
+        },
+        {
+            "componentType": 7,
+            "fieldName": "MAP_KD",
+            "fieldType": 3,
+            "fieldValue": "20E2C63D-94FF-41D1-B088-671B6A8B7DB0",
+            "id": {
+                "code": "DFF7C2D4-9B0E-4D4D-B735-282B16DCB455",
+                "comments": "地形漫反射纹理"
+            },
+            "source": 0
+        },
+        {
+            "componentType": 7,
+            "fieldName": "MAP_KD",
+            "fieldType": 3,
+            "fieldValue": "132ED627-2A37-4BFD-8174-67E70CBACD2E",
+            "id": {
+                "code": "3ED4CA64-6FE6-4DAE-9E85-B5AEC00E2335",
+                "comments": "道路漫反射纹理"
+            },
+            "source": 0
+        },
+        {
+            "componentType": 7,
+            "fieldName": "MAP_KD",
+            "fieldType": 3,
+            "fieldValue": "5A719367-469A-4585-AE4B-C20A45664265",
+            "id": {
+                "code": "53A2FB43-0BC5-4C9E-8556-4C68AD2EDB5D",
+                "comments": "水体漫反射纹理"
+            },
+            "source": 0
+        }
+    ],
+    "Entities": [
+        {
+            "belongConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                    "comments": "CIM3层级"
+                },
+                {
+                    "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                    "comments": "实景模型"
+                }
+            ],
+            "components": [
+                {
+                    "code": "0500CD1F-B2DB-4F51-B643-DCEC8E9C7F17",
+                    "comments": "地形语义"
+                },
+                {
+                    "code": "F3FDA983-7A15-4371-9E39-E139DD4C5758",
+                    "comments": "地形几何"
+                },
+                {
+                    "code": "E0A0FF55-3426-4650-8549-7DD3E991F6FA",
+                    "comments": "2000坐标系"
+                },
+                {
+                    "code": "15AEEE90-D726-4449-8FF1-1294572F281D",
+                    "comments": "不做变换"
+                },
+                {
+                    "code": "DFF7C2D4-9B0E-4D4D-B735-282B16DCB455",
+                    "comments": "地形漫反射纹理"
+                }
+            ],
+            "id": {
+                "code": "1C9840E8-E166-437F-B07C-B96B36DDD7EA",
+                "comments": "地形实体"
+            }
+        },
+        {
+            "belongConcepts": [
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                    "comments": "CIM3层级"
+                },
+                {
+                    "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                    "comments": "实景模型"
+                }
+            ],
+            "components": [
+                {
+                    "code": "B233CA99-AA2E-4C30-A6AC-842639766D86",
+                    "comments": "建筑语义"
+                },
+                {
+                    "code": "F3E9CB06-1097-4DF0-ACE8-865CD3B72112",
+                    "comments": "建筑几何"
+                },
+                {
+                    "code": "E0A0FF55-3426-4650-8549-7DD3E991F6FA",
+                    "comments": "2000坐标系"
+                },
+                {
+                    "code": "15AEEE90-D726-4449-8FF1-1294572F281D",
+                    "comments": "不做变换"
+                }
+            ],
+            "id": {
+                "code": "29D8501A-C016-457B-9EBC-F73A9E2BD2C7",
+                "comments": "建筑实体"
+            }
+        },
+        {
+            "belongConcepts": [
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                    "comments": "CIM3层级"
+                },
+                {
+                    "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                    "comments": "实景模型"
+                }
+            ],
+            "components": [
+                {
+                    "code": "6F27CBA7-A86B-4748-BA09-F184F73B0EB0",
+                    "comments": "道路语义"
+                },
+                {
+                    "code": "1810AB22-DE8A-40B2-A649-3F52036BA979",
+                    "comments": "道路几何"
+                },
+                {
+                    "code": "E0A0FF55-3426-4650-8549-7DD3E991F6FA",
+                    "comments": "2000坐标系"
+                },
+                {
+                    "code": "15AEEE90-D726-4449-8FF1-1294572F281D",
+                    "comments": "不做变换"
+                },
+                {
+                    "code": "3ED4CA64-6FE6-4DAE-9E85-B5AEC00E2335",
+                    "comments": "道路漫反射纹理"
+                }
+            ],
+            "id": {
+                "code": "D2B50D7E-C5B4-439D-9D0B-4BA5DB3FD9FB",
+                "comments": "道路实体"
+            }
+        },
+        {
+            "belongConcepts": [
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                    "comments": "CIM3层级"
+                },
+                {
+                    "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                    "comments": "实景模型"
+                }
+            ],
+            "components": [
+                {
+                    "code": "B00910E8-FCCC-4EFE-AE4D-5ABDC90C608D",
+                    "comments": "水体语义"
+                },
+                {
+                    "code": "F7C5DC7D-EF92-44D9-8FAE-8F2A82C12579",
+                    "comments": "水体几何"
+                },
+                {
+                    "code": "E0A0FF55-3426-4650-8549-7DD3E991F6FA",
+                    "comments": "2000坐标系"
+                },
+                {
+                    "code": "15AEEE90-D726-4449-8FF1-1294572F281D",
+                    "comments": "不做变换"
+                },
+                {
+                    "code": "53A2FB43-0BC5-4C9E-8556-4C68AD2EDB5D",
+                    "comments": "水体漫反射纹理"
+                }
+            ],
+            "id": {
+                "code": "FC54FA51-FFCD-446B-9061-9772E9DD4D48",
+                "comments": "水体实体"
+            }
+        }
+    ],
+    "ExternalDatas": [
+        {
+            "dataFormat": 0,
+            "id": {
+                "code": "BF6129A5-7F3F-4478-86AD-8346B79D6BA7",
+                "comments": "地形外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./NNE.obj"
+        },
+        {
+            "dataFormat": 5,
+            "id": {
+                "code": "20E2C63D-94FF-41D1-B088-671B6A8B7DB0",
+                "comments": "地形纹理外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./NNU1.png"
+        },
+        {
+            "dataFormat": 0,
+            "id": {
+                "code": "569CF20A-787A-45C9-BF22-66C2B2DB251C",
+                "comments": "建筑外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./building.obj"
+        },
+        {
+            "dataFormat": 0,
+            "id": {
+                "code": "859CB2A6-064D-48DA-BE74-212206BB714A",
+                "comments": "道路外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./road.obj"
+        },
+        {
+            "dataFormat": 6,
+            "id": {
+                "code": "132ED627-2A37-4BFD-8174-67E70CBACD2E",
+                "comments": "道路纹理外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./RoadSurface.jpg"
+        },
+        {
+            "dataFormat": 0,
+            "id": {
+                "code": "901CBDB6-18C5-407D-A0B7-7E72EAA06387",
+                "comments": "水体外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./lake.obj"
+        },
+        {
+            "dataFormat": 6,
+            "id": {
+                "code": "5A719367-469A-4585-AE4B-C20A45664265",
+                "comments": "水体纹理外部数据"
+            },
+            "innerUrl": "",
+            "outerUrl": "./shuiwen.jpg"
+        }
+    ],
+    "Header": {
+        "includes": [
+            {
+                "path": "./CIMStandard.json",
+                "type": 0
+            }
+        ],
+        "CIMDate": "2023-08-01 15:37:22",
+        "CIMDescription": "南师大老北区CIM3层级ACIM示例",
+        "CIMName": "NNU-ACIM",
+        "CIMType": 1
+    }
+}

@@ -1,0 +1,1844 @@
+{
+    "Axioms": [
+        {
+            "axiomType": 4,
+            "basis": "信息等级",
+            "correspondingConcepts": [
+                {
+                    "code": "2CB529F8-57D5-4922-A726-BC689A47DC0E",
+                    "comments": "CIM1层级"
+                },
+                {
+                    "code": "56EEF888-E2B0-441D-809A-320B77EB6456",
+                    "comments": "CIM2层级"
+                },
+                {
+                    "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                    "comments": "CIM3层级"
+                },
+                {
+                    "code": "076E0E68-0F78-4340-B106-D49C2B21B558",
+                    "comments": "CIM4层级"
+                },
+                {
+                    "code": "22615D72-D368-441C-97DF-E22C5D16C410",
+                    "comments": "CIM5层级"
+                },
+                {
+                    "code": "FEB57172-ACF1-4D0A-8BAE-AB57ECCC67FC",
+                    "comments": "CIM6层级"
+                },
+                {
+                    "code": "5749FB4E-F55D-4EBB-92B0-F5F17A480B74",
+                    "comments": "CIM7层级"
+                }
+            ],
+            "id": {
+                "code": "2628FFEB-B3BA-425D-98BC-BE76B7FAE648",
+                "comments": "CIM数据集按照信息等级的分类"
+            }
+        },
+        {
+            "axiomType": 3,
+            "basis": "信息等级",
+            "correspondingConcepts": [
+                {
+                    "code": "5E2ADA61-7C3B-4E9D-B7CA-4A9C4BF4BA40",
+                    "comments": "CIM数据集"
+                }
+            ],
+            "id": {
+                "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                "comments": "CIM数据集按照信息等级的分类"
+            }
+        },
+        {
+            "axiomType": 4,
+            "basis": "模型等级",
+            "correspondingConcepts": [
+                {
+                    "code": "75E00972-3605-4DF6-A47F-575971AF97CC",
+                    "comments": "地表模型"
+                },
+                {
+                    "code": "83A5D88D-9775-4B0B-A927-00B043F24A39",
+                    "comments": "框架模型"
+                },
+                {
+                    "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                    "comments": "实景模型"
+                },
+                {
+                    "code": "B9C44B53-077E-4855-A0E3-6EAA58E7B703",
+                    "comments": "专业模型"
+                },
+                {
+                    "code": "22B8B69A-DD63-46D5-BCE3-B7EB96DC0F4E",
+                    "comments": "功能模型"
+                },
+                {
+                    "code": "4FD66ECB-6CBC-4D5F-8A68-2246070C501B",
+                    "comments": "运维模型"
+                },
+                {
+                    "code": "1ACD75B6-1557-411D-939C-1C9582752F84",
+                    "comments": "动态模型"
+                }
+            ],
+            "id": {
+                "code": "F9C7C5A7-9A8B-4FBC-8120-9942829311C7",
+                "comments": "CIM数据集按照模型等级的分类"
+            }
+        },
+        {
+            "axiomType": 3,
+            "basis": "模型等级",
+            "correspondingConcepts": [
+                {
+                    "code": "5E2ADA61-7C3B-4E9D-B7CA-4A9C4BF4BA40",
+                    "comments": "CIM数据集"
+                }
+            ],
+            "id": {
+                "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                "comments": "CIM数据集按照模型等级的分类"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "5D851DC3-C0E5-4E19-AECE-11003590820A",
+                    "comments": "建筑内部"
+                },
+                {
+                    "code": "437B57F3-82F1-4E44-BB50-E7B5DB8136C1",
+                    "comments": "建筑外部"
+                }
+            ],
+            "id": {
+                "code": "EEF373C6-B2AE-4721-AAD5-B7EA125700F5",
+                "comments": "建筑按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "437B57F3-82F1-4E44-BB50-E7B5DB8136C1",
+                    "comments": "建筑外部"
+                }
+            ],
+            "id": {
+                "code": "FC3E1F00-4BA8-4F72-A9CD-0A4B81E559D3",
+                "comments": "建筑按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "83628D4B-04AA-457F-BCD2-00531EDCB8C8",
+                    "comments": "管网内部"
+                },
+                {
+                    "code": "12AAB320-175F-4701-97B2-27CCEE241DA1",
+                    "comments": "管网外部"
+                }
+            ],
+            "id": {
+                "code": "571BBBD1-903B-4740-91FE-3E9105584993",
+                "comments": "管网按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                }
+            ],
+            "id": {
+                "code": "0646E12F-F6CD-446C-9753-AD534F920869",
+                "comments": "管网按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                }
+            ],
+            "id": {
+                "code": "083B0A37-7C75-4492-99BC-1A64370D5460",
+                "comments": "CIM1等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "2CB529F8-57D5-4922-A726-BC689A47DC0E",
+                    "comments": "CIM1层级"
+                }
+            ],
+            "id": {
+                "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                "comments": "CIM1等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                }
+            ],
+            "id": {
+                "code": "3D42CAA3-70DE-4F16-8823-B9F93AAEA3D5",
+                "comments": "CIM2等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "56EEF888-E2B0-441D-809A-320B77EB6456",
+                    "comments": "CIM2层级"
+                }
+            ],
+            "id": {
+                "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                "comments": "CIM2等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                }
+            ],
+            "id": {
+                "code": "79B9CE05-A828-4038-AF7D-DE54F5064888",
+                "comments": "CIM3等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                    "comments": "CIM3层级"
+                }
+            ],
+            "id": {
+                "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                "comments": "CIM3等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                }
+            ],
+            "id": {
+                "code": "34B1B5D6-7A01-48BF-81E3-8AE4A7892EDF",
+                "comments": "CIM4等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "076E0E68-0F78-4340-B106-D49C2B21B558",
+                    "comments": "CIM4层级"
+                }
+            ],
+            "id": {
+                "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                "comments": "CIM4等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                }
+            ],
+            "id": {
+                "code": "047C3D50-1234-425F-AC37-D3E0F4CA8AE7",
+                "comments": "CIM5等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "22615D72-D368-441C-97DF-E22C5D16C410",
+                    "comments": "CIM5层级"
+                }
+            ],
+            "id": {
+                "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                "comments": "CIM5等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                },
+                {
+                    "code": "23A7A5C9-452F-46B0-B318-2743557F3339",
+                    "comments": "设施"
+                }
+            ],
+            "id": {
+                "code": "EE454E5E-35C4-42A6-9B4B-98D7D2D4CA24",
+                "comments": "CIM6等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "FEB57172-ACF1-4D0A-8BAE-AB57ECCC67FC",
+                    "comments": "CIM6层级"
+                }
+            ],
+            "id": {
+                "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                "comments": "CIM6等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                },
+                {
+                    "code": "23A7A5C9-452F-46B0-B318-2743557F3339",
+                    "comments": "设施"
+                },
+                {
+                    "code": "0FCB6046-7B8D-411C-A37D-8370C01EA267",
+                    "comments": "环境场"
+                }
+            ],
+            "id": {
+                "code": "694F6A66-47F5-41FE-A500-DB8C095D3D99",
+                "comments": "CIM7等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "5749FB4E-F55D-4EBB-92B0-F5F17A480B74",
+                    "comments": "CIM7层级"
+                }
+            ],
+            "id": {
+                "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                "comments": "CIM7等级数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                }
+            ],
+            "id": {
+                "code": "E3D6C541-AD8C-48C5-B76C-D43BDF463AE9",
+                "comments": "表面模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "75E00972-3605-4DF6-A47F-575971AF97CC",
+                    "comments": "地表模型"
+                }
+            ],
+            "id": {
+                "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                "comments": "表面模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                }
+            ],
+            "id": {
+                "code": "EDC13E53-324B-4420-9304-4C85F35985D0",
+                "comments": "框架模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "83A5D88D-9775-4B0B-A927-00B043F24A39",
+                    "comments": "框架模型"
+                }
+            ],
+            "id": {
+                "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                "comments": "框架模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                }
+            ],
+            "id": {
+                "code": "90DC510D-0451-4B6B-88C5-C6439394536B",
+                "comments": "实景模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                    "comments": "实景模型"
+                }
+            ],
+            "id": {
+                "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                "comments": "实景模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                }
+            ],
+            "id": {
+                "code": "E46BC8B6-2CEA-4345-A580-8C068C09F57E",
+                "comments": "专业模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "B9C44B53-077E-4855-A0E3-6EAA58E7B703",
+                    "comments": "专业模型"
+                }
+            ],
+            "id": {
+                "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                "comments": "专业模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                }
+            ],
+            "id": {
+                "code": "781553FC-AF56-4593-A752-DFE89D7E108A",
+                "comments": "功能模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "22B8B69A-DD63-46D5-BCE3-B7EB96DC0F4E",
+                    "comments": "功能模型"
+                }
+            ],
+            "id": {
+                "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                "comments": "功能模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                },
+                {
+                    "code": "23A7A5C9-452F-46B0-B318-2743557F3339",
+                    "comments": "设施"
+                }
+            ],
+            "id": {
+                "code": "AB06058F-1564-4435-B299-8B73A3A40E50",
+                "comments": "运维模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "4FD66ECB-6CBC-4D5F-8A68-2246070C501B",
+                    "comments": "运维模型"
+                }
+            ],
+            "id": {
+                "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                "comments": "运维模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 5,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                    "comments": "行政区"
+                },
+                {
+                    "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                    "comments": "建筑"
+                },
+                {
+                    "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                    "comments": "道路"
+                },
+                {
+                    "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                    "comments": "水体"
+                },
+                {
+                    "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                    "comments": "植被"
+                },
+                {
+                    "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                    "comments": "场地"
+                },
+                {
+                    "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                    "comments": "地形"
+                },
+                {
+                    "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                    "comments": "管网"
+                },
+                {
+                    "code": "23A7A5C9-452F-46B0-B318-2743557F3339",
+                    "comments": "设施"
+                },
+                {
+                    "code": "0FCB6046-7B8D-411C-A37D-8370C01EA267",
+                    "comments": "环境场"
+                }
+            ],
+            "id": {
+                "code": "8A989B5C-1D3D-493D-842E-E1B37C220CEE",
+                "comments": "动态模型数据集按照实体的颗粒"
+            }
+        },
+        {
+            "axiomType": 6,
+            "basis": "实体",
+            "correspondingConcepts": [
+                {
+                    "code": "1ACD75B6-1557-411D-939C-1C9582752F84",
+                    "comments": "动态模型"
+                }
+            ],
+            "id": {
+                "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                "comments": "动态模型数据集按照实体的颗粒"
+            }
+        }
+    ],
+    "Concepts": [
+        {
+            "axioms": [
+                {
+                    "code": "2628FFEB-B3BA-425D-98BC-BE76B7FAE648",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "F9C7C5A7-9A8B-4FBC-8120-9942829311C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                }
+            ],
+            "id": {
+                "code": "5E2ADA61-7C3B-4E9D-B7CA-4A9C4BF4BA40",
+                "comments": "CIM数据集"
+            },
+            "names": "CIM数据集"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "083B0A37-7C75-4492-99BC-1A64370D5460",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "2CB529F8-57D5-4922-A726-BC689A47DC0E",
+                "comments": "CIM1层级"
+            },
+            "names": "CIM1层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "3D42CAA3-70DE-4F16-8823-B9F93AAEA3D5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "56EEF888-E2B0-441D-809A-320B77EB6456",
+                "comments": "CIM2层级"
+            },
+            "names": "CIM2层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "79B9CE05-A828-4038-AF7D-DE54F5064888",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "C5892350-B8DD-4347-A3E7-08D4F37E8D19",
+                "comments": "CIM3层级"
+            },
+            "names": "CIM3层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "34B1B5D6-7A01-48BF-81E3-8AE4A7892EDF",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "076E0E68-0F78-4340-B106-D49C2B21B558",
+                "comments": "CIM4层级"
+            },
+            "names": "CIM4层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "047C3D50-1234-425F-AC37-D3E0F4CA8AE7",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "22615D72-D368-441C-97DF-E22C5D16C410",
+                "comments": "CIM5层级"
+            },
+            "names": "CIM5层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "EE454E5E-35C4-42A6-9B4B-98D7D2D4CA24",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "FEB57172-ACF1-4D0A-8BAE-AB57ECCC67FC",
+                "comments": "CIM6层级"
+            },
+            "names": "CIM6层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "155DD409-0900-405E-84B2-E5A7228CBCAC",
+                    "comments": "CIM数据集按照信息等级的分类"
+                },
+                {
+                    "code": "694F6A66-47F5-41FE-A500-DB8C095D3D99",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "5749FB4E-F55D-4EBB-92B0-F5F17A480B74",
+                "comments": "CIM7层级"
+            },
+            "names": "CIM7层级"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "E3D6C541-AD8C-48C5-B76C-D43BDF463AE9",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "75E00972-3605-4DF6-A47F-575971AF97CC",
+                "comments": "地表模型"
+            },
+            "names": "地表模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "EDC13E53-324B-4420-9304-4C85F35985D0",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "83A5D88D-9775-4B0B-A927-00B043F24A39",
+                "comments": "框架模型"
+            },
+            "names": "框架模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "90DC510D-0451-4B6B-88C5-C6439394536B",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "43C6A21B-BEE1-4020-8813-C53A5C8A72A9",
+                "comments": "实景模型"
+            },
+            "names": "实景模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "E46BC8B6-2CEA-4345-A580-8C068C09F57E",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "B9C44B53-077E-4855-A0E3-6EAA58E7B703",
+                "comments": "专业模型"
+            },
+            "names": "专业模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "781553FC-AF56-4593-A752-DFE89D7E108A",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "22B8B69A-DD63-46D5-BCE3-B7EB96DC0F4E",
+                "comments": "功能模型"
+            },
+            "names": "功能模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "AB06058F-1564-4435-B299-8B73A3A40E50",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "4FD66ECB-6CBC-4D5F-8A68-2246070C501B",
+                "comments": "运维模型"
+            },
+            "names": "运维模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "1F45E8B7-AB61-4FD3-B452-D60458B3C6C7",
+                    "comments": "CIM数据集按照模型等级的分类"
+                },
+                {
+                    "code": "8A989B5C-1D3D-493D-842E-E1B37C220CEE",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "1ACD75B6-1557-411D-939C-1C9582752F84",
+                "comments": "动态模型"
+            },
+            "names": "动态模型"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "D8FBD5AB-1176-4493-A52C-83908B8F4457",
+                "comments": "地形"
+            },
+            "names": "地形"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "7B3B1741-8107-4C13-B132-2E169F0DE52D",
+                "comments": "行政区"
+            },
+            "names": "行政区"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "EEF373C6-B2AE-4721-AAD5-B7EA125700F5",
+                    "comments": "建筑按照实体的颗粒"
+                },
+                {
+                    "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "6A0F90F6-F3D8-46A9-B2C3-C96A4D6E8F6C",
+                "comments": "建筑"
+            },
+            "names": "建筑"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "FC3E1F00-4BA8-4F72-A9CD-0A4B81E559D3",
+                    "comments": "建筑按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "5D851DC3-C0E5-4E19-AECE-11003590820A",
+                "comments": "建筑内部"
+            },
+            "names": "建筑内部"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "FC3E1F00-4BA8-4F72-A9CD-0A4B81E559D3",
+                    "comments": "建筑按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "437B57F3-82F1-4E44-BB50-E7B5DB8136C1",
+                "comments": "建筑外部"
+            },
+            "names": "建筑外部"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "DC30A16B-81DD-474D-8400-C2389D54458A",
+                "comments": "道路"
+            },
+            "names": "道路"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "4CF29AD1-B3FF-4D7B-BC11-7DA6F5E6BCD6",
+                "comments": "水体"
+            },
+            "names": "水体"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "C86CF9CF-E6C8-4B33-BD60-75F8D6AE26EE",
+                    "comments": "CIM1等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BEA58028-B73C-4728-80AC-8A78AF3F94C5",
+                    "comments": "CIM2等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "40375128-DF00-43C4-9C1F-0194C08827A2",
+                    "comments": "CIM3等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "80CFB6D2-0B0F-476F-BE7C-8BE2DED8D9CF",
+                    "comments": "表面模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "6D55E6A9-1A80-4BD7-A575-131D59E8ACB2",
+                    "comments": "框架模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "638E2274-0893-4543-8149-E610E2680FB8",
+                    "comments": "实景模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "5BC46617-C71C-4DFF-8AA1-4AE0B10A3A64",
+                "comments": "植被"
+            },
+            "names": "植被"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "8653E2C8-D03B-48D0-8204-FBF7CB3895E9",
+                "comments": "场地"
+            },
+            "names": "场地"
+        },
+        {
+            "id": {
+                "code": "FDCC4CB0-ED7C-4CA2-98C2-BFB2BFA3443B",
+                "comments": "地质"
+            },
+            "names": "地质"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "571BBBD1-903B-4740-91FE-3E9105584993",
+                    "comments": "管网按照实体的颗粒"
+                },
+                {
+                    "code": "F4CB641C-A096-427C-91A7-BA240B3FCCD1",
+                    "comments": "CIM4等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "F25900F4-0DE9-4C62-9060-174AD448D590",
+                    "comments": "CIM5等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "987038BB-8C9B-4A9C-8432-700771D3DAF1",
+                    "comments": "专业模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "A20CA29C-68D9-4AAA-8146-4B9712137DB0",
+                    "comments": "功能模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "25EBD2ED-9191-41AB-A76E-128B7925C46E",
+                "comments": "管网"
+            },
+            "names": "管网"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "0646E12F-F6CD-446C-9753-AD534F920869",
+                    "comments": "管网按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "83628D4B-04AA-457F-BCD2-00531EDCB8C8",
+                "comments": "管网内部"
+            },
+            "names": "管网内部"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "0646E12F-F6CD-446C-9753-AD534F920869",
+                    "comments": "管网按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "12AAB320-175F-4701-97B2-27CCEE241DA1",
+                "comments": "管网外部"
+            },
+            "names": "管网外部"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "39F09E95-F193-4122-B62C-A59FFB746468",
+                    "comments": "CIM6等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "4F2B81B2-DA0B-4089-91C1-6E1B4EE1DCF3",
+                    "comments": "运维模型数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "23A7A5C9-452F-46B0-B318-2743557F3339",
+                "comments": "设施"
+            },
+            "names": "设施"
+        },
+        {
+            "axioms": [
+                {
+                    "code": "BFB8FB83-55D1-4295-980D-1C3D38F70738",
+                    "comments": "CIM7等级数据集按照实体的颗粒"
+                },
+                {
+                    "code": "B08FF4F6-0F94-4128-A7C7-601FED111C51",
+                    "comments": "动态模型数据集按照实体的颗粒"
+                }
+            ],
+            "id": {
+                "code": "0FCB6046-7B8D-411C-A37D-8370C01EA267",
+                "comments": "环境场"
+            },
+            "names": "环境场"
+        }
+    ],
+    "Header": {
+        "CIMDate": "2023-08-01 15:37:22",
+        "CIMDescription": "仅作示例",
+        "CIMName": "CIM数据集标准规范",
+        "CIMType": 0
+    }
+}
