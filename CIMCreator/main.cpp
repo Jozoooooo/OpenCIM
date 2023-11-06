@@ -7,9 +7,9 @@
 @文件描述 场景样例的启动文件。
 @修订历史 2023.7.28 创建
 **/
-#include <iostream>
+
 void CIMStandard();
-#include <iostream>
+
 int main() {
     CIMStandard();
 }
