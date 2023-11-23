@@ -57,3 +57,11 @@ const std::string &UniqueID::getCode() const {
     return _code;
 }
 
+std::string UniqueID::getCCode() const {
+    return _cCode;
+}
+
+[[maybe_unused]] void UniqueID::setCCode(const std::string &cCode) {
+    UniqueID::_cCode = cCode;
+}
+
