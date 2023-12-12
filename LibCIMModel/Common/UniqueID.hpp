@@ -17,7 +17,6 @@
 struct UniqueID {
 private:
     std::string _code;
-    std::string _cCode;
     std::string _comments;
 
 public:
@@ -32,10 +31,6 @@ public:
     [[maybe_unused]] [[nodiscard]] const std::string &getComments() const;
 
     [[maybe_unused]] void setComments(const std::string &comments);
-
-    [[nodiscard]] std::string getCCode() const;
-
-    [[maybe_unused]] void setCCode(const std::string &cCode);
 
     bool operator==(UniqueID *rhs) const {
         return _code == rhs->getCode();

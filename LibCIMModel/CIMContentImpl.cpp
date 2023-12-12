@@ -1,6 +1,7 @@
 #include <fstream>
 
 #include <nlohmann/json.hpp>
+#include <sstream>
 
 #include "ICIMStandard.hpp"
 #include "CIMContentImpl.hpp"
@@ -51,6 +52,41 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
             auto item = (NNU::OpenCIM::Component::Property *) component;
             json["Components"].emplace_back(nlohmann::json::parse(item->toJson()));
         }
+    }
+
+    // 调整输出实体编码
+    for(auto entity: _entities)
+    {
+        if(entity->getComponentsCount() == 0)
+        {
+            continue;
+        }
+
+        auto conceptId = entity->getBelongConcept(0);
+        auto code = conceptId->getCode();
+
+        int count = 0;
+        for(auto e: _entities)
+        {
+            if(e->getComponentsCount() == 0)
+            {
+                continue;
+            }
+
+            auto t = e->getBelongConcept(0);
+            if(t == conceptId)
+            {
+                count++;
+            }
+        }
+
+        std::ostringstream oss;
+        oss << std::setw(6) << std::setfill('0') << count;
+        std::string countString = oss.str();
+
+        // 更新字符串
+        code.replace(code.length() - countString.length(), countString.length(), countString);
+        entity->getId()->setCode(code);
     }
 
     // 输出实体
