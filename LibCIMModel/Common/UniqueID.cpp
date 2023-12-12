@@ -65,3 +65,7 @@ std::string UniqueID::getCCode() const {
     UniqueID::_cCode = cCode;
 }
 
+void UniqueID::setCode(const std::string &code) {
+    _code = code;
+}
+

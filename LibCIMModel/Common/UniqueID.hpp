@@ -25,6 +25,8 @@ public:
 
     explicit UniqueID(const std::string &jsonStr);
 
+    void setCode(const std::string &code);
+
     [[nodiscard]] const std::string &getCode() const;
 
     [[maybe_unused]] [[nodiscard]] const std::string &getComments() const;
