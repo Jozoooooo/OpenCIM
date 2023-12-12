@@ -10,10 +10,10 @@ NNU::OpenCIM::CIMHeader::CIMHeader() : _CIMType(UNKNOWNSCE), _CIMDate(Common::Da
 JSONSTR NNU::OpenCIM::CIMHeader::toJson() const {
     nlohmann::json json;
 
-    json["CIMName"] = _CIMName;
-    json["CIMType"] = _CIMType;
-    json["CIMDate"] = _CIMDate;
-    json["CIMDescription"] = _CIMDescription;
+    json["sceneName"] = _CIMName;
+    json["sceneType"] = _CIMType;
+    json["sceneDate"] = _CIMDate;
+    json["sceneDescription"] = _CIMDescription;
 
     for (const auto &include: _includes) {
         nlohmann::json includeJson;
@@ -29,10 +29,10 @@ JSONSTR NNU::OpenCIM::CIMHeader::toJson() const {
 void NNU::OpenCIM::CIMHeader::fromJson(const JSONSTR &jsonStr) {
     nlohmann::json json = nlohmann::json::parse(jsonStr);
 
-    _CIMName = json["CIMName"];
-    _CIMType = json["CIMType"];
-    _CIMDate = json["CIMDate"];
-    _CIMDescription = json["CIMDescription"];
+    _CIMName = json["sceneName"];
+    _CIMType = json["sceneType"];
+    _CIMDate = json["sceneDate"];
+    _CIMDescription = json["sceneDescription"];
 
     for (auto include: json["includes"]) {
         auto meta = Include{include["type"], include["path"]};
