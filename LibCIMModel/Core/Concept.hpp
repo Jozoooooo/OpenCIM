@@ -19,6 +19,12 @@ namespace NNU::OpenCIM {
 }
 
 namespace NNU::OpenCIM::Core {
+    enum ConceptType {
+        PROPERTY, //属性
+        ENTITY, // 实体
+        RELATION, // 关系
+    };
+
     /**
      * 概念类
      */
@@ -27,6 +33,7 @@ namespace NNU::OpenCIM::Core {
         UniqueID *_id; // 概念唯一标识
         std::string _name; // 概念名
         std::vector<UniqueID *> _axioms; // 公理集合
+        ConceptType _conceptType;
 
         /**
           * 初始化概念，为概念构建唯一id
@@ -96,5 +103,9 @@ namespace NNU::OpenCIM::Core {
          * @param axiomId 公理Id
          */
         [[maybe_unused]] void removeAxiom(UniqueID *axiomId);
+
+        [[nodiscard]] ConceptType getConceptType() const;
+
+        void setConceptType(ConceptType conceptType);
     };
 }

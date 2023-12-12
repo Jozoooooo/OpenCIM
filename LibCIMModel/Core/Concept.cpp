@@ -11,6 +11,7 @@ JSONSTR NNU::OpenCIM::Core::Concept::toJson() const {
 
     json["Id"] = nlohmann::json::parse(_id->toJson());
     json["Names"] = _name;
+    json["ConceptType"] = _conceptType;
 
     for (const auto &axiom: _axioms) {
         json["Axioms"].emplace_back(nlohmann::json::parse(axiom->toJson()));
@@ -24,6 +25,7 @@ void NNU::OpenCIM::Core::Concept::fromJson(const std::string &jsonStr) {
 
     _id = new UniqueID(json["Id"].dump());
     _name = json["Names"];
+    _conceptType = json["ConceptType"];
 
     for (const auto &axiom: json["Axioms"]) {
         auto uid = new UniqueID(axiom.dump());
@@ -66,5 +68,13 @@ bool NNU::OpenCIM::Core::Concept::operator==(const NNU::OpenCIM::Core::Concept &
 
 bool NNU::OpenCIM::Core::Concept::operator!=(const NNU::OpenCIM::Core::Concept &rhs) const {
     return !(rhs == *this);
+}
+
+NNU::OpenCIM::Core::ConceptType NNU::OpenCIM::Core::Concept::getConceptType() const {
+    return _conceptType;
+}
+
+void NNU::OpenCIM::Core::Concept::setConceptType(NNU::OpenCIM::Core::ConceptType conceptType) {
+    _conceptType = conceptType;
 }
 

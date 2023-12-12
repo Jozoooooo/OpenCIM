@@ -30,7 +30,8 @@ namespace NNU::OpenCIM::Core {
         SUBOF, // 分类关系中的子类关系
         SUPEROF, // 分类关系中的父类关系
         CONSISTOF, // 颗粒中的父颗粒
-        PARTOF // 颗粒中的子颗粒
+        PARTOF, // 颗粒中的子颗粒
+        AFFILIATE, // 附属关系
     };
 
     [[maybe_unused]] constexpr AxiomType AxiomaticCorrespondence[] = {NONE, NONE, NONE, DERIVABLEREVERSE, DERIVABLE,
