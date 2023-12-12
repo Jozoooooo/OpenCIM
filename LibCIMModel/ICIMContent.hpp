@@ -52,6 +52,10 @@ namespace NNU::OpenCIM {
 
         [[maybe_unused]] virtual void release() = 0; // 释放资源
 
+        [[maybe_unused]] virtual const char *getAreaNumber() = 0; // 获取行政区代码
+
+        [[maybe_unused]] virtual void setAreaNumber(const char *areNumber) = 0; // 设置行政区代码
+
         [[maybe_unused]] virtual ICIMStandard *getIncludeCIMStandard() = 0;
 
         [[maybe_unused]] virtual Common::ExternalData *createExternalData() = 0; // 创建外部数据
@@ -104,13 +108,13 @@ namespace NNU::OpenCIM {
 
         [[maybe_unused]] virtual const char *getSystemCodeFromIndex(int index) = 0; // 根据索引获取系统id
 
-        [[maybe_unused]] virtual const char *getExternalDataCodeFromComments(const char* comments) = 0; // 根据注释获取外部数据id
+        [[maybe_unused]] virtual const char *getExternalDataCodeFromComments(const char *comments) = 0; // 根据注释获取外部数据id
 
-        [[maybe_unused]] virtual const char *getComponentCodeFromComments(const char* comments) = 0; // 根据注释获取外部数据id
+        [[maybe_unused]] virtual const char *getComponentCodeFromComments(const char *comments) = 0; // 根据注释获取外部数据id
 
-        [[maybe_unused]] virtual const char *getEntityCodeFromComments(const char* comments) = 0; // 根据注释获取外部数据id
+        [[maybe_unused]] virtual const char *getEntityCodeFromComments(const char *comments) = 0; // 根据注释获取外部数据id
 
-        [[maybe_unused]] virtual const char *getSystemCodeFromComments(const char* comments) = 0; // 根据注释获取外部数据id
+        [[maybe_unused]] virtual const char *getSystemCodeFromComments(const char *comments) = 0; // 根据注释获取外部数据id
 
         [[maybe_unused]] virtual void removeExternalData(const char *uid) = 0; // 删除外部数据
 

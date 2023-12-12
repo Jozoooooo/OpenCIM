@@ -40,5 +40,21 @@ namespace NNU::OpenCIM::System {
         [[nodiscard]] SystemType getSystemType() const {
             return _systemType;
         }
+
+        [[maybe_unused]] UniqueID* getBelongConcept()
+        {
+            return _belongConcepts[0];
+        }
+
+        [[maybe_unused]] void setBelongConcept(UniqueID* uniqueId){
+            if(_belongConcepts.empty())
+            {
+                _belongConcepts.emplace_back(uniqueId);
+            }
+            else
+            {
+                _belongConcepts[0] = uniqueId;
+            }
+        }
     };
 }

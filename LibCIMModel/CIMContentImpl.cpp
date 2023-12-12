@@ -7,7 +7,7 @@
 #include "CIMContentImpl.hpp"
 
 NNU::OpenCIM::CIMHeader *NNU::OpenCIM::CIMContentImpl::getHeader() {
-    return _CIMHeader;
+    return _cimHeader;
 }
 
 NNU::OpenCIM::ICIMStandard *NNU::OpenCIM::CIMContentImpl::getIncludeCIMStandard() {
@@ -18,7 +18,7 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
     nlohmann::json json;
 
     // 输出文件头
-    json["Header"] = nlohmann::json::parse(_CIMHeader->toJson());
+    json["Header"] = nlohmann::json::parse(_cimHeader->toJson());
 
     // 输出外部数据
     for (auto externalData: _externalDatas) {
@@ -55,27 +55,26 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
     }
 
     // 调整输出实体编码
-    for(auto entity: _entities)
-    {
-        if(entity->getComponentsCount() == 0)
-        {
+    for (auto entity: _entities) {
+        if (entity->getComponentsCount() == 0) {
             continue;
         }
 
-        auto conceptId = entity->getBelongConcept(0);
-        auto code = conceptId->getCode();
+        auto clasCon = entity->getClassificationBelongConcept();
+        auto partiCon = entity->getParticleBelongConcept();
+        std::string code1 = clasCon->getCode();
+        std::string code2 = partiCon->getCode();
 
         int count = 0;
-        for(auto e: _entities)
-        {
-            if(e->getComponentsCount() == 0)
-            {
+        for (auto e: _entities) {
+            if (e->getComponentsCount() <=1 ) {
                 continue;
             }
 
-            auto t = e->getBelongConcept(0);
-            if(t == conceptId)
-            {
+            auto c1 = e->getClassificationBelongConcept()->getCode();
+            auto c2 = e->getParticleBelongConcept()->getCode();
+
+            if ((c1 == code1) && (c2 == code2)) {
                 count++;
             }
         }
@@ -84,9 +83,7 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
         oss << std::setw(6) << std::setfill('0') << count;
         std::string countString = oss.str();
 
-        // 更新字符串
-        code.replace(code.length() - countString.length(), countString.length(), countString);
-        entity->getId()->setCode(code);
+        entity->getId()->setCode(this->_areaNumber.append(code1).append(code2).append(countString));
     }
 
     // 输出实体
@@ -128,7 +125,7 @@ void NNU::OpenCIM::CIMContentImpl::fromJson(const char *jsonPath) {
     nlohmann::json json = nlohmann::json::parse(result);
 
     if (json.contains("Header")) {
-        _CIMHeader->fromJson(json["Header"].dump());
+        _cimHeader->fromJson(json["Header"].dump());
     }
 
     if (json.contains("ExternalDatas")) {
@@ -221,7 +218,7 @@ void NNU::OpenCIM::CIMContentImpl::fromJson(const char *jsonPath) {
         }
     }
 
-    for (const auto &include: _CIMHeader->_includes) {
+    for (const auto &include: _cimHeader->_includes) {
         std::filesystem::path pathObj(jsonPath);
         std::filesystem::path parentPath = pathObj.parent_path();
         auto path = parentPath.string() + "/" + include.CIMPath;
@@ -471,12 +468,12 @@ NNU::OpenCIM::ICIMContent *NNU::OpenCIM::CIMContentImpl::getIncludeCIMContent(in
     return _includeContent[index];
 }
 
-NNU::OpenCIM::CIMContentImpl::CIMContentImpl() : _CIMHeader(new CIMHeader), _includeStandard(nullptr) {
-    _CIMHeader->_CIMType = CONTENT;
+NNU::OpenCIM::CIMContentImpl::CIMContentImpl() : _cimHeader(new CIMHeader), _includeStandard(nullptr) {
+    _cimHeader->_CIMType = CONTENT;
 }
 
 NNU::OpenCIM::CIMContentImpl::~CIMContentImpl() {
-    delete _CIMHeader;
+    delete _cimHeader;
 
     for (auto externalData: _externalDatas) {
         delete externalData;
@@ -493,4 +490,12 @@ NNU::OpenCIM::CIMContentImpl::~CIMContentImpl() {
     for (auto system: _systems) {
         delete system;
     }
+}
+
+const char *NNU::OpenCIM::CIMContentImpl::getAreaNumber() {
+    return _areaNumber.c_str();
+}
+
+void NNU::OpenCIM::CIMContentImpl::setAreaNumber(const char *areNumber) {
+    this->_areaNumber = areNumber;
 }

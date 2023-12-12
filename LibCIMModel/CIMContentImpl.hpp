@@ -19,6 +19,10 @@ namespace NNU::OpenCIM {
 
         ICIMStandard *getIncludeCIMStandard() override;
 
+        const char *getAreaNumber() override;
+
+        void setAreaNumber(const char *areNumber) override;
+
         void toJson(const char *jsonPath) override;
 
         void fromJson(const char *jsonPath) override;
@@ -75,13 +79,13 @@ namespace NNU::OpenCIM {
 
         const char *getSystemCodeFromIndex(int index) override;
 
-        const char *getExternalDataCodeFromComments(const char* comments) override;
+        const char *getExternalDataCodeFromComments(const char *comments) override;
 
-        const char *getComponentCodeFromComments(const char* comments) override;
+        const char *getComponentCodeFromComments(const char *comments) override;
 
-        const char *getEntityCodeFromComments(const char* comments) override;
+        const char *getEntityCodeFromComments(const char *comments) override;
 
-        const char *getSystemCodeFromComments(const char* comments) override;
+        const char *getSystemCodeFromComments(const char *comments) override;
 
         void removeExternalData(const char *uid) override;
 
@@ -99,7 +103,9 @@ namespace NNU::OpenCIM {
         ICIMStandard *_includeStandard;
         std::vector<ICIMContent *> _includeContent;
 
-        CIMHeader *_CIMHeader;
+        std::string _areaNumber;
+
+        CIMHeader *_cimHeader;
         std::vector<Common::ExternalData *> _externalDatas;
         std::vector<Component::Component *> _components;
         std::vector<Entity::Entity *> _entities;

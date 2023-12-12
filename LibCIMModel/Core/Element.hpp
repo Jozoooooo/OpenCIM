@@ -53,22 +53,5 @@ namespace NNU::OpenCIM::Core {
         bool operator!=(const Element &rhs) const {
             return !(rhs == *this);
         }
-
-        [[maybe_unused]] void addBelongConcept(UniqueID *conceptId) {
-            _belongConcepts.emplace_back(conceptId);
-        }
-
-        [[maybe_unused]] [[nodiscard]] int getBelongConceptsCount() const {
-            return static_cast<int>( _belongConcepts.size());
-        }
-
-        [[maybe_unused]] [[nodiscard]] UniqueID *getBelongConcept(int index) const {
-            return _belongConcepts[index];
-        }
-
-        [[maybe_unused]] void removeBelongConcept(const UniqueID *concept) {
-            auto it = std::find(_belongConcepts.begin(), _belongConcepts.end(), concept);
-            _belongConcepts.erase(it);
-        }
     };
 }
