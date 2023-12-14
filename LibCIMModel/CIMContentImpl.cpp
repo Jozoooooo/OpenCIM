@@ -54,6 +54,8 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
         }
     }
 
+    std::map<std::string,int> codeDict;
+
     // 调整输出实体编码
     for (auto entity: _entities) {
         if (entity->getComponentsCount() == 0) {
@@ -65,25 +67,24 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
         std::string code1 = clasCon->getCode();
         std::string code2 = partiCon->getCode();
 
-        int count = 0;
-        for (auto e: _entities) {
-            if (e->getComponentsCount() <=1 ) {
-                continue;
-            }
+        auto tempCode = this->_areaNumber;
+        tempCode.append(code1).append(code2);
 
-            auto c1 = e->getClassificationBelongConcept()->getCode();
-            auto c2 = e->getParticleBelongConcept()->getCode();
+        auto it = codeDict.find(tempCode);
 
-            if ((c1 == code1) && (c2 == code2)) {
-                count++;
-            }
+        auto count = 1;
+        if (it != codeDict.end()) {
+            it->second++;
+            count = it->second;
+        } else {
+            codeDict[tempCode] = count;
         }
 
         std::ostringstream oss;
         oss << std::setw(6) << std::setfill('0') << count;
         std::string countString = oss.str();
 
-        entity->getId()->setCode(this->_areaNumber.append(code1).append(code2).append(countString));
+        entity->getId()->setCode(tempCode.append(countString));
     }
 
     // 输出实体
