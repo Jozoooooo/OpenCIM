@@ -54,39 +54,6 @@ void NNU::OpenCIM::CIMContentImpl::toJson(const char *jsonPath) {
         }
     }
 
-    std::map<std::string,int> codeDict;
-
-    // 调整输出实体编码
-    for (auto entity: _entities) {
-        if (entity->getComponentsCount() == 0) {
-            continue;
-        }
-
-        auto clasCon = entity->getClassificationBelongConcept();
-        auto partiCon = entity->getParticleBelongConcept();
-        std::string code1 = clasCon->getCode();
-        std::string code2 = partiCon->getCode();
-
-        auto tempCode = this->_areaNumber;
-        tempCode.append(code1).append(code2);
-
-        auto it = codeDict.find(tempCode);
-
-        auto count = 1;
-        if (it != codeDict.end()) {
-            it->second++;
-            count = it->second;
-        } else {
-            codeDict[tempCode] = count;
-        }
-
-        std::ostringstream oss;
-        oss << std::setw(6) << std::setfill('0') << count;
-        std::string countString = oss.str();
-
-        entity->getId()->setCode(tempCode.append(countString));
-    }
-
     // 输出实体
     for (auto entity: _entities) {
         json["Entities"].emplace_back(nlohmann::json::parse(entity->toJson()));
