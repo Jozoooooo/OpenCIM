@@ -25,8 +25,8 @@ namespace NNU::OpenCIM::Core {
      */
     enum AxiomType {
         NONE, // 无意义，用于对应公理判断
-        DERIVABLE, // 推导
-        EFFECT, // 作用
+        EFFECT, // 推导
+        DERIVABLE, // 作用
         SUBOF, // 分类关系中的子类关系
         SUPEROF, // 分类关系中的父类关系
         CONSISTOF, // 颗粒中的父颗粒
