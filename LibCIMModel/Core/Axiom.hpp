@@ -25,18 +25,14 @@ namespace NNU::OpenCIM::Core {
      */
     enum AxiomType {
         NONE, // 无意义，用于对应公理判断
-        DERIVABLE, // 可推导（默认），无方向的推导和正向推导
-        DERIVABLEREVERSE, // 可推导（逆向），关系中会出现逆向推导，如父（A,B）和子（B,A）
+        DERIVABLE, // 推导
+        EFFECT, // 作用
         SUBOF, // 分类关系中的子类关系
         SUPEROF, // 分类关系中的父类关系
         CONSISTOF, // 颗粒中的父颗粒
         PARTOF, // 颗粒中的子颗粒
         AFFILIATE, // 附属关系
     };
-
-    [[maybe_unused]] constexpr AxiomType AxiomaticCorrespondence[] = {NONE, NONE, NONE, DERIVABLEREVERSE, DERIVABLE,
-                                                                      SUPEROF, SUBOF,
-                                                                      PARTOF, CONSISTOF}; // 记录每一公理的相对公理
 
     /**
      * 公理

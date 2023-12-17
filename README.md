@@ -1,4 +1,4 @@
-# OpenCIM
+_# OpenCIM
 
 <img src="https://pic.imgdb.cn/item/64c325591ddac507cc9a5a6e.jpg" style="zoom:50%;"  alt=""/>
 
@@ -101,7 +101,7 @@ LibCIMModel对JSON文件的读写依赖于nlohmann库。
 对场景中【概念】的逻辑约束，主要包含：
 
 - 公理标识 —— id
-- 公理类型（空、正向推导、反向推导、子类、父类、父颗粒、子颗粒） —— axiomType
+- 公理类型（空 编号0、推导 编号1、作用 编号2、子类 编号3、父类 编号4、父颗粒 编号5、子颗粒 编号6、附属 编号7） —— axiomType
 - 公理依据 —— basis
 - 公理对应概念集合 —— correspondingConcepts
 
@@ -159,21 +159,23 @@ component为基类，仅具有组件类型（componentType）字段。
 
 共有八类组件继承自component类，分别为语义（Semantics）、空间几何（SpatialGeometry）、空间位置（SpatialLocation）、空间系统（SpatialSystem）、时间点（TemporalPoint）、时间范围（TemporalRange）、时间系统（TemporalSystem）、属性（Property）。
 
-- 语义：定义（definition）、描述（description）
+- 语义：定义（definition）、描述（description） 编号0
 
-- 空间几何：空间几何类型（spatialGeometryType）、geometry（空间几何描述）、uv（几何材质）
+- 空间几何：空间几何类型（spatialGeometryType）、geometry（空间几何描述）、uv（几何材质）编号3
 
 - 空间位置：x平移距离（panX）、y平移距离（panY）、z平移距离（panZ）、rotateX（x旋转角度）、rotateY（y旋转角度）、z旋转角度（rotateZ）、模型缩放（scale）
+  编号1
 
-- 空间系统：空间坐标系标准EPSG（coordinateSystem）、中央经线（centralMeridian）
+- 空间系统：空间坐标系标准EPSG（coordinateSystem）、中央经线（centralMeridian） 编号2
 
-- 时间点：时间戳（timeStamp）
+- 时间点：时间戳（timeStamp） 编号4
 
-- 时间范围：开始时间时间戳（startTime）、结束时间时间戳（endTime）
+- 时间范围：开始时间时间戳（startTime）、结束时间时间戳（endTime） 编号6
 
 - 时间系统：时间系统名（temporalSystemName）、时间系统类型（temporalSystemType）、相对时间系统（relativeTemporalSystem）、与相对时间系统的转换（trans）
+  编号5
 
-- 属性：字段名（fieldName）、字段来源（source）、字段类型（fieldType）、字段值（fieldType）
+- 属性：字段名（fieldName）、字段来源（source）、字段类型（fieldType）、字段值（fieldType） 编号7
 
   [^表达材质属性，需要特定的字段名和字段类型]:
 
@@ -191,9 +193,9 @@ system为基类，仅具有系统类型（systemType）字段。
 
 共有三类系统继承自system类，分别为关系（Relation）、演化（Evolution）、机制（Mechanism）。
 
-- 关系：描述（description）、出发实体集合（fromEntities）、指向实体集合（toEntities）
-- 演化：出发实体（fromEntity）、指向实体（toEntity）
-- 机制：机制名（mechanismName）、机制描述（mechanismComments）、机制版本（mechanismVersion）、机制路径（mechanismPath）
+- 关系：描述（description）、出发实体集合（fromEntities）、指向实体集合（toEntities） 编号0
+- 演化：出发实体（fromEntity）、指向实体（toEntity） 编号1
+- 机制：机制名（mechanismName）、机制描述（mechanismComments）、机制版本（mechanismVersion）、机制路径（mechanismPath） 编号2
 
 ### 库功能
 
@@ -251,28 +253,31 @@ int main()
 
 ### 更新记录
 
-|   更新时间    | 更新类型 |                 更新内容                 |
-|:---------:|:----:|:------------------------------------:|
-| 2023.7.17 |  修改  |       场景头字段<br />场景头字段创建、查询接口        |
-| 2023.7.17 |  新增  |            用于描述场景信息的场景头类             |
-| 2023.7.17 |  修改  |          在【属性】中增加对“材质”描述的能力          |
-| 2023.7.17 |  修改  | 将【时间位置】更名为【时间点】<br />将【时间几何】更名为【时间段】 |
-| 2023.7.18 |  修改  |    “fromJson”函数实现代码<br />要素删除实现代码    |
-| 2023.7.18 |  修改  |      外部场景模型字段<br />外部场景模型字段查询接口      |
-| 2023.7.18 |  修改  |             【机制】热拔插实现代码              |
-| 2023.7.21 |  修改  |            将SetUv更名为SetUV            |
-| 2023.7.21 |  修改  |     将IMechanismPlugin更名为IPlugin      |
-| 2023.7.21 |  修改  |      将CIMHeader.hpp/cpp移动至根目录      |
-| 2023.7.21 |  新增  |                用于描述材质                |
-| 2023.7.21 |  修改  |        材质字段<br />材质字段创建、查询接口         |
-| 2023.7.21 |  修改  |            删除【属性】中的“材质”描述            |
-| 2023.7.22 |  修改  | 将Property作为基类，派生出内部属性类和外部数据线类（纹理材质）  |
-| 2023.7.22 |  修改  |           在Element添加“注解”字段           |
-| 2023.7.22 |  修改  |    添加“Meta”类型，场景间相互调用采用Meta类型进行调用    |
-| 2023.7.22 |  新增  |           getMeta函数实现获取元数据           |
-| 2023.7.22 |  修改  |              将场景和场景标准拆分              |
-| 2023.7.24 |  修改  |               整体结构进行微调               |
-| 2023.8.1  |  新增  |           新增根据注释查询场景要素的接口            |
+|    更新时间    | 更新类型 |                 更新内容                 |
+|:----------:|:----:|:------------------------------------:|
+| 2023.7.17  |  修改  |       场景头字段<br />场景头字段创建、查询接口        |
+| 2023.7.17  |  新增  |            用于描述场景信息的场景头类             |
+| 2023.7.17  |  修改  |          在【属性】中增加对“材质”描述的能力          |
+| 2023.7.17  |  修改  | 将【时间位置】更名为【时间点】<br />将【时间几何】更名为【时间段】 |
+| 2023.7.18  |  修改  |    “fromJson”函数实现代码<br />要素删除实现代码    |
+| 2023.7.18  |  修改  |      外部场景模型字段<br />外部场景模型字段查询接口      |
+| 2023.7.18  |  修改  |             【机制】热拔插实现代码              |
+| 2023.7.21  |  修改  |            将SetUv更名为SetUV            |
+| 2023.7.21  |  修改  |     将IMechanismPlugin更名为IPlugin      |
+| 2023.7.21  |  修改  |       将CIMHeader.hpp/cpp移动至根目录       |
+| 2023.7.21  |  新增  |                用于描述材质                |
+| 2023.7.21  |  修改  |        材质字段<br />材质字段创建、查询接口         |
+| 2023.7.21  |  修改  |            删除【属性】中的“材质”描述            |
+| 2023.7.22  |  修改  | 将Property作为基类，派生出内部属性类和外部数据线类（纹理材质）  |
+| 2023.7.22  |  修改  |           在Element添加“注解”字段           |
+| 2023.7.22  |  修改  |    添加“Meta”类型，场景间相互调用采用Meta类型进行调用    |
+| 2023.7.22  |  新增  |           getMeta函数实现获取元数据           |
+| 2023.7.22  |  修改  |              将场景和场景标准拆分              |
+| 2023.7.24  |  修改  |               整体结构进行微调               |
+|  2023.8.1  |  新增  |           新增根据注释查询场景要素的接口            |
+| 2023.12.15 |  新增  |               新增编码修改接口               |
+| 2023.12.15 |  新增  |              概念新增概念类型字段              |
+| 2023.12.15 |  修改  |           实体、组件、系统概念映射接口调整           |
 
 ## CIMCreator
 
@@ -389,8 +394,8 @@ CPSViewer颗粒体系示例
 
 ### 更新记录
 
-|   更新时间    | 更新类型 |     更新内容      |
-|:---------:|:----:|:-------------:|
-| 2023.7.26 |  新增  | 创建CIMViewer |
-| 2023.7.30 |  修改  | 修改了部分描述与说明文字  |
+|   更新时间    | 更新类型 |     更新内容     |
+|:---------:|:----:|:------------:|
+| 2023.7.26 |  新增  | 创建CIMViewer  |
+| 2023.7.30 |  修改  | 修改了部分描述与说明文字 |_
 
