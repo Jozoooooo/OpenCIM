@@ -21,7 +21,7 @@ namespace NNU::OpenCIM::Component {
      * 空间几何类型
      */
     enum SpatialGeometryType {
-        WKT [[maybe_unused]], // 内嵌式WKT
+        SWEPT [[maybe_unused]], // 扫略法
         BREP [[maybe_unused]], // 边界表示法 表示格式："0,0,0;0,1,0;1,1,1"
         EXTERNALGEO [[maybe_unused]], // 外链式
         UNKNOWNGEO // 未知几何
