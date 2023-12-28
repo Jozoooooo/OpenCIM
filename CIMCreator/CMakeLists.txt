@@ -12,6 +12,11 @@ include_directories("${CMAKE_SOURCE_DIR}/LibCIMModel")
 
 link_directories("${CMAKE_SOURCE_DIR}/out/build/OpenCIM/libCIMModel")
 
-add_executable(CIMCreator main.cpp CIMStandard.cpp)
+add_executable(CIMCreator
+        main.cpp
+        CIMStandard.cpp
+        NNU-ACIM.cpp
+        Mechanism/TestPlugin.cpp
+        Mechanism/Plugin/HelloMechanism.cpp)
 
 target_link_libraries(CIMCreator libCIMModel_d)

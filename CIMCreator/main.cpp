@@ -9,7 +9,9 @@
 **/
 
 void CIMStandard();
+void NNUACIM();
 
 int main() {
     CIMStandard();
+    NNUACIM();
 }
