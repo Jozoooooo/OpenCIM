@@ -279,47 +279,46 @@ int main()
 | 2023.12.15 |  新增  |              概念新增概念类型字段              |
 | 2023.12.15 |  修改  |           实体、组件、系统概念映射接口调整           |
 
-## CIMCreator
+## ACIMCreator
 
 ### 背景
 
-CIMCreator 是基于LibCIMModel的基础上，构建场景模型数据集的示例可执行程序。
+* ACIMCreator 是基于LibCIMModel的基础上，构建场景模型数据集的示例可执行程序。
+* ACIMCreator 具有代码构建和界面构建两种形式，分别为对应Code版本和GUI版本。
+* GUI版本将会在后续上线。
 
 ### 库依赖
 
-CIMCreator 依赖于LibCIMModel库。
+* CIMCreator-Code 依赖于LibCIMModel库。
 
-### 程序功能
+### Code
+
+#### 程序功能
 
 程序中共有三个示例函数：CIMStandard、NNU-ACIM、TestPlugin，分别用于构建CIM场景基础标准示例、CIM3层级以南师大北区数据为例的ACIM数据格式示例、场景机制使用示例。
 
-### 快速开始
-
-#### 编译插件
+#### 快速开始
 
 将CMakeList对应位置修改为如下形式，编译程序即可。
 
 ```cmake
-#add_executable(CIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
-add_library(CIMCreator SHARED Mechanism/Plugin/HelloMechanism.cpp)
+#add_executable(ACIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
+add_library(ACIMCreator SHARED Mechanism/Plugin/HelloMechanism.cpp)
 ```
-
-#### 运行示例
 
 将CMakeList对应位置修改为如下形式。
 
 ```cmake
-add_executable(CIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
-# add_library(CIMCreator SHARED Mechanism/Plugin/HelloMechanism.cpp)
+add_executable(ACIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
+# add_library(ACIMCreator SHARED Mechanism/Plugin/HelloMechanism.cpp)
 ```
 
-在main.cpp文件中选择想要运行的函数，并取消注释。
+在main.cpp文件中选择想要运行的函数。
 
 ```c++
 int main() {
-//    CIMStandard();
-//    NNUACIM();
-    TestPlugin();
+    CIMStandard();
+    NNUACIM();
 }
 ```
 
@@ -332,15 +331,16 @@ int main() {
 | 2023.7.17 |  新增  |     【材质】【纹理】示例      |
 | 2023.7.18 |  新增  |       【机制】示例        |
 
-## CIMViewer
+## ACIMViewer
 
 ### 背景
 
-CIMViewer是基于LibCIMModel的基础上，对场景JSON文件进行可视化的程序。
+* ACIMViewer是基于LibCIMModel的基础上，对ACIM JSON文件进行可视化的程序。
+* #### 注：2024年1月5日版本后的数据集无法查看，最新ACIM Viewer正在开发中，会在近期上线。
 
 ### 库依赖
 
-CIMViewer中，3DViewer依赖于LibCIMModel和VTK库；CPSViewer依赖于LibCIMModel和glfw库。
+ACIMViewer中，3DViewer依赖于LibCIMModel和VTK库；CPSViewer依赖于LibCIMModel和glfw库。
 
 ### 程序功能
 

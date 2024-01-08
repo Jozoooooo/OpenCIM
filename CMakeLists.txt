@@ -6,8 +6,8 @@ cmake_minimum_required (VERSION 3.25)
 project (OpenCIM)
 
 # 场景数据模型核心类库
-add_subdirectory ("LibCIMModel")
+add_subdirectory (LibCIMModel)
 # 场景数据模型验证案例
-add_subdirectory ("CIMCreator")
+add_subdirectory (ACIMCreator)
 # 场景可视化工具
-add_subdirectory ("CIMViewer")
+add_subdirectory (ACIMViewer)
