@@ -291,7 +291,7 @@ int main()
 
 * CIMCreator-Code 依赖于LibCIMModel库。
 
-### Code
+### ACIMCreator-Code
 
 #### 程序功能
 
@@ -330,6 +330,9 @@ int main() {
 | 2023.7.17 |  新增  | CIM1层级【公理】-【概念】标准示例 |
 | 2023.7.17 |  新增  |     【材质】【纹理】示例      |
 | 2023.7.18 |  新增  |       【机制】示例        |
+
+### ACIMCreator-GUI
+开发中
 
 ## ACIMViewer
 
