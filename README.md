@@ -289,7 +289,7 @@ int main()
 
 ### ACIMCreator-Code
 
-### 库依赖
+#### 库依赖
 
 * CIMCreator-Code 依赖于LibCIMModel库。
 
@@ -332,6 +332,7 @@ int main() {
 | 2023.7.18 |  新增  |       【机制】示例        |
 
 ### ACIMCreator-GUI
+
 开发中
 
 ## ACIMViewer
