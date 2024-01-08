@@ -287,11 +287,11 @@ int main()
 * ACIMCreator 具有代码构建和界面构建两种形式，分别为对应Code版本和GUI版本。
 * GUI版本将会在后续上线。
 
+### ACIMCreator-Code
+
 ### 库依赖
 
 * CIMCreator-Code 依赖于LibCIMModel库。
-
-### ACIMCreator-Code
 
 #### 程序功能
 
