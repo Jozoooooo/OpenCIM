@@ -16,7 +16,7 @@
 #include "../Common/UniqueID.hpp"
 
 namespace NNU::OpenCIM {
-    class CIMStandardImpl;
+    class CIMSchemaImpl;
 }
 
 namespace NNU::OpenCIM::Core {
@@ -53,7 +53,7 @@ namespace NNU::OpenCIM::Core {
 
         void fromJson(const JSONSTR &jsonStr);
 
-        friend class NNU::OpenCIM::CIMStandardImpl;
+        friend class NNU::OpenCIM::CIMSchemaImpl;
 
     public:
         /**

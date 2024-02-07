@@ -27,8 +27,8 @@ include_directories(${CMAKE_SOURCE_DIR}/3rdlibs)
 file(GLOB_RECURSE SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 add_library(LibCIMModel SHARED ${SOURCE_FILES})
 
-add_custom_command(TARGET LibCIMModel POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LibCIMModel> ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/../ACIMCreator/GUI COMMENT "Copying libCIMModel to specified path...")
-add_custom_command(TARGET LibCIMModel POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LibCIMModel> ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/../ACIMCreator/Code COMMENT "Copying libCIMModel to specified path...")
+add_custom_command(TARGET LibCIMModel POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LibCIMModel> ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/../ACIMTest COMMENT "Copying libCIMModel to specified path...")
+add_custom_command(TARGET LibCIMModel POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LibCIMModel> ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/../ACIMCreator COMMENT "Copying libCIMModel to specified path...")
 add_custom_command(TARGET LibCIMModel POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LibCIMModel> ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/../ACIMViewer/CPSViewer COMMENT "Copying libCIMModel to specified path...")
 add_custom_command(TARGET LibCIMModel POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LibCIMModel> ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/../ACIMViewer/3DViewer COMMENT "Copying libCIMModel to specified path...")
 

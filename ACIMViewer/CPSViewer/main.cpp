@@ -25,13 +25,13 @@ void InitialMainWidgetViewModel(int type, const char *CIMPath) {
     mainWidgetViewModel = new MainWidgetViewModel;
 
     if (type == 1) {
-        mainWidgetViewModel->iCIMStandard = CreateCIMStandard();
-        mainWidgetViewModel->iCIMStandard->fromJson(CIMPath);
+        mainWidgetViewModel->iCIMSchema = CreateCIMSchema();
+        mainWidgetViewModel->iCIMSchema->fromJson(CIMPath);
     }
 
     if (type == 2) {
-        mainWidgetViewModel->iCIMContent = CreateCIMContent();
-        mainWidgetViewModel->iCIMContent->fromJson(CIMPath);
+        mainWidgetViewModel->iCIMSynthetic = CreateCIMSynthetic();
+        mainWidgetViewModel->iCIMSynthetic->fromJson(CIMPath);
     }
 }
 
@@ -47,23 +47,23 @@ void InitialCPSTabControlViewModel(int type) {
 
 void InitialCsTreeViewModel(int type) {
     if (type == 1) {
-        csTreeViewModel = new TreeViewModel(mainWidgetViewModel->iCIMStandard);
+        csTreeViewModel = new TreeViewModel(mainWidgetViewModel->iCIMSchema);
     }
 
     if (type == 2) {
         csTreeViewModel = new TreeViewModel(
-                mainWidgetViewModel->iCIMContent->getIncludeCIMStandard());
+                mainWidgetViewModel->iCIMSynthetic->getIncludeCIMStandard());
     }
 }
 
 void InitialPSTreeViewModel(int type) {
     if (type == 1) {
-        psTreeViewModel = new TreeViewModel(mainWidgetViewModel->iCIMStandard);
+        psTreeViewModel = new TreeViewModel(mainWidgetViewModel->iCIMSchema);
     }
 
     if (type == 2) {
         psTreeViewModel = new TreeViewModel(
-                mainWidgetViewModel->iCIMContent->getIncludeCIMStandard());
+                mainWidgetViewModel->iCIMSynthetic->getIncludeCIMStandard());
     }
 }
 

@@ -6,22 +6,32 @@
 @最新修改日期 20223.7.28
 @文件描述 场景数据模型核心库入口
 @修订历史 2023.7.28 创建
+ 2024.2.6 修改名称
 **/
-#include "CIMStandardImpl.hpp"
-#include "CIMContentImpl.hpp"
+#include "CIMSchemaImpl.hpp"
+#include "CIMSyntheticImpl.hpp"
+#include "CIMDatasetImpl.hpp"
 
-[[maybe_unused]] NNU::OpenCIM::ICIMStandard *NNU::OpenCIM::CreateCIMStandard() {
-    return new CIMStandardImpl();
+[[maybe_unused]] NNU::OpenCIM::ICIMSchema *NNU::OpenCIM::CreateCIMSchema() {
+    return new CIMSchemaImpl();
 }
 
-[[maybe_unused]]  void NNU::OpenCIM::DestroyCIMStandard(ICIMStandard *iCIMStandard) {
-    iCIMStandard->release();
+[[maybe_unused]]  void NNU::OpenCIM::DestroyCIMSchema(ICIMSchema *iCIMSchema) {
+    iCIMSchema->release();
 }
 
-[[maybe_unused]] NNU::OpenCIM::ICIMContent *NNU::OpenCIM::CreateCIMContent() {
-    return new CIMContentImpl();
+[[maybe_unused]] NNU::OpenCIM::ICIMSynthetic *NNU::OpenCIM::CreateCIMSynthetic() {
+    return new CIMSyntheticImpl();
 }
 
-[[maybe_unused]]  void NNU::OpenCIM::DestroyCIMContent(ICIMContent *iCIMContent) {
-    iCIMContent->release();
+[[maybe_unused]]  void NNU::OpenCIM::DestroyCIMSynthetic(ICIMSynthetic *iCIMSynthetic) {
+    iCIMSynthetic->release();
+}
+
+[[maybe_unused]] NNU::OpenCIM::ICIMDataSet *NNU::OpenCIM::CreateCIMDataSet() {
+    return new CIMDataSetImpl();
+}
+
+[[maybe_unused]]  void NNU::OpenCIM::DestroyCIMDataSet(NNU::OpenCIM::ICIMDataSet *iCIMDateSet) {
+    iCIMDateSet->release();
 }

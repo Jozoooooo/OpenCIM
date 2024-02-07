@@ -4,6 +4,3 @@
 cmake_minimum_required (VERSION 3.25)
 
 project (ACIMCreator)
-
-add_subdirectory (Code)
-add_subdirectory (GUI)

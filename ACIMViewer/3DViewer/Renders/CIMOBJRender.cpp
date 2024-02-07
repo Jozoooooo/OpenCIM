@@ -33,20 +33,20 @@ std::string getFileExtension(const std::string &filePath) {
 
 
 CIMOBJRender::CIMOBJRender(const std::string &CIMPath) {
-    auto iCIMContent = CreateCIMContent();
-    iCIMContent->fromJson(CIMPath.c_str());
+    auto cimSynthetic = CreateCIMSynthetic();
+    cimSynthetic->fromJson(CIMPath.c_str());
 
     std::filesystem::path pathObj(CIMPath);
     std::filesystem::path parentPath = pathObj.parent_path();
 
-    for (int i = 0; i < iCIMContent->getEntitiesCount(); i++) {
-        auto entity = iCIMContent->getEntityFromCode(iCIMContent->getEntityCodeFromIndex(i));
+    for (int i = 0; i < cimSynthetic->getEntitiesCount(); i++) {
+        auto entity = cimSynthetic->getEntityFromCode(cimSynthetic->getEntityCodeFromIndex(i));
 
         std::string objPath;
         std::string texturePath;
 
         for (int j = 0; j < entity->getComponentsCount(); j++) {
-            auto component = iCIMContent->getComponentFromCode(entity->getComponent(j)->getCode().c_str());
+            auto component = cimSynthetic->getComponentFromCode(entity->getComponent(j)->getCode().c_str());
 
             if(component == nullptr)
                 continue;
@@ -59,7 +59,7 @@ CIMOBJRender::CIMOBJRender(const std::string &CIMPath) {
                 if (geo->getSpatialGeometryType() != Component::SpatialGeometryType::EXTERNALGEO)
                     continue;
 
-                auto externalData = iCIMContent->getExternalDataFromCode(geo->getGeometry().c_str());
+                auto externalData = cimSynthetic->getExternalDataFromCode(geo->getGeometry().c_str());
 
                 // 是否是OBJ文件
                 if (externalData->getDataFormat() != NNU::OpenCIM::Common::OBJ)
@@ -78,7 +78,7 @@ CIMOBJRender::CIMOBJRender(const std::string &CIMPath) {
                 if (property->getFieldName() != MaterialType[9])
                     continue;
 
-                auto externalData = iCIMContent->getExternalDataFromCode(property->getFieldValue().c_str());
+                auto externalData = cimSynthetic->getExternalDataFromCode(property->getFieldValue().c_str());
 
                 texturePath = parentPath.string() + "//" + externalData->getOuterUrl();
 

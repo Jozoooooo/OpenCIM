@@ -59,7 +59,7 @@ LibCIMModel用于构建场景数据模型。
 
 每一【要素】会归属于零至多个【概念】，【概念】间采用【公理】进行逻辑约束。
 
-因此我们将【概念】、【公理】作为一类，称为场景标准——【CIMStandard】；将【组件】、【实体】【系统】作为一类称为场景内容——【CIMContent】。
+因此我们将【概念】、【公理】作为一类，称为场景标准——【CIMSchema】；将【组件】、【实体】【系统】作为一类称为场景内容——【CIMContent】。
 
 上述六类对象在场景中都具有【UniqueID】字段作为唯一标识，【UniqueID】采用【Code】和【Comments】进行描述。【Code】为对象编码，全局唯一；【Comments】为对象描述，由用户输入，仅便于场景文件的阅读和理解。
 
@@ -73,7 +73,7 @@ LibCIMModel对JSON文件的读写依赖于nlohmann库。
 
 ### 模型简述
 
-#### CIMStandard
+#### CIMSchema
 
 场景标准由四部分组成：
 
@@ -199,14 +199,14 @@ system为基类，仅具有系统类型（systemType）字段。
 
 ### 库功能
 
-- 创建、读取、查询、修改、保存CIMStandard
-- 创建、读取、查询、修改、保存CIMContent
+- 创建、读取、查询、修改、保存CIMSchema
+- 创建、读取、查询、修改、保存CIMSynthetic
 
 ### 使用说明
 
 1. 编译LibCIMModel
 2. 引入LibCIMModel头文件、静态链接库
-3. 通过CreateCIMStandard、CreateCIMContent创建场景操作接口
+3. 通过CreateCIMSchema、CreateCIMSynthetic创建场景操作接口
 4. 通过场景接口实现场景功能
 
 ### 保存格式
@@ -234,17 +234,17 @@ using namespace NNU::OpenCIM;
 int main()
 {
     // 打开场景标准
-    auto CIMStandard = CreateCIMStandard();
-    CIMStandard->fromJson("./Example/CIMStandard.json");
+    auto CIMSchema = CreateCIMSchema();
+    CIMStandard->fromJson("./Example/CIMSchema.json");
     
      // 创建场景
-    auto CIMContent = CreateCIMContent();
+    auto CIMContent = CreateCIMSynthetic();
     
     // 创建场景头
     auto header = CIMContent->getHeader();
     header->setCIMName("NNU-CIM3");
     header->setCIMDescription("南师大老北区CIM3层级ACIM示例");
-    header->addInclude(Include{STANDARD, "./CIMStandard.json"});
+    header->addInclude(Include{STANDARD, "./CIMSchema.json"});
     
     // 保存场景
     CIMContent->toJson("Example/NNU-ACIM/NNU-ACIM.json");
@@ -278,38 +278,42 @@ int main()
 | 2023.12.15 |  新增  |               新增编码修改接口               |
 | 2023.12.15 |  新增  |              概念新增概念类型字段              |
 | 2023.12.15 |  修改  |           实体、组件、系统概念映射接口调整           |
+|  2024.2.6  |  修改  |            接口名称与现有标准保持一致             |
+|  2024.2.6  |  新增  |         CIM数据集接口，用于读写.CIM文件          |
+|  2024.2.6  |  修复  |    LibCIMModel setAreaNumber导致的错误    |
 
 ## ACIMCreator
 
 ### 背景
 
-* ACIMCreator 是基于LibCIMModel的基础上，构建场景模型数据集的示例可执行程序。
-* ACIMCreator 具有代码构建和界面构建两种形式，分别为对应Code版本和GUI版本。
-* GUI版本将会在后续上线。
+* ACIMCreator 是基于LibCIMModel的基础上，构建CIM数据集的可执行程序。
+* 将会在后续上线。
 
-### ACIMCreator-Code
+## ACIMTest
 
-#### 库依赖
+### 背景
 
-* CIMCreator-Code 依赖于LibCIMModel库。
+### 库依赖
 
-#### 程序功能
+* ACIMTest 依赖于LibCIMModel库。
 
-程序中共有三个示例函数：CIMStandard、NNU-ACIM、TestPlugin，分别用于构建CIM场景基础标准示例、CIM3层级以南师大北区数据为例的ACIM数据格式示例、场景机制使用示例。
+### 程序功能
 
-#### 快速开始
+程序中共有四个个示例函数：CIMSchema、CIMSynthetic、CIMDataSet、TestPlugin，分别用于测试模式层、ACIM综合模型、CIM数据集、ACIM插件接口。
+
+### 快速开始
 
 将CMakeList对应位置修改为如下形式，编译程序即可。
 
 ```cmake
-#add_executable(ACIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
+#add_executable(ACIMCreator CIMSchema.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
 add_library(ACIMCreator SHARED Mechanism/Plugin/HelloMechanism.cpp)
 ```
 
 将CMakeList对应位置修改为如下形式。
 
 ```cmake
-add_executable(ACIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
+add_executable(ACIMCreator CIMSchema.cpp Mechanism/TestPlugin.cpp main.cpp NNU-ACIM.cpp)
 # add_library(ACIMCreator SHARED Mechanism/Plugin/HelloMechanism.cpp)
 ```
 
@@ -317,12 +321,13 @@ add_executable(ACIMCreator CIMStandard.cpp Mechanism/TestPlugin.cpp main.cpp NNU
 
 ```c++
 int main() {
-    CIMStandard();
-    NNUACIM();
+    CIMSchema();
+    CIMSynthetic();
+    CIMDataSet();
 }
 ```
 
-#### 更新记录
+### 更新记录
 
 |   更新时间    | 更新类型 |        更新内容         |
 |:---------:|:----:|:-------------------:|
@@ -330,10 +335,7 @@ int main() {
 | 2023.7.17 |  新增  | CIM1层级【公理】-【概念】标准示例 |
 | 2023.7.17 |  新增  |     【材质】【纹理】示例      |
 | 2023.7.18 |  新增  |       【机制】示例        |
-
-### ACIMCreator-GUI
-
-开发中
+| 2024.2.6  |  新增  |     CIM数据集构建示例      |
 
 ## ACIMViewer
 

@@ -11,3 +11,5 @@ Testing
 *.ilk
 *.pdb
 *.cmake
+/.vs/
+/.idea/

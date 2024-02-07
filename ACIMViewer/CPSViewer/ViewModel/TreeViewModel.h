@@ -19,7 +19,7 @@
 class TreeViewModel {
 private:
     int preIndex = -1;
-    ICIMStandard *_CIMStandard; // 场景标准
+    ICIMSchema *_cimSchema; // 场景标准
 
     // 根据概念和公理构建分类和颗粒树
     void concept2Tree(const std::string &concept, int index, Core::AxiomType axiomType, TreeNode *current) {
@@ -30,12 +30,12 @@ private:
             auto [tempConcept, node] = stack.top(); // 弹出当前树节点和概念
             stack.pop();
 
-            auto item = _CIMStandard->getConceptFromCode(tempConcept.c_str());
+            auto item = _cimSchema->getConceptFromCode(tempConcept.c_str());
             node->data = item->getName(); // 将概念名赋值给节点值
 
             // 获取概念的子类或子颗粒
             for (int i = 0; i < item->getAxiomsCount(); i++) {
-                auto axiom = _CIMStandard->getAxiomFromCode(item->getAxiomId(i)->getCode().c_str());
+                auto axiom = _cimSchema->getAxiomFromCode(item->getAxiomId(i)->getCode().c_str());
 
                 // 确定公理依据和公理类型
                 if (axiom->getBasisId() == index && axiom->getAxiomType() == axiomType) {
@@ -56,7 +56,7 @@ private:
 public:
     TreeNode *root;
 
-    explicit TreeViewModel(ICIMStandard *CIMStandard) : root(new TreeNode), _CIMStandard(CIMStandard) {
+    explicit TreeViewModel(ICIMSchema *iCIMSchema) : root(new TreeNode), _cimSchema(iCIMSchema) {
 
     }
 
@@ -73,8 +73,8 @@ public:
         std::vector<std::string> concepts;
 
         // 首先获取所有父亲节点
-        for (int i = 0; i < _CIMStandard->getAxiomsCount(); i++) {
-            auto axiom = _CIMStandard->getAxiomFromCode(_CIMStandard->getAxiomCodeFromIndex(i));
+        for (int i = 0; i < _cimSchema->getAxiomsCount(); i++) {
+            auto axiom = _cimSchema->getAxiomFromCode(_cimSchema->getAxiomCodeFromIndex(i));
 
             if (axiom->getBasisId() == index && axiom->getAxiomType() == axiomType2) {
                 for (int j = 0; j < axiom->getConceptCount(); j++) {
@@ -88,8 +88,8 @@ public:
         }
 
         // 判断父亲节点是否某节点的孩子节点，如果是则移除
-        for (int i = 0; i < _CIMStandard->getAxiomsCount(); i++) {
-            auto axiom = _CIMStandard->getAxiomFromCode(_CIMStandard->getAxiomCodeFromIndex(i));
+        for (int i = 0; i < _cimSchema->getAxiomsCount(); i++) {
+            auto axiom = _cimSchema->getAxiomFromCode(_cimSchema->getAxiomCodeFromIndex(i));
 
             if (axiom->getBasisId() == index && axiom->getAxiomType() == axiomType1) {
                 for (int j = 0; j < axiom->getConceptCount(); j++) {

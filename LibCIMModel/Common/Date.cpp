@@ -22,8 +22,9 @@ std::string NNU::OpenCIM::Common::Date::currentDate() {
     now_tm = &now_tm_buf;
     localtime_s(now_tm, &now_c);  // Windows 使用 localtime_s
 #else
-    std::tm* now_tm_ptr;
-        now_tm = std::localtime_r(&now_c, now_tm_ptr);  // Linux 使用 localtime_r
+    std::tm now_tm_buf{};
+    std::tm* now_tm_ptr = &now_tm_buf;
+    now_tm = std::localtime_r(&now_c, now_tm_ptr);  // Linux 使用 localtime_r
 #endif
 
     // 格式化为字符串

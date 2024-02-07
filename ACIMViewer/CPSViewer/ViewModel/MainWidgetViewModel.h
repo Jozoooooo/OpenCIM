@@ -10,16 +10,16 @@
 
 # pragma once
 
-#include <ICIMStandard.hpp>
-#include <ICIMContent.hpp>
+#include <ICIMSchema.hpp>
+#include <ICIMSynthetic.hpp>
 
 using namespace NNU::OpenCIM;
 
 // 储存场景标准和场景内容
 class MainWidgetViewModel {
 public:
-    MainWidgetViewModel() : iCIMStandard(nullptr), iCIMContent(nullptr) {};
+    MainWidgetViewModel() : iCIMSchema(nullptr), iCIMSynthetic(nullptr) {};
 
-    ICIMContent *iCIMContent;
-    ICIMStandard *iCIMStandard;
+    ICIMSynthetic *iCIMSynthetic;
+    ICIMSchema *iCIMSchema;
 };

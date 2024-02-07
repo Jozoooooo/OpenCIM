@@ -1,6 +1,6 @@
 ﻿/****************************************************************************
 - Copyright (c) 2023, NanJin Normal University
-- File name:CIMHeader.hpp
+- File _name:CIMHeader.hpp
 - Author:南京师范大学
 - Version:1.0
  -Data:20223.7.28
@@ -16,9 +16,9 @@
 #include "Common/Define.hpp"
 
 namespace NNU::OpenCIM {
-    class CIMStandardImpl;
+    class CIMSchemaImpl;
 
-    class CIMContentImpl;
+    class CIMSyntheticImpl;
 }
 
 namespace NNU::OpenCIM {
@@ -58,9 +58,9 @@ namespace NNU::OpenCIM {
 
         void fromJson(const JSONSTR &jsonStr);
 
-        friend class NNU::OpenCIM::CIMStandardImpl;
+        friend class NNU::OpenCIM::CIMSchemaImpl;
 
-        friend class NNU::OpenCIM::CIMContentImpl;
+        friend class NNU::OpenCIM::CIMSyntheticImpl;
 
     public:
         [[nodiscard]] JSONSTR toJson() const;

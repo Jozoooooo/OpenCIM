@@ -11,7 +11,7 @@
 # pragma once
 
 namespace NNU::OpenCIM {
-    struct ICIMContent;
+    struct ICIMSynthetic;
 }
 
 struct IPlugin {
@@ -22,7 +22,7 @@ public:
 
     virtual int getVersion() = 0;
 
-    [[maybe_unused]] virtual void preprocessing(NNU::OpenCIM::ICIMContent *iCIMContent) = 0;
+    [[maybe_unused]] virtual void preprocessing(NNU::OpenCIM::ICIMSynthetic *iCIMContent) = 0;
 
     [[maybe_unused]] virtual void run() = 0;
 };

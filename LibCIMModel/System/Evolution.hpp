@@ -13,7 +13,7 @@
 #include "System.hpp"
 
 namespace NNU::OpenCIM {
-    class CIMContentImpl;
+    class CIMSyntheticImpl;
 }
 
 namespace NNU::OpenCIM::System {
@@ -32,7 +32,7 @@ namespace NNU::OpenCIM::System {
 
         void fromJson(const JSONSTR &jsonStr);
 
-        friend class NNU::OpenCIM::CIMContentImpl;
+        friend class NNU::OpenCIM::CIMSyntheticImpl;
 
     public:
         /**

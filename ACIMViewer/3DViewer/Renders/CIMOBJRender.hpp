@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "ICIMContent.hpp"
+#include "ICIMSynthetic.hpp"
 
 using namespace NNU::OpenCIM;
 
