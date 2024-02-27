@@ -281,6 +281,7 @@ int main()
 |  2024.2.6  |  修改  |            接口名称与现有标准保持一致             |
 |  2024.2.6  |  新增  |         CIM数据集接口，用于读写.CIM文件          |
 |  2024.2.6  |  修复  |    LibCIMModel setAreaNumber导致的错误    |
+| 2024.2.27  |  修改  |             空间系统改为EPSG描述             |
 
 ## ACIMCreator
 

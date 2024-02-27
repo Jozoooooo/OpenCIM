@@ -108,8 +108,7 @@ void CIMSynthetic() {
     // 创建坐标系
     auto spatialSystem = sceneContent->createSpatialSystem();
     spatialSystem->getId()->setComments("2000坐标系");
-    spatialSystem->setCoordinateSystem(NNU::OpenCIM::Component::CGCS2000_3);
-    spatialSystem->setCentralMeridian(120);
+    spatialSystem->setEpsg("epsg:4549");
 
     // 创建位置
     auto spatialLocation = sceneContent->createSpatialLocation();

@@ -2,7 +2,7 @@
 
 #include "SpatialSystem.hpp"
 
-NNU::OpenCIM::Component::SpatialSystem::SpatialSystem() : _coordinateSystem(UNKNOWNCOOR), _centralMeridian(120.0) {
+NNU::OpenCIM::Component::SpatialSystem::SpatialSystem() : _epsg("epsg:4326") {
     _componentType = ComponentType::SPATIALSYSTEM;
 }
 
@@ -12,8 +12,7 @@ JSONSTR NNU::OpenCIM::Component::SpatialSystem::toJson() const {
 
     json["Id"] = nlohmann::json::parse(_id->toJson());
     json["ComponentType"] = _componentType;
-    json["CoordinateSystem"] = _coordinateSystem;
-    json["CentralMeridian"] = _centralMeridian;
+    json["Epsg"] = _epsg;
 
     for (const auto &belongConcept: _belongConcepts) {
         json["BelongConcepts"].emplace_back(nlohmann::json::parse(belongConcept->toJson()));
@@ -27,8 +26,7 @@ void NNU::OpenCIM::Component::SpatialSystem::fromJson(const std::string &jsonStr
 
     _id = new UniqueID(json["Id"].dump());
     _componentType = json["ComponentType"];
-    _coordinateSystem = json["CoordinateSystem"];
-    _centralMeridian = json["CentralMeridian"];
+    _epsg = json["Epsg"];
 
     for (const auto &belongConcept: json["BelongConcepts"]) {
         auto uid = new UniqueID(belongConcept.dump());
@@ -36,20 +34,10 @@ void NNU::OpenCIM::Component::SpatialSystem::fromJson(const std::string &jsonStr
     }
 }
 
-[[maybe_unused]] double NNU::OpenCIM::Component::SpatialSystem::getCentralMeridian() const {
-    return _centralMeridian;
+const std::string &NNU::OpenCIM::Component::SpatialSystem::getEpsg() const {
+    return _epsg;
 }
 
-[[maybe_unused]] void NNU::OpenCIM::Component::SpatialSystem::setCentralMeridian(double centralMeridian) {
-    SpatialSystem::_centralMeridian = centralMeridian;
-}
-
-[[maybe_unused]] NNU::OpenCIM::Component::CoordinateSystem
-NNU::OpenCIM::Component::SpatialSystem::getCoordinateSystem() const {
-    return _coordinateSystem;
-}
-
-[[maybe_unused]] void NNU::OpenCIM::Component::SpatialSystem::setCoordinateSystem(
-        NNU::OpenCIM::Component::CoordinateSystem coordinateSystem) {
-    _coordinateSystem = coordinateSystem;
+void NNU::OpenCIM::Component::SpatialSystem::setEpsg(const std::string &epsg) {
+    SpatialSystem::_epsg = epsg;
 }
