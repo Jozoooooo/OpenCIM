@@ -127,6 +127,8 @@ namespace NNU::OpenCIM {
         [[maybe_unused]] virtual int getIncludeCIMContentCount() = 0; // 获取引用的外部场景内容的数量
 
         [[maybe_unused]] virtual ICIMSynthetic *getIncludeCIMContent(int index) = 0; // 根据索引获取引用的外部场景内容接口
+
+        virtual bool mergeCIMSynthetic(const char *syntheticPath) = 0; // 合并综合模型（传入模型向当前模型合并）
     };
 
     extern "C" [[maybe_unused]]  CIM_MODEL_API ICIMSynthetic *CreateCIMSynthetic(); // 创建场景内容接口
