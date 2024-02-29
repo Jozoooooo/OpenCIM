@@ -99,7 +99,7 @@ namespace NNU::OpenCIM {
 
         ICIMSynthetic *getIncludeCIMContent(int index) override;
 
-        bool mergeCIMSynthetic(const char *syntheticPath) override;
+        bool mergeCIMSynthetic(const char *syntheticPath, bool mergeSame) override;
 
     private:
         ICIMSchema *_includeStandard;
