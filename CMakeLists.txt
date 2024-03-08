@@ -13,3 +13,5 @@ add_subdirectory (ACIMTest)
 add_subdirectory (ACIMCreator)
 # ACIM可视化工具
 add_subdirectory (ACIMViewer)
+# Excel批量转换为模式信息
+add_subdirectory (SchemaConvert)

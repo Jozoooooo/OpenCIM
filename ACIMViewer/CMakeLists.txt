@@ -4,8 +4,3 @@
 cmake_minimum_required (VERSION 3.25)
 
 project (ACIMViewer)
-
-# 场景分类颗粒树可视化
-add_subdirectory ("CPSViewer")
-# 场景三维可视化
-add_subdirectory ("3DViewer")

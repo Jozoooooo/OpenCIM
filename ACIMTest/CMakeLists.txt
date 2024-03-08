@@ -10,7 +10,7 @@ endif ()
 
 include_directories(${CMAKE_SOURCE_DIR}/LibCIMModel)
 
-link_directories(${CMAKE_SOURCE_DIR}/out/build/OpenCIM/libCIMModel)
+link_directories(${CMAKE_SOURCE_DIR}/out/build/OpenCIM/LibCIMModel)
 
 add_executable(ACIMTest
         main.cpp

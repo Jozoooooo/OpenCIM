@@ -6,24 +6,20 @@
 ![Static Badge](https://img.shields.io/badge/OpenCIM-LibCIMModel-blue)![Static Badge](https://img.shields.io/badge/OpenCIM-CIMCreator-blue)![Static Badge](https://img.shields.io/badge/OpenCIM-CIMViewer-blue)
 ![Static Badge](https://img.shields.io/badge/C%2B%2B-v17-green)![Static Badge](https://img.shields.io/badge/CMake-v3.25-green)
 
-OpenCIM是基于闾国年教授场景学思想的场景数据模型实现。
-
 本仓库包含以下内容：
 
-- LibCIMModel —— OpenCIM核心库，提供场景学数据模型操作SDK。
-- CIMCreator —— OpenCIM创建的简单示例，调用LibCIMModel实现简单场景用例。
-- CIMViewer —— OpenCIM简单可视化，调用LIbCIMModel读取CIMCreator生成的示例数据并可视化。
+- LibCIMModel —— OpenCIM核心库，提供CIM交换格式操作SDK。
+- ACIMTest —— OpenCIM创建的简单示例，调用LibCIMModel实现简单场景用例。
+- ACIMViewer —— OpenCIM数据集的可视化。
 
-    - CPSViewer ——对CIMModel中分类、颗粒体系进行可视化。
-    - 3DViewer —— 对CIMModel进行三维可视化。
-- Data —— CIMCreator 中所生成的ACIM示例数据。
-- Paper —— 场景学主要著作
+- ACIMCreator —— ACIMCreator 是基于LibCIMModel的基础上，构建CIM数据集的可执行程序。
+- SchemaConvert —— 读取指定格式xlsx文件自动生成CIM模式信息的可执行控制台程序。
+- Paper —— 场景学主要著作。
 
 ## 文件结构
 
 - 3rdlibs 外部库文件
-- Data 示例数据
-- LibCIMModel、CIMCreator、CIMViewer 仓库核心文件
+- LibCIMModel、ACIMCreator、ACIMViewer、ACIMTest、SchemaConvert
 - out 编译输出文件
 
 ## 安装
@@ -31,6 +27,8 @@ OpenCIM是基于闾国年教授场景学思想的场景数据模型实现。
 无需安装，采用CMake编译运行
 
 ## LibCIMModel
+
+！！LibCIMModel进行了多次更新，最新接口请看源码，接口标准请查阅《城市信息模型数据交换格式标准》。
 
 ### 背景
 
@@ -59,143 +57,9 @@ LibCIMModel用于构建场景数据模型。
 
 每一【要素】会归属于零至多个【概念】，【概念】间采用【公理】进行逻辑约束。
 
-因此我们将【概念】、【公理】作为一类，称为场景标准——【CIMSchema】；将【组件】、【实体】【系统】作为一类称为场景内容——【CIMContent】。
-
-上述六类对象在场景中都具有【UniqueID】字段作为唯一标识，【UniqueID】采用【Code】和【Comments】进行描述。【Code】为对象编码，全局唯一；【Comments】为对象描述，由用户输入，仅便于场景文件的阅读和理解。
-
-对象间调用采用【UniqueID】形式进行调用，并不之间传输对象。
-
-所有对象储存在场景中，可以根据【UniqueID】中的【Code】查询任意对象。
-
 ### 库依赖
 
 LibCIMModel对JSON文件的读写依赖于nlohmann库。
-
-### 模型简述
-
-#### CIMSchema
-
-场景标准由四部分组成：
-
-- 引用的外部场景标准（零至多个）—— includeStandard
-- 场景头（有且只有一个） —— CIMHeader
-- 公理集合 （零至多个）—— axioms
-- 概念集合（零至多个）—— concepts
-
-##### includeStandard
-
-在构建场景标准时，如果有部分标准在另一场景标准文件中已经构建，或本场景标准希望基于某一标准进行扩充描述等，可以引用外部场景标准文件。
-
-##### CIMHeader
-
-用于描述场景信息，主要包含：
-
-- 场景名 —— CIMName
-- 场景类型（场景标准、场景内容） —— CIMType
-- 场景创建日期 —— CIMDate
-- 场景描述信息 —— CIMDescription
-- 场景引用的外部场景路径（场景标准或场景内容） —— includes
-
-##### axioms
-
-对场景中【概念】的逻辑约束，主要包含：
-
-- 公理标识 —— id
-- 公理类型（空 编号0、作用 编号1、推导 编号2、子类 编号3、父类 编号4、父颗粒 编号5、子颗粒 编号6、附属 编号7） —— axiomType
-- 公理依据 —— basis
-- 公理对应概念集合 —— correspondingConcepts
-
-##### concepts
-
-对世界万物的抽象，主要包含：
-
-- 概念标识 —— id
-- 概念名 —— name
-- 公理集合 —— axioms
-
-#### CIMContent
-
-场景内容主要由七部分组成：
-
-- 引用的外部场景标准（零至一个）—— includeStandard
-- 引用的外部场景内容（零至多个）—— includeCIMContent
-- 场景头（有且只有一个） —— CIMHeader
-- 外联数据集合（零至多个）—— externalDatas
-- 组件集合（零至多个）—— components
-- 实体集合（零至多个）—— entities
-- 系统集合（零至多个）—— systems
-
-##### includeStandard/includeCIMContent
-
-在构建场景内容时，可以引用外部场景标准对场景内容进行约束。
-
-在构建场景内容时，如果有部分内容在另一场景内容文件中已经构建，可以引用外部场景内容文件。
-
-##### CIMHeader
-
-与CIMStandard场景头一致。
-
-##### externalDatas
-
-场景中外联的公共已知格式文件，如.obj、.ifc、.png等，主要包含：
-
-- 外联数据标识 —— id
-
-- 数据格式 —— dataFormat
-
-- 数据外部储存地址 —— outerUrl
-
-  [^数据在硬盘中或网络上的储存位置]:
-
-- 数据内部储存地址 —— innerUrl
-
-  [^如IFC文件内部具有复杂的文件结构，可以只引用某一IFC文件内部某一构件。]:
-
-##### components
-
-用于对场景【实体】内部进行描述，属于无状态、无根要素。
-
-component为基类，仅具有组件类型（componentType）字段。
-
-共有八类组件继承自component类，分别为语义（Semantics）、空间几何（SpatialGeometry）、空间位置（SpatialLocation）、空间系统（SpatialSystem）、时间点（TemporalPoint）、时间范围（TemporalRange）、时间系统（TemporalSystem）、属性（Property）。
-
-- 语义：定义（definition）、描述（description） 编号0
-
-- 空间几何：空间几何类型（spatialGeometryType）、geometry（空间几何描述）、uv（几何材质）编号3
-
-- 空间位置：x平移距离（panX）、y平移距离（panY）、z平移距离（panZ）、rotateX（x旋转角度）、rotateY（y旋转角度）、z旋转角度（rotateZ）、模型缩放（scale）
-  编号1
-
-- 空间系统：空间坐标系标准EPSG（coordinateSystem）、中央经线（centralMeridian） 编号2
-
-- 时间点：时间戳（timeStamp） 编号4
-
-- 时间范围：开始时间时间戳（startTime）、结束时间时间戳（endTime） 编号6
-
-- 时间系统：时间系统名（temporalSystemName）、时间系统类型（temporalSystemType）、相对时间系统（relativeTemporalSystem）、与相对时间系统的转换（trans）
-  编号5
-
-- 属性：字段名（fieldName）、字段来源（source）、字段类型（fieldType）、字段值（fieldType） 编号7
-
-  [^表达材质属性，需要特定的字段名和字段类型]:
-
-##### entities
-
-场景中的活动对象，主要包含：
-
-- 构成组件集合 —— components
-
-##### system
-
-用于对场景【实体】间进行描述。
-
-system为基类，仅具有系统类型（systemType）字段。
-
-共有三类系统继承自system类，分别为关系（Relation）、演化（Evolution）、机制（Mechanism）。
-
-- 关系：描述（description）、出发实体集合（fromEntities）、指向实体集合（toEntities） 编号0
-- 演化：出发实体（fromEntity）、指向实体（toEntity） 编号1
-- 机制：机制名（mechanismName）、机制描述（mechanismComments）、机制版本（mechanismVersion）、机制路径（mechanismPath） 编号2
 
 ### 库功能
 
@@ -220,36 +84,6 @@ system为基类，仅具有系统类型（systemType）字段。
 ![](https://pic.imgdb.cn/item/64c2450f1ddac507cc44e24e.jpg)
 
 概念JSON结构示例
-
-### 快速开始
-
-下面示例如何使用LibCIMModel创建并保存场景，更详细的场景构建示例，请查看CIMCreator。
-
-```c++
-#include <ICIMStandard.hpp>
-#include <ICIMContent.hpp>
-
-using namespace NNU::OpenCIM;
-
-int main()
-{
-    // 打开场景标准
-    auto CIMSchema = CreateCIMSchema();
-    CIMStandard->fromJson("./Example/CIMSchema.json");
-    
-     // 创建场景
-    auto CIMContent = CreateCIMSynthetic();
-    
-    // 创建场景头
-    auto header = CIMContent->getHeader();
-    header->setCIMName("NNU-CIM3");
-    header->setCIMDescription("南师大老北区CIM3层级ACIM示例");
-    header->addInclude(Include{STANDARD, "./CIMSchema.json"});
-    
-    // 保存场景
-    CIMContent->toJson("Example/NNU-ACIM/NNU-ACIM.json");
-}
-```
 
 ### 更新记录
 
@@ -285,9 +119,7 @@ int main()
 
 ## ACIMCreator
 
-### 背景
-
-* ACIMCreator 是基于LibCIMModel的基础上，构建CIM数据集的可执行程序。
+* ACIMCreator 是基于LibCIMModel的基础上，采用GUI构建CIM数据集的可执行程序。
 * 将会在后续上线。
 
 ## ACIMTest
@@ -340,69 +172,48 @@ int main() {
 
 ## ACIMViewer
 
-### 背景
-
-* ACIMViewer是基于LibCIMModel的基础上，对ACIM JSON文件进行可视化的程序。
 * #### 注：2024年1月5日版本后的数据集无法查看，最新ACIM Viewer正在开发中，会在近期上线。
 
-### 库依赖
+## SchemaConvert
 
-ACIMViewer中，3DViewer依赖于LibCIMModel和VTK库；CPSViewer依赖于LibCIMModel和glfw库。
+### 功能
 
-### 程序功能
+本程序为读取指定格式xlsx文件自动生成CIM模式信息的可执行控制台程序。
 
-程序分为两个模块：
+### 依赖库
 
-- 3DViewer（3 Dimension Viewer）—— 场景JSON中所有具有几何的实体三维静态可视化。
-- CPSViewer（Classification Particle System Viewer） —— 场景JSON中所有概念和公理所构成的分类颗粒体系可视化。
+- LibCIMModel
+- xlnt
 
-### 快速开始
+### 快速上手
 
-#### 3DViewer
+1. 打开控制台。
+2. 定位至程序路径。
+3. 参数：程序名 xlsx路径 输出模式信息json路径【缺省】。
 
-3DViewer采用命令行程序形式，从命令行读取程序参数。
+### xlsx格式
 
-3DViewer程序参数有且只有一个，参数要求如下：
+- 必须包含名为“分类表”和“颗粒表”的sheet。
 
-| 参数类型   | 参数含义     | 示例                                         |
-|--------|----------|--------------------------------------------|
-| string | 场景json路径 | ../../../../../Data/NNU-ACIM/NNU-ACIM.json |
+- 可以包含名为“属性表”和“关系表”的sheet。
 
-在编译运行时，可以设置程序参数，例：`../../../../../Data/NNU-ACIM/NNU-ACIM.json`。
+- 表单第一列为父概念名。
 
-或在控制台打开程序所在目录，并输入`3DViewer.exe ../../../../../Data/NNU-ACIM/NNU-ACIM.json `。
+- 表单第二列为分类/颗粒依据。
 
-![](https://pic.imgdb.cn/item/64c324601ddac507cc98f2ea.jpg)
+- 表单第三列为子概念名。
 
-3DViewer程序示例
+- 表单第四列为叶子概念CIM编码。
 
-#### CPSViewer
+- 示例：
 
-CPSViewer采用命令行形式，从命令行读取程序参数。
+  | FJGN       | GLYJ             | ZJGN           | BM     |
+  | ---------- | ---------------- | -------------- | ------ |
+  | 行政区     | 行政区的分类     | CIM1行政区     |        |
+  | CIM1行政区 | CIM1行政区的分类 | CIM1国家       | 601000 |
+  | CIM1行政区 | CIM1行政区的分类 | CIM1省级行政区 |        |
 
-3DViewer程序参数有两个，参数要求如下：
+### 注
 
-| 参数类型   | 参数含义                   | 示例                                         |
-|--------|------------------------|--------------------------------------------|
-| int    | 1：场景标准文件<br />2：场景内容文件 | 2                                          |
-| string | 场景json路径               | ../../../../../Data/NNU-ACIM/NNU-ACIM.json |
-
-在编译运行时，可以设置程序参数，例：`2 ../../../../../Data/NNU-ACIM/NNU-ACIM.json`。
-
-或在控制台打开程序所在目录，并输入`CPSViewer.exe 2 ../../../../../Data/NNU-ACIM/NNU-ACIM.json `。
-
-![](https://pic.imgdb.cn/item/64c3243e1ddac507cc989e65.jpg)
-
-CPSViewer分类体系示例
-
-![](https://pic.imgdb.cn/item/64c3242b1ddac507cc987ea1.jpg)
-
-CPSViewer颗粒体系示例
-
-### 更新记录
-
-|   更新时间    | 更新类型 |     更新内容     |
-|:---------:|:----:|:------------:|
-| 2023.7.26 |  新增  | 创建CIMViewer  |
-| 2023.7.30 |  修改  | 修改了部分描述与说明文字 |
-
+- 输出模式信息json路径可以缺省，缺省值为当前程序路径，自动生成result.json。
+- 可以直接将xlsx文件拖拽至可执行程序上，便捷运行。
