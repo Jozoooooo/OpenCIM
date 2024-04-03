@@ -17,23 +17,12 @@ namespace NNU::OpenCIM {
 }
 
 namespace NNU::OpenCIM::Component {
-
-    enum CoordinateSystem {
-        CGCS2000_3 [[maybe_unused]], // 2000坐标系3度带120中心投影
-        GSC_WGS84 [[maybe_unused]], // 84投影坐标
-        BEIJIN54_3 [[maybe_unused]], // 北京54坐标系3度带120中心
-        XIAN80_3 [[maybe_unused]], // 西安80坐标系3度带120中心
-        ALBERS [[maybe_unused]], // 亚洲北部阿尔伯斯等积圆锥投影坐标系
-        UNKNOWNCOOR // 未知投影
-    };
-
     /**
      * 空间系统组件类，继承自组件类
      */
     class SpatialSystem : public Component {
     private:
-        CoordinateSystem _coordinateSystem; // 空间系统对应标准EPSG
-        double _centralMeridian; // 中央经线
+        std::string _epsg;
 
         /**
          * 空间系统初始化
@@ -51,12 +40,8 @@ namespace NNU::OpenCIM::Component {
          */
         [[nodiscard]] JSONSTR toJson() const;
 
-        [[maybe_unused]] [[nodiscard]] double getCentralMeridian() const;
+        [[nodiscard]] const std::string &getEpsg() const;
 
-        [[maybe_unused]] void setCentralMeridian(double centralMeridian);
-
-        [[maybe_unused]] [[nodiscard]] CoordinateSystem getCoordinateSystem() const;
-
-        [[maybe_unused]] void setCoordinateSystem(CoordinateSystem coordinateSystem);
+        void setEpsg(const std::string &epsg);
     };
 }
