@@ -61,3 +61,33 @@ void NNU::OpenCIM::Entity::Entity::fromJson(const std::string &jsonStr) {
     auto it = std::find(_components.begin(), _components.end(), componentId);
     _components.erase(it);
 }
+
+void NNU::OpenCIM::Entity::Entity::setBelongConcept(UniqueID *uniqueId) {
+    if (_belongConcepts.empty()) {
+        _belongConcepts.emplace_back(uniqueId);
+    } else {
+        _belongConcepts[0] = uniqueId;
+    }
+}
+
+UniqueID *NNU::OpenCIM::Entity::Entity::getBelongConcept() {
+    return _belongConcepts[0];
+}
+
+std::string NNU::OpenCIM::Entity::Entity::getEntityCode() {
+    return _entityCode;
+}
+
+void NNU::OpenCIM::Entity::Entity::setEntityCode(const std::string &entityCode) {
+    _entityCode = entityCode;
+}
+
+std::string NNU::OpenCIM::Entity::Entity::getEntityName() {
+    return _entityName;
+}
+
+void NNU::OpenCIM::Entity::Entity::setEntityName(const std::string &entityName) {
+    _entityName = entityName;
+}
+
+

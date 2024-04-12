@@ -64,32 +64,16 @@ namespace NNU::OpenCIM::Entity {
          */
         [[maybe_unused]] void removeComponent(const UniqueID *component);
 
-        [[maybe_unused]] UniqueID *getBelongConcept() {
-            return _belongConcepts[0];
-        }
+        [[maybe_unused]] UniqueID *getBelongConcept();
 
-        [[maybe_unused]] void setBelongConcept(UniqueID *uniqueId) {
-            if (_belongConcepts.empty()) {
-                _belongConcepts.emplace_back(uniqueId);
-            } else {
-                _belongConcepts[0] = uniqueId;
-            }
-        }
+        [[maybe_unused]] void setBelongConcept(UniqueID *uniqueId);
 
-        [[maybe_unused]] std::string getEntityCode(){
-            return _entityCode;
-        }
+        [[maybe_unused]] std::string getEntityCode();
 
-        [[maybe_unused]] void setEntityCode(const std::string& entityCode){
-            _entityCode=entityCode;
-        }
+        [[maybe_unused]] void setEntityCode(const std::string& entityCode);
 
-        [[maybe_unused]] std::string getEntityName(){
-            return _entityName;
-        }
+        [[maybe_unused]] std::string getEntityName();
 
-        [[maybe_unused]] void setEntityName(const std::string& entityName){
-            _entityName=entityName;
-        }
+        [[maybe_unused]] void setEntityName(const std::string& entityName);
     };
 }
