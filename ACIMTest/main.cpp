@@ -14,6 +14,6 @@ void CIMDateSet();
 
 int main() {
 //    CIMSchema();
-//    CIMSynthetic();
-    CIMDateSet();
+    CIMSynthetic();
+//    CIMDateSet();
 }

@@ -10,6 +10,10 @@ JSONSTR NNU::OpenCIM::Entity::Entity::toJson() const {
 
     json["Id"] = nlohmann::json::parse(_id->toJson());
 
+    json["EntityCode"] = _entityCode;
+
+    json["EntityName"] = _entityName;
+
     for (const auto &component: _components) {
         json["Components"].emplace_back(nlohmann::json::parse(component->toJson()));
     }
@@ -25,6 +29,10 @@ void NNU::OpenCIM::Entity::Entity::fromJson(const std::string &jsonStr) {
     nlohmann::json json = nlohmann::json::parse(jsonStr);
 
     _id = new UniqueID(json["Id"].dump());
+
+    _entityCode = json["EntityCode"];
+
+    _entityName = json["EntityName"];
 
     for (const auto &component: json["Components"]) {
         auto uid = new UniqueID(component.dump());

@@ -467,3 +467,7 @@ const char *NNU::OpenCIM::CIMSyntheticImpl::getAreaNumber() {
 void NNU::OpenCIM::CIMSyntheticImpl::setAreaNumber(const char *areNumber) {
     this->_areaNumber = areNumber;
 }
+
+bool NNU::OpenCIM::CIMSyntheticImpl::mergeCIMSynthetic(const char *syntheticPath, bool mergeSame) {
+    return false;
+}

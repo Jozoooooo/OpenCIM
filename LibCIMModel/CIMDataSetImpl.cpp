@@ -177,3 +177,7 @@ const char *NNU::OpenCIM::CIMDataSetImpl::getExpressionPath() {
 void NNU::OpenCIM::CIMDataSetImpl::setExpressionPath(const char *path) {
     _expressionPath = path;
 }
+
+int NNU::OpenCIM::CIMDataSetImpl::getSyntheticCount() {
+    return static_cast<int>(_syntheticName.size());
+}

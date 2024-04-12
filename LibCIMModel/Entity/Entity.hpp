@@ -23,6 +23,8 @@ namespace NNU::OpenCIM::Entity {
     class Entity : public Core::Element {
     private:
         std::vector<UniqueID *> _components; // 构成组件集合
+        std::string _entityCode;//实体编码
+        std::string _entityName;//实体名称
 
         Entity();
 
@@ -87,6 +89,34 @@ namespace NNU::OpenCIM::Entity {
             } else {
                 _belongConcepts[1] = uniqueId;
             }
+        }
+
+        [[maybe_unused]] UniqueID *getBelongConcept() {
+            return _belongConcepts[0];
+        }
+
+        [[maybe_unused]] void setBelongConcept(UniqueID *uniqueId) {
+            if (_belongConcepts.empty()) {
+                _belongConcepts.emplace_back(uniqueId);
+            } else {
+                _belongConcepts[0] = uniqueId;
+            }
+        }
+
+        [[maybe_unused]] std::string getEntityCode(){
+            return _entityCode;
+        }
+
+        [[maybe_unused]] void setEntityCode(const std::string& entityCode){
+            _entityCode=entityCode;
+        }
+
+        [[maybe_unused]] std::string getEntityName(){
+            return _entityName;
+        }
+
+        [[maybe_unused]] void setEntityName(const std::string& entityName){
+            _entityName=entityName;
         }
     };
 }
