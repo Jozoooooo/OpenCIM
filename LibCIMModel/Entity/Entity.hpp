@@ -64,33 +64,6 @@ namespace NNU::OpenCIM::Entity {
          */
         [[maybe_unused]] void removeComponent(const UniqueID *component);
 
-        [[maybe_unused]] UniqueID *getClassificationBelongConcept() {
-            return _belongConcepts[0];
-        }
-
-        [[maybe_unused]] void setClassificationBelongConcept(UniqueID *uniqueId) {
-            if (_belongConcepts.empty()) {
-                _belongConcepts.emplace_back(uniqueId);
-            } else {
-                _belongConcepts[0] = uniqueId;
-            }
-        }
-
-        [[maybe_unused]] UniqueID *getParticleBelongConcept() {
-            return _belongConcepts[1];
-        }
-
-        [[maybe_unused]] void setParticleBelongConcept(UniqueID *uniqueId) {
-            if (_belongConcepts.empty()) {
-                _belongConcepts.emplace_back(new UniqueID);
-                _belongConcepts.emplace_back(uniqueId);
-            } else if (_belongConcepts.size() == 1) {
-                _belongConcepts.emplace_back(uniqueId);
-            } else {
-                _belongConcepts[1] = uniqueId;
-            }
-        }
-
         [[maybe_unused]] UniqueID *getBelongConcept() {
             return _belongConcepts[0];
         }
