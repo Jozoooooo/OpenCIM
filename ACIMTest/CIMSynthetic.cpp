@@ -65,9 +65,9 @@ void CIMSynthetic() {
 
     // 创建语义
     auto semantics_terrain = sceneContent->createSemantics();
-//    semantics_terrain->getId()->setComments("地形语义");
-//    semantics_terrain->setDefinition("地形");
-//    semantics_terrain->setDescription("地球表面上各种地貌、地势特征以及地面的形态");
+    semantics_terrain->getId()->setComments("地形语义");
+    semantics_terrain->setDefinition("地形");
+    semantics_terrain->setDescription("地球表面上各种地貌、地势特征以及地面的形态");
 
     auto semantic_building = sceneContent->createSemantics();
     semantic_building->getId()->setComments("建筑语义");
@@ -107,8 +107,8 @@ void CIMSynthetic() {
 
     // 创建坐标系
     auto spatialSystem = sceneContent->createSpatialSystem();
-//    spatialSystem->getId()->setComments("2000坐标系");
-//    spatialSystem->setEpsg("epsg:4549");
+    spatialSystem->getId()->setComments("2000坐标系");
+    spatialSystem->setEpsg("epsg:4549");
 
     // 创建位置
     auto spatialLocation = sceneContent->createSpatialLocation();
@@ -116,11 +116,11 @@ void CIMSynthetic() {
 
     // 创建属性
     auto texture_terrain = sceneContent->createProperty();
-//    texture_terrain->getId()->setComments("地形漫反射纹理");
-//    texture_terrain->setFieldName(MaterialType[9]);
-//    texture_terrain->setSource(NNU::OpenCIM::Component::EXTERNALPRO);
-//    texture_terrain->setFieldType(NNU::OpenCIM::Component::COMPLEX);
-//    texture_terrain->setFieldValue(external_terrainTEX->getId()->getCode());
+    texture_terrain->getId()->setComments("地形漫反射纹理");
+    texture_terrain->setFieldName(MaterialType[9]);
+    texture_terrain->setSource(NNU::OpenCIM::Component::EXTERNALPRO);
+    texture_terrain->setFieldType(NNU::OpenCIM::Component::COMPLEX);
+    texture_terrain->setFieldValue(external_terrainTEX->getId()->getCode());
 
     auto texture_road = sceneContent->createProperty();
     texture_road->getId()->setComments("道路漫反射纹理");
@@ -139,10 +139,8 @@ void CIMSynthetic() {
     // 创建实体
     auto entity = sceneContent->createEntity();
     entity->getId()->setComments("地形实体");
-    entity->setClassificationBelongConcept(
+    entity->setBelongConcept(
             sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("地形"))->getId());
-    entity->setParticleBelongConcept(
-            sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("实景模型"))->getId());
     entity->addComponent(semantics_terrain->getId());
     entity->addComponent(geo_terrain->getId());
     entity->addComponent(spatialSystem->getId());
@@ -151,10 +149,8 @@ void CIMSynthetic() {
 
     entity = sceneContent->createEntity();
     entity->getId()->setComments("建筑实体");
-    entity->setClassificationBelongConcept(
+    entity->setBelongConcept(
             sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("建筑"))->getId());
-    entity->setParticleBelongConcept(
-            sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("实景模型"))->getId());
     entity->addComponent(semantic_building->getId());
     entity->addComponent(geo_building->getId());
     entity->addComponent(spatialSystem->getId());
@@ -162,10 +158,8 @@ void CIMSynthetic() {
 
     entity = sceneContent->createEntity();
     entity->getId()->setComments("道路实体");
-    entity->setClassificationBelongConcept(
+    entity->setBelongConcept(
             sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("道路"))->getId());
-    entity->setParticleBelongConcept(
-            sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("实景模型"))->getId());
     entity->addComponent(semantic_road->getId());
     entity->addComponent(geo_road->getId());
     entity->addComponent(spatialSystem->getId());
@@ -174,10 +168,8 @@ void CIMSynthetic() {
 
     entity = sceneContent->createEntity();
     entity->getId()->setComments("水体实体");
-    entity->setClassificationBelongConcept(
+    entity->setBelongConcept(
             sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("水体"))->getId());
-    entity->setParticleBelongConcept(
-            sceneStandard->getConceptFromCode(sceneStandard->getConceptCodeFromName("实景模型"))->getId());
     entity->addComponent(semantic_water->getId());
     entity->addComponent(geo_water->getId());
     entity->addComponent(spatialSystem->getId());
