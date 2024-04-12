@@ -9,9 +9,5 @@ project (OpenCIM)
 add_subdirectory (LibCIMModel)
 # ACIM验证案例
 add_subdirectory (ACIMTest)
-# ACIM创建工具
-add_subdirectory (ACIMCreator)
-# ACIM可视化工具
-add_subdirectory (ACIMViewer)
 # Excel批量转换为模式信息
 add_subdirectory (SchemaConvert)
