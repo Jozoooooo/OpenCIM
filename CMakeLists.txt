@@ -11,3 +11,5 @@ add_subdirectory (LibCIMModel)
 add_subdirectory (ACIMTest)
 # Excel批量转换为模式信息
 add_subdirectory (SchemaConvert)
+# ACIM可视化系统（轻量版本）
+add_subdirectory (ACIMViewer-Lite)

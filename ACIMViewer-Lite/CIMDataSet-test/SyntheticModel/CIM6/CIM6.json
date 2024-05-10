@@ -1,0 +1,14 @@
+{
+    "Header": {
+        "includes": [
+            {
+                "path": "../../Schema/CIMStandard.json",
+                "type": 0
+            }
+        ],
+        "sceneDate": "2024-05-08 10:43:47",
+        "sceneDescription": "",
+        "sceneName": "",
+        "sceneType": 1
+    }
+}

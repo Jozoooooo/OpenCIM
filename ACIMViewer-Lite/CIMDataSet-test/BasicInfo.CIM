@@ -1,0 +1,40 @@
+{
+    "MD5": "",
+    "创建人": "南京师范大学",
+    "创建单位": "南京师范大学",
+    "创建时间": "2024-05-08 10:43:47",
+    "名称": "测试数据集",
+    "模式信息路径": "./Schema/CIMStandard.json",
+    "版本": "1.0",
+    "综合模型路径": [
+        {
+            "名称": "CIM1",
+            "路径": "./SyntheticModel/CIM1/CIM1.json"
+        },
+        {
+            "名称": "CIM2",
+            "路径": "./SyntheticModel/CIM2/CIM2.json"
+        },
+        {
+            "名称": "CIM3",
+            "路径": "./SyntheticModel/CIM3/CIM3.json"
+        },
+        {
+            "名称": "CIM4",
+            "路径": "./SyntheticModel/CIM4/CIM4.json"
+        },
+        {
+            "名称": "CIM5",
+            "路径": "./SyntheticModel/CIM5/CIM5.json"
+        },
+        {
+            "名称": "CIM6",
+            "路径": "./SyntheticModel/CIM6/CIM6.json"
+        },
+        {
+            "名称": "CIM7",
+            "路径": "./SyntheticModel/CIM7/CIM7.json"
+        }
+    ],
+    "表达模型路径": ""
+}

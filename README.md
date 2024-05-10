@@ -11,12 +11,13 @@
 - LibCIMModel —— OpenCIM核心库，提供CIM交换格式操作SDK。
 - ACIMTest —— OpenCIM创建的简单示例，调用LibCIMModel实现简单场景用例。
 - SchemaConvert —— 读取指定格式xlsx文件自动生成CIM模式信息的可执行控制台程序。
+- ACIMViewer_Lite——轻量化读取ACIM文件并可视化的可执行控制台程序。
 - Paper —— 场景学主要著作。
 
 ## 文件结构
 
 - 3rdlibs 外部库文件
-- LibCIMModel、ACIMTest、SchemaConvert
+- LibCIMModel、ACIMTest、SchemaConvert、ACIMViewer_Lite
 - out 编译输出文件
 
 ## 安装
@@ -1067,3 +1068,38 @@ int main() {
 
 - 输出模式信息json路径可以缺省，缺省值为当前程序路径，自动生成result.json。
 - 可以直接将xlsx文件拖拽至可执行程序上，便捷运行。
+
+## ACIMViewer_Lite
+
+### 功能
+
+轻量化读取ACIM文件并可视化的可执行控制台程序
+
+### 依赖库
+
+- LibCIMModel
+
+- OSG 3.6.5
+
+- Qt 5.15.2
+
+- OSGEarth 3.5
+
+### 注意事项
+
+- 本程序所需头文件与第三方库文件都已提供，可以编译生成可执行程序。
+- **由于Gitee上传文件大小限制，本程序运行所需第三方DLL文件都未提供，需要用户自行编译并放于程序运行路径下。**
+- OSG库地址为：[GitHub - openscenegraph/OpenSceneGraph: OpenSceneGraph git repository](https://github.com/openscenegraph/OpenSceneGraph)
+- OSGEarth库地址为：[GitHub - gwaldron/osgearth: A 3D Mapping Engine & SDK for OpenSceneGraph.](https://github.com/gwaldron/osgearth)
+- 程序中IFC解析的代码未提供，需要用户补全。
+- **需要将Temp文件夹拷贝至程序运行目录。**
+- 为方便用户测试，本程序提供了示例数据CIMDataSet-test，可以直接调用运行。
+- CIMDataSet-test数据集为测试数据集，只有CIM3层级有地形和建筑，其他层级为空。
+-  程序所在路径不能有中文。
+
+### 快速上手
+
+- 打开控制台。
+- 定位至程序路径。
+-  程序需要传入两个参数：数据集.CIM文件路径、要可视化的层级。如：“D:\NNU_CIM_DataSet_2024.01.28\BasicInfo.CIM 3”， 其中第二个参数”3“表示可视化数据集的CIM3层级。
+- 键盘事件：点击F键缩放到场景、点击T键取消鼠标拖动场景后的"Throw"操作、点击A键打开"Throw"操作。
