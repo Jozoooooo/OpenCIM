@@ -1,0 +1,3358 @@
+{
+    "Components": [
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0007",
+            "Id": {
+                "Code": "A1AB2C52-85CD-4410-BAF6-DC1E25E36101",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 2,
+            "Epsg": "epsg:4549",
+            "Id": {
+                "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                "Comments": "epsg:4549"
+            }
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "7590088E-6125-4A0C-817D-39CAFC575D45",
+                "Comments": ""
+            },
+            "PanX": 397131.9166866485,
+            "PanY": 3555204.5852215616,
+            "PanZ": 17.9,
+            "RotateX": -90.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "99D6B831-DD2A-4424-9C61-8D6EC3CFB50C",
+            "Id": {
+                "Code": "B4132844-58A3-4167-82A4-F4EA44E2F050",
+                "Comments": "南师大地形几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "名称",
+            "FieldType": 2,
+            "FieldValue": "南师大地形",
+            "Id": {
+                "Code": "81DD8616-EC01-4B4E-A26F-54D51DF6C8DC",
+                "Comments": "南师大地形的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0019",
+            "Id": {
+                "Code": "F954FDED-604E-4326-BAF7-51C9F68B7219",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "78B0D36C-9356-47EE-A245-5FB18C14BB75",
+                "Comments": ""
+            },
+            "PanX": 397237.57166,
+            "PanY": 3555349.01047,
+            "PanZ": 34.018,
+            "RotateX": -90.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "7C10C76C-6716-46EA-A681-973A85E903F4",
+            "Id": {
+                "Code": "CEDCC546-D333-4E18-AE96-B04FF2044AC8",
+                "Comments": "地科院几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "",
+            "FieldType": 2,
+            "FieldValue": "地科院",
+            "Id": {
+                "Code": "0433003C-AF25-4358-A7FD-07CC4D95E943",
+                "Comments": "地科院的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0021",
+            "Id": {
+                "Code": "7663931C-0C7E-4894-B19A-AC57897CB1F8",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "E7090BDF-D843-4B56-A6B9-46CF4711EC14",
+                "Comments": ""
+            },
+            "PanX": 397073.622836,
+            "PanY": 3555060.58732,
+            "PanZ": 22.363732,
+            "RotateX": -90.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "AF14100C-88C3-47B8-9066-0B1DB0105E01",
+            "Id": {
+                "Code": "988B798E-B0C9-4A44-BCD0-009356D5BF61",
+                "Comments": "31宿舍几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "",
+            "FieldType": 2,
+            "FieldValue": "31-3宿舍",
+            "Id": {
+                "Code": "DABAF634-A4AA-46CA-B7C0-E17BDE4A61D9",
+                "Comments": "31-3宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0zcsEhz6HDZPizFbDw2asj",
+            "Id": {
+                "Code": "20A08147-B126-4378-8F98-798AB278F5B7",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "17A88770-ED7D-4728-AE63-0A4F6E58B403",
+                "Comments": ""
+            },
+            "PanX": 397072.708,
+            "PanY": 3555135.454,
+            "PanZ": 25.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "716C8F8D-8746-4EA1-B77D-FEF0E77D5FB1",
+            "Id": {
+                "Code": "250D1689-FF16-43F5-AF01-6B5680EFCA6B",
+                "Comments": "1层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "1",
+            "Id": {
+                "Code": "80D37B2E-32F1-441A-A961-3B280C3B052A",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1XSS$oJJ57SgsB_fGGUCZo",
+            "Id": {
+                "Code": "88864254-F2AB-4605-BA04-F0EF01099DF5",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "490CF615-F4E0-4550-89D1-28040C502913",
+                "Comments": ""
+            },
+            "PanX": 397072.721,
+            "PanY": 3555135.242,
+            "PanZ": 28.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "543D131D-0F09-42CA-9006-4B3CCBF9F690",
+            "Id": {
+                "Code": "71E10C11-EA3E-4D96-B1D5-3FF56FA7F6C3",
+                "Comments": "2层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "2",
+            "Id": {
+                "Code": "B29C676D-69B6-4559-AC7A-9FDB33B76690",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "2nZIGnS5PBIg9Z$lH8RLtC",
+            "Id": {
+                "Code": "E3A7843F-8314-4BBF-AD04-8357F433A561",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "DA064640-54F4-4C67-B3C5-89628EDD3B66",
+                "Comments": ""
+            },
+            "PanX": 397072.721,
+            "PanY": 3555135.242,
+            "PanZ": 31.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "C825320B-3E65-4721-A915-7418D0BDB63C",
+            "Id": {
+                "Code": "555C8835-2859-43D1-946E-AF2853A97712",
+                "Comments": "3层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "3",
+            "Id": {
+                "Code": "9A5C1945-A035-4D18-B8B9-825FCCB765CF",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0l4vqYFuf8KufB3VlerMKD",
+            "Id": {
+                "Code": "95B808EE-444C-48FE-A9C2-5E1A23D10E98",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "334EE6E8-8EBB-4A67-B813-90A7AC3F0A7E",
+                "Comments": ""
+            },
+            "PanX": 397072.721,
+            "PanY": 3555135.242,
+            "PanZ": 34.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "0D7CBD5F-FEFD-4E81-B451-322DBEA4B478",
+            "Id": {
+                "Code": "C5B846AC-5278-4DD3-9AC8-F0AFF5F4BF10",
+                "Comments": "4层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "4",
+            "Id": {
+                "Code": "6E96CE46-37B1-4F7C-A88A-38080C0D81D7",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1v4w9UjN52MAnZxxMqJ2GK",
+            "Id": {
+                "Code": "CEC484BC-E63E-46F3-845E-9A580D53F146",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "BEE3ACC1-A26A-498B-81F1-06803B65D6EB",
+                "Comments": ""
+            },
+            "PanX": 397072.721,
+            "PanY": 3555135.242,
+            "PanZ": 37.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "168ACB3A-41C7-4DA7-A6C3-600EA3563140",
+            "Id": {
+                "Code": "FE76CA57-8300-445A-B9C1-5FD18F9C2CD9",
+                "Comments": "5层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "5",
+            "Id": {
+                "Code": "5205D98E-6B4D-4F23-A8C7-E9A1E7A1BE5A",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "2gmaV5fGb4Rug5mpyAgZb6",
+            "Id": {
+                "Code": "FF5AC12A-AB6A-400E-A58D-2112961300D1",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "90F0086D-8126-4505-9749-8F43A9AD3CE2",
+                "Comments": ""
+            },
+            "PanX": 397072.721,
+            "PanY": 3555135.242,
+            "PanZ": 40.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "02C2A640-3A4A-462D-9923-4014A0EE41FD",
+            "Id": {
+                "Code": "69638013-6776-4F01-BD4B-373286815D23",
+                "Comments": "6层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "6",
+            "Id": {
+                "Code": "DB24FAFF-157C-4320-9206-370674589EFE",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "3r7$$dsn16m83ulh$r2dWA",
+            "Id": {
+                "Code": "63F6D73D-4BB1-4D85-BF8A-D15999C9D3C5",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "E01F00ED-A13E-45F1-ADD8-318445704FB5",
+                "Comments": ""
+            },
+            "PanX": 397072.645,
+            "PanY": 3555137.317,
+            "PanZ": 43.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "9A31FA49-28D9-4454-B1BA-D32C56288D8C",
+            "Id": {
+                "Code": "686BA572-1BEC-47B8-891D-9B50D812403A",
+                "Comments": "7层的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "楼层",
+            "FieldType": 2,
+            "FieldValue": "7",
+            "Id": {
+                "Code": "584830EE-03A8-422F-A88F-8064233F2300",
+                "Comments": "楼层33-1宿舍的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0hBT24fjHFWAJDSoZ1loaJ",
+            "Id": {
+                "Code": "D626FF8A-A7C2-4478-B1CA-8FA385CA148A",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "D2D2749D-6774-4662-9CE8-9A6EDA7D6F4A",
+                "Comments": ""
+            },
+            "PanX": 397085.98,
+            "PanY": 3555132.8045,
+            "PanZ": 25.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "878BD6DA-193E-4046-BDDC-13A71B947EE3",
+            "Id": {
+                "Code": "3CA1552C-FA6A-442F-B585-5627DFC59180",
+                "Comments": "101的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "101",
+            "Id": {
+                "Code": "4177CFBA-A1E8-49AA-B6FA-581DE39C09A0",
+                "Comments": "101的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "45CCD903-6CA2-4A28-80BC-CD4431BD6074",
+                "Comments": "101的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1TC_3uYoT5q9y4lmvLfVIj",
+            "Id": {
+                "Code": "CD38A94E-8BDB-4B30-AEA0-7EEC75F0453B",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "EC96AF21-057A-45D6-97B0-4584BDA4D3E7",
+                "Comments": ""
+            },
+            "PanX": 397066.18,
+            "PanY": 3555132.8045,
+            "PanZ": 25.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "4218CB6A-A6AB-4589-B34D-DFBD7EB05E26",
+            "Id": {
+                "Code": "CB0CF26D-97AF-487F-BE5A-E79606505994",
+                "Comments": "103的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "FC157E4F-8824-4231-8B48-E86426B07F50",
+                "Comments": "103的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "80408DB2-0AD6-4187-8C94-D1B92A50C257",
+                "Comments": "103的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1x9HomYLf3bfgh4tLSO8hp",
+            "Id": {
+                "Code": "66655B09-39AC-4265-ABFB-D0D557E7E69A",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "7B638A8C-6FF8-4846-A6DF-940834128046",
+                "Comments": ""
+            },
+            "PanX": 397079.11,
+            "PanY": 3555132.8045,
+            "PanZ": 25.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "58CC8469-E14F-421B-BEFA-5AC10DE4F33C",
+            "Id": {
+                "Code": "227FB326-E796-45ED-AA3E-8BE2DCE9742D",
+                "Comments": "102的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "102",
+            "Id": {
+                "Code": "064E4806-9BEB-4AF9-A79B-9AE232E35BE8",
+                "Comments": "102的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "C8E998EE-8725-472A-B4C6-27F1DE747794",
+                "Comments": "102的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "07$xJ8K$fC7QsKh11WCMKj",
+            "Id": {
+                "Code": "ABDE0993-65D8-45D0-B6AC-FF7D56DC7DB4",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "F94438D8-E7ED-45B8-9D64-FE27C8BEDFB5",
+                "Comments": ""
+            },
+            "PanX": 397059.31,
+            "PanY": 3555132.8045,
+            "PanZ": 25.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "14C6D365-6EF5-4252-B447-AF9A5C270536",
+            "Id": {
+                "Code": "86D312E4-350E-4CEF-866D-05F26DFE9C4F",
+                "Comments": "104的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "104",
+            "Id": {
+                "Code": "1CA7D9CA-F64B-4AFF-AF7F-E06C6DB489CD",
+                "Comments": "104的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "7B09DC03-8401-490C-9834-8201EB71B8E6",
+                "Comments": "104的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "20CkVenGH7DOMKwKErc8K9",
+            "Id": {
+                "Code": "CF3AE776-D8CF-4980-96DE-86786E5F8706",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "573B7204-389E-4D13-BD82-8EDA91EB5DDB",
+                "Comments": ""
+            },
+            "PanX": 397079.11,
+            "PanY": 3555132.8045,
+            "PanZ": 28.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "5FE7D41B-1367-4C34-A7F8-B7EBD8A32FA0",
+            "Id": {
+                "Code": "200E9295-9D71-430A-8CAF-586B0015FE36",
+                "Comments": "202的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "202",
+            "Id": {
+                "Code": "2817C539-C1BF-4C7C-94A3-46CA7281273A",
+                "Comments": "202的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "7146450A-C76B-4029-8295-5BD106F93EDD",
+                "Comments": "202的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0vvjqrp2HDfxxQvHn33poB",
+            "Id": {
+                "Code": "662C2CBC-A338-47B4-8DD3-3FAE630E5325",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "7F49367D-1CEA-49C8-8E22-3E2C227BE04A",
+                "Comments": ""
+            },
+            "PanX": 397066.18,
+            "PanY": 3555132.8045,
+            "PanZ": 28.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "E50AD79D-403D-4B3D-B4E5-3BCB7EAEC1D3",
+            "Id": {
+                "Code": "5C92E35D-E7AE-441E-AB5F-F5F229C7405A",
+                "Comments": "203的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "203",
+            "Id": {
+                "Code": "C9955C56-9BF2-4715-8B6E-8CB67293997E",
+                "Comments": "203的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "F28FBF6D-A921-4154-B3B5-358985CC5A2B",
+                "Comments": "203的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1D85yzw$P8t8N0k$xGOelB",
+            "Id": {
+                "Code": "93DD391A-A306-467B-8FAA-D3EEE4599E11",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "9A34A7AA-0BE5-4C96-B49E-D38620300E0B",
+                "Comments": ""
+            },
+            "PanX": 397059.31,
+            "PanY": 3555132.8045,
+            "PanZ": 28.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "9DF8F613-E07E-453D-AFE8-AA021380C4D3",
+            "Id": {
+                "Code": "5C24EF70-C9E4-4566-A1A4-905F96251F3E",
+                "Comments": "204的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "204",
+            "Id": {
+                "Code": "EA6F55C9-7E0C-4BE5-86CB-2F6AF33BC42F",
+                "Comments": "204的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "7C02E152-4AAC-49E0-B910-93A95634A5CB",
+                "Comments": "204的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1GkrOYhyL2CBHOFYevpcZd",
+            "Id": {
+                "Code": "2B7FC207-14B5-4EEC-8217-73C496BF8255",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "0740FF57-E689-4C15-B488-533AC406B4FE",
+                "Comments": ""
+            },
+            "PanX": 397085.98,
+            "PanY": 3555132.8045,
+            "PanZ": 28.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "121F26A9-E865-4F95-A36E-8F7E36FD98D4",
+            "Id": {
+                "Code": "13A706E3-6748-4275-B1CB-B916ACB1CD0E",
+                "Comments": "201的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "201",
+            "Id": {
+                "Code": "3AAD3D16-185A-4BB8-A122-CDC2F9AF021B",
+                "Comments": "201的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "692BC1DD-537E-4650-9FC3-D977113A1255",
+                "Comments": "201的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0LOtSQrwP6dPK4adk2z32k",
+            "Id": {
+                "Code": "7F4A5051-EC13-4CFE-9BDB-101E72A7FC58",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "3B0AC807-4EA7-4028-AD26-C19E2E8FC224",
+                "Comments": ""
+            },
+            "PanX": 397079.11,
+            "PanY": 3555132.8045,
+            "PanZ": 31.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "E0D6D599-BC04-4642-8862-65402A071950",
+            "Id": {
+                "Code": "D78903F1-7555-404E-9151-B2CB07F88EFE",
+                "Comments": "302的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "302",
+            "Id": {
+                "Code": "1C9BC3B5-AF02-408B-BFE7-28CDD7F908EA",
+                "Comments": "302的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "C9CA80D4-B774-4C51-9588-D8D68DFA1872",
+                "Comments": "302的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1VVe6QqbHDhRyeM9HgmeZj",
+            "Id": {
+                "Code": "066D1126-D76F-47B4-B1E7-0152B271AFAD",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "20209EEB-8382-4C5B-A9CD-ED680BBC58C3",
+                "Comments": ""
+            },
+            "PanX": 397066.18,
+            "PanY": 3555132.8045,
+            "PanZ": 31.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "8370FF51-9B32-450A-AE01-6BC1CAF53EE4",
+            "Id": {
+                "Code": "1290A1FB-08A3-47D4-98AF-DE6390D9426F",
+                "Comments": "303的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "303",
+            "Id": {
+                "Code": "00EB718E-206D-4ED5-AFCC-62A5811B4A1B",
+                "Comments": "303的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "B39A51F6-D5E0-4B25-AAA2-5A9F61102858",
+                "Comments": "303的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "2qUxIHYRf7eeIL9Unl9RXt",
+            "Id": {
+                "Code": "174480CC-129E-44AB-B05A-3F92D370D8DB",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "90800CE4-6D7E-444B-8AC6-9C058E26EEF2",
+                "Comments": ""
+            },
+            "PanX": 397059.31,
+            "PanY": 3555132.8045,
+            "PanZ": 31.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "FF302F18-6D18-4A26-8B57-C114E0A86280",
+            "Id": {
+                "Code": "4FA29F9A-D41F-4360-8EA6-B81886B63703",
+                "Comments": "304的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "304",
+            "Id": {
+                "Code": "5EE09AB7-E212-40E1-8538-5F01A7F9C229",
+                "Comments": "304的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "CA40BCB9-87FB-4197-9AE4-4BFEE5E9853C",
+                "Comments": "304的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "2msS631znBDAHYupoVzrqt",
+            "Id": {
+                "Code": "9F3497D0-E489-4D90-9E14-15FC987ED1A7",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "7DEE8014-D700-4D56-934D-1DCA725BE7B1",
+                "Comments": ""
+            },
+            "PanX": 397085.98,
+            "PanY": 3555132.8045,
+            "PanZ": 31.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "B6D30F20-BFB0-43B5-B833-DD5D8D10564A",
+            "Id": {
+                "Code": "C21C3C33-620B-461D-BB58-75391A1E1188",
+                "Comments": "301的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "301",
+            "Id": {
+                "Code": "66061D69-B52E-448E-A7CB-2E2B56E0696F",
+                "Comments": "301的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "3DEC1AC0-1761-4B75-A184-D86EA85E16A4",
+                "Comments": "301的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "12P3y409D4eB0T90AhTznK",
+            "Id": {
+                "Code": "8B22DE65-AB7D-48AC-B49D-C5713F2C6E75",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "EB83157C-F2B4-438B-8752-4F29698E6835",
+                "Comments": ""
+            },
+            "PanX": 397079.11,
+            "PanY": 3555132.8045,
+            "PanZ": 34.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "8EB4C000-2772-4E83-9611-7FC50530DD6A",
+            "Id": {
+                "Code": "9D04EABB-4A95-4E68-ACCE-7FD3EFF27CFF",
+                "Comments": "402的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "402",
+            "Id": {
+                "Code": "B606114D-8FF3-47EB-9EC8-13D6A551528B",
+                "Comments": "402的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "66DC89FE-21D9-429E-80FE-8C0FA15AA801",
+                "Comments": "402的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0ad7CTlxX3RvlsSYm6U2xT",
+            "Id": {
+                "Code": "8BC2B02A-6CE3-49DD-BE50-81D94ABE620E",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "67201B61-E052-44B0-A5F5-FCAE394B0407",
+                "Comments": ""
+            },
+            "PanX": 397066.18,
+            "PanY": 3555132.8045,
+            "PanZ": 34.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "CBC39A77-FACC-4C42-AE25-1807CA72B953",
+            "Id": {
+                "Code": "81DD2776-E659-4170-8862-F46060CC9C68",
+                "Comments": "403的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "403",
+            "Id": {
+                "Code": "E833F7B6-F0E4-4325-8224-D70212659CCB",
+                "Comments": "403的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "0B195AD9-271A-4CF6-B473-3D4D8F319529",
+                "Comments": "403的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "3KQYApJMLBqOJfp5cRFnbL",
+            "Id": {
+                "Code": "A085F547-E395-43F2-9228-D7A86C6B72F4",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "0B7F9BC0-818E-4285-A686-2749E278F9A1",
+                "Comments": ""
+            },
+            "PanX": 397059.31,
+            "PanY": 3555132.8045,
+            "PanZ": 34.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "59F7D093-EAA5-4006-A860-F047B59FDECB",
+            "Id": {
+                "Code": "EFE5AE95-A93C-4637-B289-342D95247814",
+                "Comments": "404的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "404",
+            "Id": {
+                "Code": "C35DEA80-05BA-49CF-BE4B-B58EAC5C207F",
+                "Comments": "404的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "DD5B39D0-3CD3-4251-9EF4-3115A59A6463",
+                "Comments": "404的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0OhtKq04P2wAwRyZNvIh$e",
+            "Id": {
+                "Code": "30C388B7-ED58-434D-9D25-71128CB86A97",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "A4A1455C-037C-48B0-86F1-BE988983300F",
+                "Comments": ""
+            },
+            "PanX": 397085.98,
+            "PanY": 3555132.8045,
+            "PanZ": 34.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "1EE62815-396D-491F-9BA5-B8D0A089CC8D",
+            "Id": {
+                "Code": "25C3C44A-BE16-46A7-A428-5B2CA7A15BD7",
+                "Comments": "401的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "401",
+            "Id": {
+                "Code": "92DBADB5-CB51-429B-88E7-956060CD7285",
+                "Comments": "401的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "E1EE5039-E020-41D2-BFE2-1EC4C454AEE1",
+                "Comments": "401的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "3Q6pD1dsrCyBqS6hceKhV_",
+            "Id": {
+                "Code": "5D279858-8C5E-4B79-A538-426D5623EF15",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "C2569469-830E-4A4A-B0E2-4CF54EA8B139",
+                "Comments": ""
+            },
+            "PanX": 397079.11,
+            "PanY": 3555132.8045,
+            "PanZ": 37.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "56983A4F-7ED0-458A-85C3-0BAC973FD56B",
+            "Id": {
+                "Code": "B0F742DE-9173-43AE-AD0A-541493BF7AC4",
+                "Comments": "502的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "502",
+            "Id": {
+                "Code": "13017CB9-250F-4D4D-8D95-2C20C40FF52F",
+                "Comments": "502的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "4E90BAF8-2253-4B7F-9729-E76010B23D6B",
+                "Comments": "502的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "3u4wccYDzE3wLueB$zg66i",
+            "Id": {
+                "Code": "D1491BDC-75DE-4691-BE7F-58D895736ED4",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "658DA0CB-58DB-4213-A614-792AD77D0B77",
+                "Comments": ""
+            },
+            "PanX": 397066.18,
+            "PanY": 3555132.8045,
+            "PanZ": 37.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "C5C6DD05-AA53-4205-8451-8CEA58FD2F7C",
+            "Id": {
+                "Code": "963AABCD-44A1-46EF-A5F6-7FE389566548",
+                "Comments": "503的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "503",
+            "Id": {
+                "Code": "17A09334-FF42-41E7-8988-028E27F082A7",
+                "Comments": "503的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "89DF16C3-9A52-4853-89F6-2950DCEACE87",
+                "Comments": "503的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "3oF55TEy93GuzqrCfkJFuf",
+            "Id": {
+                "Code": "005F478B-D26A-4CAB-B15E-E725FC0983C4",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "2C6EA8BF-E826-4FE6-8805-05BDEB4084C5",
+                "Comments": ""
+            },
+            "PanX": 397059.31,
+            "PanY": 3555132.8045,
+            "PanZ": 37.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "413B08D7-1DEA-4F53-873E-C7BCBFB0B24C",
+            "Id": {
+                "Code": "37CBE412-67BD-4D01-BDA7-78F22D19FB48",
+                "Comments": "504的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "504",
+            "Id": {
+                "Code": "9CC23203-B12B-4691-8255-C1534C74291A",
+                "Comments": "504的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "AB400C23-C662-460E-89CE-38DF09C98ECB",
+                "Comments": "504的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1GoJwwgjDBGwG3TztZD_R$",
+            "Id": {
+                "Code": "C0E24783-91DC-4EED-A7D5-0562A4F99AF2",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "0346E935-9393-4F65-B73B-ECE0963162A4",
+                "Comments": ""
+            },
+            "PanX": 397085.98,
+            "PanY": 3555132.8045,
+            "PanZ": 37.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "82A000D7-A4AA-4F91-9780-8C3178C88CEE",
+            "Id": {
+                "Code": "7064C0E8-976A-4520-98BA-B3F5E4E75F8B",
+                "Comments": "501的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "501",
+            "Id": {
+                "Code": "8262BE95-A9C1-4304-BF7C-2E40F7611DB1",
+                "Comments": "501的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "879ADC2D-B793-4393-9C64-A8A3B1D7EE7E",
+                "Comments": "501的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "3gLjpC3zH79Rr$biRQLvhc",
+            "Id": {
+                "Code": "77A45A38-0D9E-44E3-BB1B-939DF1A7559D",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "32D46BB9-99D3-4275-B901-98A71327003D",
+                "Comments": ""
+            },
+            "PanX": 397079.11,
+            "PanY": 3555132.8045,
+            "PanZ": 40.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "37AF84A5-78F6-4591-8B53-80FB1D3EA3C4",
+            "Id": {
+                "Code": "3114A61B-82C6-4273-884A-209996FD93B3",
+                "Comments": "602的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "602",
+            "Id": {
+                "Code": "B95530E4-4525-439E-AFEE-B228DF71D06C",
+                "Comments": "602的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "CAC923A3-61CA-4DB4-AD82-347341B66DC1",
+                "Comments": "602的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1ehNyTOzXC4BbV8mmFYvn6",
+            "Id": {
+                "Code": "115C0B96-7D41-4C6F-8B16-6BBAB478BAE6",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "18B07B3D-21A2-4404-A4B9-B2FA57B467D5",
+                "Comments": ""
+            },
+            "PanX": 397066.18,
+            "PanY": 3555132.8045,
+            "PanZ": 40.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "3C487077-DC6C-4F69-8951-F09D331DBEBA",
+            "Id": {
+                "Code": "D3754FEB-83A5-4F55-9131-DCA62EFB0116",
+                "Comments": "603的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "603",
+            "Id": {
+                "Code": "A89A474D-04B3-4FD1-8A57-E22E3FA254FD",
+                "Comments": "603的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "86A2FB83-0767-4977-BD3C-9DF196994912",
+                "Comments": "603的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "1jTmW3LhHDfhbfrbCVVz1z",
+            "Id": {
+                "Code": "4C25A0CD-CC1B-4BB7-B529-D0531225FFB8",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "BBE876FC-3C72-4FAC-AB7D-91B92C89BF16",
+                "Comments": ""
+            },
+            "PanX": 397059.31,
+            "PanY": 3555132.8045,
+            "PanZ": 40.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "7DA44C57-C9CE-4525-ABDD-CD74A61ED370",
+            "Id": {
+                "Code": "4B7E1E0A-559C-4214-9815-E36D2E6088CB",
+                "Comments": "604的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "604",
+            "Id": {
+                "Code": "CAA281CD-3EEB-47F1-9346-6C78DB7CCDCF",
+                "Comments": "604的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "1ABAAA95-C3F9-4A10-9931-D2FEAB603CD0",
+                "Comments": "604的建筑面积属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "EntityCustom_ID",
+            "FieldType": 2,
+            "FieldValue": "0fLmn5VdT6vBX_hCHqWLvS",
+            "Id": {
+                "Code": "E9AAA896-4D51-4B4C-8431-A620D1B4A4D0",
+                "Comments": "用户自定义ID"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 1,
+            "Id": {
+                "Code": "F6092181-6A55-49F1-9604-73A3FDA79ADA",
+                "Comments": ""
+            },
+            "PanX": 397085.98,
+            "PanY": 3555132.8045,
+            "PanZ": 40.12,
+            "RotateX": 0.0,
+            "RotateY": 0.0,
+            "RotateZ": 0.0,
+            "Scale": 1.0
+        },
+        {
+            "ComponentType": 3,
+            "Geometry": "432C6E19-D3D0-4218-A481-892ACD6B2338",
+            "Id": {
+                "Code": "0D981503-C21B-4F7F-A0B1-A27F28C56E92",
+                "Comments": "601的几何"
+            },
+            "SpatialGeometryType": 2
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "户室号",
+            "FieldType": 2,
+            "FieldValue": "601",
+            "Id": {
+                "Code": "DCD07F5D-7A56-46A3-A9A5-41DF75BBD3DF",
+                "Comments": "601的属性"
+            },
+            "Source": 1
+        },
+        {
+            "ComponentType": 7,
+            "FieldName": "建筑面积",
+            "FieldType": 2,
+            "FieldValue": "103",
+            "Id": {
+                "Code": "8BD0771A-F11F-4D9A-857C-4C8E8EFF650F",
+                "Comments": "601的建筑面积属性"
+            },
+            "Source": 1
+        }
+    ],
+    "Entities": [
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "800AE704-81F2-484C-9427-CEAD374F96CF",
+                    "Comments": "CIM3地形"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "A1AB2C52-85CD-4410-BAF6-DC1E25E36101",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "7590088E-6125-4A0C-817D-39CAFC575D45",
+                    "Comments": ""
+                },
+                {
+                    "Code": "B4132844-58A3-4167-82A4-F4EA44E2F050",
+                    "Comments": "南师大地形几何"
+                },
+                {
+                    "Code": "81DD8616-EC01-4B4E-A26F-54D51DF6C8DC",
+                    "Comments": "南师大地形的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "南师大地形实体",
+            "Id": {
+                "Code": "A4AE13AB-E7C5-4B50-A044-E5A4A88CAAB6",
+                "Comments": "南师大地形实体"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "20A08147-B126-4378-8F98-798AB278F5B7",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "17A88770-ED7D-4728-AE63-0A4F6E58B403",
+                    "Comments": ""
+                },
+                {
+                    "Code": "250D1689-FF16-43F5-AF01-6B5680EFCA6B",
+                    "Comments": "1层的几何"
+                },
+                {
+                    "Code": "80D37B2E-32F1-441A-A961-3B280C3B052A",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍0层",
+            "Id": {
+                "Code": "393A9756-588E-4E08-96D0-F10E90C28769",
+                "Comments": "33-1宿舍1层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "88864254-F2AB-4605-BA04-F0EF01099DF5",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "490CF615-F4E0-4550-89D1-28040C502913",
+                    "Comments": ""
+                },
+                {
+                    "Code": "71E10C11-EA3E-4D96-B1D5-3FF56FA7F6C3",
+                    "Comments": "2层的几何"
+                },
+                {
+                    "Code": "B29C676D-69B6-4559-AC7A-9FDB33B76690",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍1层",
+            "Id": {
+                "Code": "88264724-59FB-49EA-9027-A5F7EC0AFDC5",
+                "Comments": "33-1宿舍2层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "E3A7843F-8314-4BBF-AD04-8357F433A561",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "DA064640-54F4-4C67-B3C5-89628EDD3B66",
+                    "Comments": ""
+                },
+                {
+                    "Code": "555C8835-2859-43D1-946E-AF2853A97712",
+                    "Comments": "3层的几何"
+                },
+                {
+                    "Code": "9A5C1945-A035-4D18-B8B9-825FCCB765CF",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍2层",
+            "Id": {
+                "Code": "F93807D1-4036-48DA-BC1E-BFD0A27D8AA5",
+                "Comments": "33-1宿舍3层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "95B808EE-444C-48FE-A9C2-5E1A23D10E98",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "334EE6E8-8EBB-4A67-B813-90A7AC3F0A7E",
+                    "Comments": ""
+                },
+                {
+                    "Code": "C5B846AC-5278-4DD3-9AC8-F0AFF5F4BF10",
+                    "Comments": "4层的几何"
+                },
+                {
+                    "Code": "6E96CE46-37B1-4F7C-A88A-38080C0D81D7",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍3层",
+            "Id": {
+                "Code": "19C69A0D-6C8F-48A0-8CB7-42C7162017A2",
+                "Comments": "33-1宿舍4层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "CEC484BC-E63E-46F3-845E-9A580D53F146",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "BEE3ACC1-A26A-498B-81F1-06803B65D6EB",
+                    "Comments": ""
+                },
+                {
+                    "Code": "FE76CA57-8300-445A-B9C1-5FD18F9C2CD9",
+                    "Comments": "5层的几何"
+                },
+                {
+                    "Code": "5205D98E-6B4D-4F23-A8C7-E9A1E7A1BE5A",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍4层",
+            "Id": {
+                "Code": "60DF7F28-1906-482B-9DC4-3FC8676557AA",
+                "Comments": "33-1宿舍5层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "FF5AC12A-AB6A-400E-A58D-2112961300D1",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "90F0086D-8126-4505-9749-8F43A9AD3CE2",
+                    "Comments": ""
+                },
+                {
+                    "Code": "69638013-6776-4F01-BD4B-373286815D23",
+                    "Comments": "6层的几何"
+                },
+                {
+                    "Code": "DB24FAFF-157C-4320-9206-370674589EFE",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍5层",
+            "Id": {
+                "Code": "01B27B15-BED6-4980-AC2A-153079D0FAB5",
+                "Comments": "33-1宿舍6层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "58BA81D3-5B36-470C-BDD3-90E346187CC2",
+                    "Comments": "CIM3教育建筑-层"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "63F6D73D-4BB1-4D85-BF8A-D15999C9D3C5",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "E01F00ED-A13E-45F1-ADD8-318445704FB5",
+                    "Comments": ""
+                },
+                {
+                    "Code": "686BA572-1BEC-47B8-891D-9B50D812403A",
+                    "Comments": "7层的几何"
+                },
+                {
+                    "Code": "584830EE-03A8-422F-A88F-8064233F2300",
+                    "Comments": "楼层33-1宿舍的属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "33-1宿舍6层",
+            "Id": {
+                "Code": "523334B1-9204-4664-80BA-80B8FBCF2CE0",
+                "Comments": "33-1宿舍7层"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "D626FF8A-A7C2-4478-B1CA-8FA385CA148A",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "D2D2749D-6774-4662-9CE8-9A6EDA7D6F4A",
+                    "Comments": ""
+                },
+                {
+                    "Code": "3CA1552C-FA6A-442F-B585-5627DFC59180",
+                    "Comments": "101的几何"
+                },
+                {
+                    "Code": "4177CFBA-A1E8-49AA-B6FA-581DE39C09A0",
+                    "Comments": "101的属性"
+                },
+                {
+                    "Code": "45CCD903-6CA2-4A28-80BC-CD4431BD6074",
+                    "Comments": "101的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "101",
+            "Id": {
+                "Code": "58044065-7E42-4CD9-9D8F-A9E7C9B11B96",
+                "Comments": "33-1宿舍101户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "CD38A94E-8BDB-4B30-AEA0-7EEC75F0453B",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "EC96AF21-057A-45D6-97B0-4584BDA4D3E7",
+                    "Comments": ""
+                },
+                {
+                    "Code": "CB0CF26D-97AF-487F-BE5A-E79606505994",
+                    "Comments": "103的几何"
+                },
+                {
+                    "Code": "FC157E4F-8824-4231-8B48-E86426B07F50",
+                    "Comments": "103的属性"
+                },
+                {
+                    "Code": "80408DB2-0AD6-4187-8C94-D1B92A50C257",
+                    "Comments": "103的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "103",
+            "Id": {
+                "Code": "2429047A-D3A6-4C86-BE72-F16CD0106CBF",
+                "Comments": "33-1宿舍103户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "66655B09-39AC-4265-ABFB-D0D557E7E69A",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "7B638A8C-6FF8-4846-A6DF-940834128046",
+                    "Comments": ""
+                },
+                {
+                    "Code": "227FB326-E796-45ED-AA3E-8BE2DCE9742D",
+                    "Comments": "102的几何"
+                },
+                {
+                    "Code": "064E4806-9BEB-4AF9-A79B-9AE232E35BE8",
+                    "Comments": "102的属性"
+                },
+                {
+                    "Code": "C8E998EE-8725-472A-B4C6-27F1DE747794",
+                    "Comments": "102的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "102",
+            "Id": {
+                "Code": "D0C302CB-01CF-490C-9133-E6719BDA1FD5",
+                "Comments": "33-1宿舍102户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "ABDE0993-65D8-45D0-B6AC-FF7D56DC7DB4",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "F94438D8-E7ED-45B8-9D64-FE27C8BEDFB5",
+                    "Comments": ""
+                },
+                {
+                    "Code": "86D312E4-350E-4CEF-866D-05F26DFE9C4F",
+                    "Comments": "104的几何"
+                },
+                {
+                    "Code": "1CA7D9CA-F64B-4AFF-AF7F-E06C6DB489CD",
+                    "Comments": "104的属性"
+                },
+                {
+                    "Code": "7B09DC03-8401-490C-9834-8201EB71B8E6",
+                    "Comments": "104的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "104",
+            "Id": {
+                "Code": "EF3851F9-DC85-4201-B46C-7028D4EC6762",
+                "Comments": "33-1宿舍104户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "CF3AE776-D8CF-4980-96DE-86786E5F8706",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "573B7204-389E-4D13-BD82-8EDA91EB5DDB",
+                    "Comments": ""
+                },
+                {
+                    "Code": "200E9295-9D71-430A-8CAF-586B0015FE36",
+                    "Comments": "202的几何"
+                },
+                {
+                    "Code": "2817C539-C1BF-4C7C-94A3-46CA7281273A",
+                    "Comments": "202的属性"
+                },
+                {
+                    "Code": "7146450A-C76B-4029-8295-5BD106F93EDD",
+                    "Comments": "202的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "202",
+            "Id": {
+                "Code": "FB36ED20-D6C6-4BA9-BA1D-713FD17633D0",
+                "Comments": "33-1宿舍202户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "662C2CBC-A338-47B4-8DD3-3FAE630E5325",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "7F49367D-1CEA-49C8-8E22-3E2C227BE04A",
+                    "Comments": ""
+                },
+                {
+                    "Code": "5C92E35D-E7AE-441E-AB5F-F5F229C7405A",
+                    "Comments": "203的几何"
+                },
+                {
+                    "Code": "C9955C56-9BF2-4715-8B6E-8CB67293997E",
+                    "Comments": "203的属性"
+                },
+                {
+                    "Code": "F28FBF6D-A921-4154-B3B5-358985CC5A2B",
+                    "Comments": "203的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "203",
+            "Id": {
+                "Code": "B54F8C71-0E38-41D8-8371-F983CC3287A4",
+                "Comments": "33-1宿舍203户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "93DD391A-A306-467B-8FAA-D3EEE4599E11",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "9A34A7AA-0BE5-4C96-B49E-D38620300E0B",
+                    "Comments": ""
+                },
+                {
+                    "Code": "5C24EF70-C9E4-4566-A1A4-905F96251F3E",
+                    "Comments": "204的几何"
+                },
+                {
+                    "Code": "EA6F55C9-7E0C-4BE5-86CB-2F6AF33BC42F",
+                    "Comments": "204的属性"
+                },
+                {
+                    "Code": "7C02E152-4AAC-49E0-B910-93A95634A5CB",
+                    "Comments": "204的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "204",
+            "Id": {
+                "Code": "6DEBDB5D-4919-4B04-82BB-F8454275E53A",
+                "Comments": "33-1宿舍204户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "2B7FC207-14B5-4EEC-8217-73C496BF8255",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "0740FF57-E689-4C15-B488-533AC406B4FE",
+                    "Comments": ""
+                },
+                {
+                    "Code": "13A706E3-6748-4275-B1CB-B916ACB1CD0E",
+                    "Comments": "201的几何"
+                },
+                {
+                    "Code": "3AAD3D16-185A-4BB8-A122-CDC2F9AF021B",
+                    "Comments": "201的属性"
+                },
+                {
+                    "Code": "692BC1DD-537E-4650-9FC3-D977113A1255",
+                    "Comments": "201的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "201",
+            "Id": {
+                "Code": "4313A959-EAF3-44FD-A6A0-52422B5AA30E",
+                "Comments": "33-1宿舍201户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "7F4A5051-EC13-4CFE-9BDB-101E72A7FC58",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "3B0AC807-4EA7-4028-AD26-C19E2E8FC224",
+                    "Comments": ""
+                },
+                {
+                    "Code": "D78903F1-7555-404E-9151-B2CB07F88EFE",
+                    "Comments": "302的几何"
+                },
+                {
+                    "Code": "1C9BC3B5-AF02-408B-BFE7-28CDD7F908EA",
+                    "Comments": "302的属性"
+                },
+                {
+                    "Code": "C9CA80D4-B774-4C51-9588-D8D68DFA1872",
+                    "Comments": "302的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "302",
+            "Id": {
+                "Code": "A55D57A3-2478-42B3-83D0-2F3497C3EDD8",
+                "Comments": "33-1宿舍302户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "066D1126-D76F-47B4-B1E7-0152B271AFAD",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "20209EEB-8382-4C5B-A9CD-ED680BBC58C3",
+                    "Comments": ""
+                },
+                {
+                    "Code": "1290A1FB-08A3-47D4-98AF-DE6390D9426F",
+                    "Comments": "303的几何"
+                },
+                {
+                    "Code": "00EB718E-206D-4ED5-AFCC-62A5811B4A1B",
+                    "Comments": "303的属性"
+                },
+                {
+                    "Code": "B39A51F6-D5E0-4B25-AAA2-5A9F61102858",
+                    "Comments": "303的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "303",
+            "Id": {
+                "Code": "8B1E3FFA-4807-4E0B-B158-B4730B6ED6B4",
+                "Comments": "33-1宿舍303户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "174480CC-129E-44AB-B05A-3F92D370D8DB",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "90800CE4-6D7E-444B-8AC6-9C058E26EEF2",
+                    "Comments": ""
+                },
+                {
+                    "Code": "4FA29F9A-D41F-4360-8EA6-B81886B63703",
+                    "Comments": "304的几何"
+                },
+                {
+                    "Code": "5EE09AB7-E212-40E1-8538-5F01A7F9C229",
+                    "Comments": "304的属性"
+                },
+                {
+                    "Code": "CA40BCB9-87FB-4197-9AE4-4BFEE5E9853C",
+                    "Comments": "304的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "304",
+            "Id": {
+                "Code": "2D327825-0A6A-48DF-8F46-9908924EACC3",
+                "Comments": "33-1宿舍304户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "9F3497D0-E489-4D90-9E14-15FC987ED1A7",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "7DEE8014-D700-4D56-934D-1DCA725BE7B1",
+                    "Comments": ""
+                },
+                {
+                    "Code": "C21C3C33-620B-461D-BB58-75391A1E1188",
+                    "Comments": "301的几何"
+                },
+                {
+                    "Code": "66061D69-B52E-448E-A7CB-2E2B56E0696F",
+                    "Comments": "301的属性"
+                },
+                {
+                    "Code": "3DEC1AC0-1761-4B75-A184-D86EA85E16A4",
+                    "Comments": "301的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "301",
+            "Id": {
+                "Code": "631F76CB-8B49-46DE-95EF-C8B57F2D9596",
+                "Comments": "33-1宿舍301户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "8B22DE65-AB7D-48AC-B49D-C5713F2C6E75",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "EB83157C-F2B4-438B-8752-4F29698E6835",
+                    "Comments": ""
+                },
+                {
+                    "Code": "9D04EABB-4A95-4E68-ACCE-7FD3EFF27CFF",
+                    "Comments": "402的几何"
+                },
+                {
+                    "Code": "B606114D-8FF3-47EB-9EC8-13D6A551528B",
+                    "Comments": "402的属性"
+                },
+                {
+                    "Code": "66DC89FE-21D9-429E-80FE-8C0FA15AA801",
+                    "Comments": "402的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "402",
+            "Id": {
+                "Code": "D34385A0-AC31-4E3A-8D2A-78FBBC037D16",
+                "Comments": "33-1宿舍402户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "8BC2B02A-6CE3-49DD-BE50-81D94ABE620E",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "67201B61-E052-44B0-A5F5-FCAE394B0407",
+                    "Comments": ""
+                },
+                {
+                    "Code": "81DD2776-E659-4170-8862-F46060CC9C68",
+                    "Comments": "403的几何"
+                },
+                {
+                    "Code": "E833F7B6-F0E4-4325-8224-D70212659CCB",
+                    "Comments": "403的属性"
+                },
+                {
+                    "Code": "0B195AD9-271A-4CF6-B473-3D4D8F319529",
+                    "Comments": "403的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "403",
+            "Id": {
+                "Code": "918FAEB4-C437-4700-8B68-A142C589B806",
+                "Comments": "33-1宿舍403户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "A085F547-E395-43F2-9228-D7A86C6B72F4",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "0B7F9BC0-818E-4285-A686-2749E278F9A1",
+                    "Comments": ""
+                },
+                {
+                    "Code": "EFE5AE95-A93C-4637-B289-342D95247814",
+                    "Comments": "404的几何"
+                },
+                {
+                    "Code": "C35DEA80-05BA-49CF-BE4B-B58EAC5C207F",
+                    "Comments": "404的属性"
+                },
+                {
+                    "Code": "DD5B39D0-3CD3-4251-9EF4-3115A59A6463",
+                    "Comments": "404的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "404",
+            "Id": {
+                "Code": "DBBD59E4-5395-4138-B1C9-366245523502",
+                "Comments": "33-1宿舍404户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "30C388B7-ED58-434D-9D25-71128CB86A97",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "A4A1455C-037C-48B0-86F1-BE988983300F",
+                    "Comments": ""
+                },
+                {
+                    "Code": "25C3C44A-BE16-46A7-A428-5B2CA7A15BD7",
+                    "Comments": "401的几何"
+                },
+                {
+                    "Code": "92DBADB5-CB51-429B-88E7-956060CD7285",
+                    "Comments": "401的属性"
+                },
+                {
+                    "Code": "E1EE5039-E020-41D2-BFE2-1EC4C454AEE1",
+                    "Comments": "401的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "401",
+            "Id": {
+                "Code": "4B062F90-48B5-4FF6-BE03-68E8B78AE526",
+                "Comments": "33-1宿舍401户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "5D279858-8C5E-4B79-A538-426D5623EF15",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "C2569469-830E-4A4A-B0E2-4CF54EA8B139",
+                    "Comments": ""
+                },
+                {
+                    "Code": "B0F742DE-9173-43AE-AD0A-541493BF7AC4",
+                    "Comments": "502的几何"
+                },
+                {
+                    "Code": "13017CB9-250F-4D4D-8D95-2C20C40FF52F",
+                    "Comments": "502的属性"
+                },
+                {
+                    "Code": "4E90BAF8-2253-4B7F-9729-E76010B23D6B",
+                    "Comments": "502的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "502",
+            "Id": {
+                "Code": "878E97C8-4616-4653-BD83-188C75102F55",
+                "Comments": "33-1宿舍502户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "D1491BDC-75DE-4691-BE7F-58D895736ED4",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "658DA0CB-58DB-4213-A614-792AD77D0B77",
+                    "Comments": ""
+                },
+                {
+                    "Code": "963AABCD-44A1-46EF-A5F6-7FE389566548",
+                    "Comments": "503的几何"
+                },
+                {
+                    "Code": "17A09334-FF42-41E7-8988-028E27F082A7",
+                    "Comments": "503的属性"
+                },
+                {
+                    "Code": "89DF16C3-9A52-4853-89F6-2950DCEACE87",
+                    "Comments": "503的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "503",
+            "Id": {
+                "Code": "F0D7433F-C563-4E80-B036-6C5B5C0CC625",
+                "Comments": "33-1宿舍503户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "005F478B-D26A-4CAB-B15E-E725FC0983C4",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "2C6EA8BF-E826-4FE6-8805-05BDEB4084C5",
+                    "Comments": ""
+                },
+                {
+                    "Code": "37CBE412-67BD-4D01-BDA7-78F22D19FB48",
+                    "Comments": "504的几何"
+                },
+                {
+                    "Code": "9CC23203-B12B-4691-8255-C1534C74291A",
+                    "Comments": "504的属性"
+                },
+                {
+                    "Code": "AB400C23-C662-460E-89CE-38DF09C98ECB",
+                    "Comments": "504的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "504",
+            "Id": {
+                "Code": "6FE9F6D3-EC3C-445D-AC34-C1E146D4940C",
+                "Comments": "33-1宿舍504户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "C0E24783-91DC-4EED-A7D5-0562A4F99AF2",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "0346E935-9393-4F65-B73B-ECE0963162A4",
+                    "Comments": ""
+                },
+                {
+                    "Code": "7064C0E8-976A-4520-98BA-B3F5E4E75F8B",
+                    "Comments": "501的几何"
+                },
+                {
+                    "Code": "8262BE95-A9C1-4304-BF7C-2E40F7611DB1",
+                    "Comments": "501的属性"
+                },
+                {
+                    "Code": "879ADC2D-B793-4393-9C64-A8A3B1D7EE7E",
+                    "Comments": "501的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "501",
+            "Id": {
+                "Code": "F6E59D07-E985-4825-8F2B-3A8C490E1D5F",
+                "Comments": "33-1宿舍501户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "77A45A38-0D9E-44E3-BB1B-939DF1A7559D",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "32D46BB9-99D3-4275-B901-98A71327003D",
+                    "Comments": ""
+                },
+                {
+                    "Code": "3114A61B-82C6-4273-884A-209996FD93B3",
+                    "Comments": "602的几何"
+                },
+                {
+                    "Code": "B95530E4-4525-439E-AFEE-B228DF71D06C",
+                    "Comments": "602的属性"
+                },
+                {
+                    "Code": "CAC923A3-61CA-4DB4-AD82-347341B66DC1",
+                    "Comments": "602的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "602",
+            "Id": {
+                "Code": "6B59A554-87BC-4FE6-B087-955A15D1A7E5",
+                "Comments": "33-1宿舍602户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "115C0B96-7D41-4C6F-8B16-6BBAB478BAE6",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "18B07B3D-21A2-4404-A4B9-B2FA57B467D5",
+                    "Comments": ""
+                },
+                {
+                    "Code": "D3754FEB-83A5-4F55-9131-DCA62EFB0116",
+                    "Comments": "603的几何"
+                },
+                {
+                    "Code": "A89A474D-04B3-4FD1-8A57-E22E3FA254FD",
+                    "Comments": "603的属性"
+                },
+                {
+                    "Code": "86A2FB83-0767-4977-BD3C-9DF196994912",
+                    "Comments": "603的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "603",
+            "Id": {
+                "Code": "9BEE40D2-5D98-4BF4-9834-FCA80EA85B99",
+                "Comments": "33-1宿舍603户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "4C25A0CD-CC1B-4BB7-B529-D0531225FFB8",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "BBE876FC-3C72-4FAC-AB7D-91B92C89BF16",
+                    "Comments": ""
+                },
+                {
+                    "Code": "4B7E1E0A-559C-4214-9815-E36D2E6088CB",
+                    "Comments": "604的几何"
+                },
+                {
+                    "Code": "CAA281CD-3EEB-47F1-9346-6C78DB7CCDCF",
+                    "Comments": "604的属性"
+                },
+                {
+                    "Code": "1ABAAA95-C3F9-4A10-9931-D2FEAB603CD0",
+                    "Comments": "604的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "604",
+            "Id": {
+                "Code": "3EE4580F-48D0-4D4D-B29F-0EE23CB77BFF",
+                "Comments": "33-1宿舍604户"
+            }
+        },
+        {
+            "BelongConcepts": [
+                {
+                    "Code": "AA17FA6F-EECD-45AF-970B-49CCBA088E06",
+                    "Comments": "CIM3教育建筑-户"
+                }
+            ],
+            "Components": [
+                {
+                    "Code": "E9AAA896-4D51-4B4C-8431-A620D1B4A4D0",
+                    "Comments": "用户自定义ID"
+                },
+                {
+                    "Code": "D91C894F-C9F4-427E-89C5-17AC70500737",
+                    "Comments": "epsg:4549"
+                },
+                {
+                    "Code": "F6092181-6A55-49F1-9604-73A3FDA79ADA",
+                    "Comments": ""
+                },
+                {
+                    "Code": "0D981503-C21B-4F7F-A0B1-A27F28C56E92",
+                    "Comments": "601的几何"
+                },
+                {
+                    "Code": "DCD07F5D-7A56-46A3-A9A5-41DF75BBD3DF",
+                    "Comments": "601的属性"
+                },
+                {
+                    "Code": "8BD0771A-F11F-4D9A-857C-4C8E8EFF650F",
+                    "Comments": "601的建筑面积属性"
+                }
+            ],
+            "EntityCode": "",
+            "EntityName": "601",
+            "Id": {
+                "Code": "1DB4E2DB-9EE4-4F94-8053-092214CC44AD",
+                "Comments": "33-1宿舍601户"
+            }
+        }
+    ],
+    "ExternalDatas": [
+        {
+            "DataFormat": 10,
+            "Id": {
+                "Code": "99D6B831-DD2A-4424-9C61-8D6EC3CFB50C",
+                "Comments": ""
+            },
+            "InnerUrl": "",
+            "OuterUrl": "./ExternalData/terrain/CIM3terrain.osgb"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "716C8F8D-8746-4EA1-B77D-FEF0E77D5FB1",
+                "Comments": ""
+            },
+            "InnerUrl": "0hBT24fjHFWAJDSoZ1loaJ,1TC_3uYoT5q9y4lmvLfVIj,1x9HomYLf3bfgh4tLSO8hp,07$xJ8K$fC7QsKh11WCMKj,09c69IwJz6A8epfn$4m1wI,1f89MxLL94UfegGrqx06MN,3lssKJsdDBivSgrfzsMNpk,0BSaMaMo58vRwkJAFUoLTV,0vbVaIV8v7Pw_TNqUeDo7c,3Il1w5rSnBuhNy7RX8EwqC",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "543D131D-0F09-42CA-9006-4B3CCBF9F690",
+                "Comments": ""
+            },
+            "InnerUrl": "20CkVenGH7DOMKwKErc8K9,0vvjqrp2HDfxxQvHn33poB,1D85yzw$P8t8N0k$xGOelB,1GkrOYhyL2CBHOFYevpcZd,1WTRjIMR1A4OMZ61Wc56Ig,0riU4ugv95sxEckwz1kENG,0gDBxBmvj9lPliAa2kUg35,2cwHSs1NX08hkVQ8H4C_6Z,2lK45Cg8nAI8DlMskLTOi$,3N7hHnr1HFR8mkFmM$j4P6",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "C825320B-3E65-4721-A915-7418D0BDB63C",
+                "Comments": ""
+            },
+            "InnerUrl": "0LOtSQrwP6dPK4adk2z32k,1VVe6QqbHDhRyeM9HgmeZj,2qUxIHYRf7eeIL9Unl9RXt,2msS631znBDAHYupoVzrqt,3ksHPMNhL6v8eTxalbMTdc,1PLbqYgqf0BPmsHqq6T7TD,1kDm$yqyr9yPnl2jTV1wko,21iMTMhwX1UOBbqtg62hUh,23MfCxVqz50BvlUZeIcWfM,22TS6fjHP8GPy7WM26lkWm",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "0D7CBD5F-FEFD-4E81-B451-322DBEA4B478",
+                "Comments": ""
+            },
+            "InnerUrl": "12P3y409D4eB0T90AhTznK,0ad7CTlxX3RvlsSYm6U2xT,3KQYApJMLBqOJfp5cRFnbL,0OhtKq04P2wAwRyZNvIh$e,0oxWu$DnH73hKZ82KqGEda,2KDgAXbqDCRfnTI5ThKuH$,2n21IKnSD7L8YCnjGVG$8p,3RIM6sn$PEUgWF_WfDmmN3,3ucp_mnPj6y9X12Ukoi28I,2nuDcdalr4ZQ9W9HKh4bth",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "168ACB3A-41C7-4DA7-A6C3-600EA3563140",
+                "Comments": ""
+            },
+            "InnerUrl": "3Q6pD1dsrCyBqS6hceKhV_,3u4wccYDzE3wLueB$zg66i,3oF55TEy93GuzqrCfkJFuf,1GoJwwgjDBGwG3TztZD_R$,00GXs_dKz2HhhCFF3igX9z,1s6c2HwpjBmwPhP8JQLK5W,2lYEWe4t55q9BVj97eWLCQ,0_n_u6LOv0c9L36hAMlPvg,3FxKnyqIfFVelLs8nC4f$j,3m6pgTADnA7uYcdV4wjrdV",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "02C2A640-3A4A-462D-9923-4014A0EE41FD",
+                "Comments": ""
+            },
+            "InnerUrl": "3gLjpC3zH79Rr$biRQLvhc,1ehNyTOzXC4BbV8mmFYvn6,1jTmW3LhHDfhbfrbCVVz1z,0fLmn5VdT6vBX_hCHqWLvS,3VGR7phWD4nBmnNKWdcbbl,3Foaj4J$zBAuFw8Xsjgx7e,0HqqTR41z5RviLVyquoEOo,2H2EiuHiXAwxywoDbs5p1K,1Fbv89y3H8W8qdIdqz3haj,0vALTQQgX7SAd4j0NjDt55",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "9A31FA49-28D9-4454-B1BA-D32C56288D8C",
+                "Comments": ""
+            },
+            "InnerUrl": "1wGBhK0fDCe8RVLvlXMa4$,2CkCNKTIn33hznJb7HA1Bh,3pyu6F14LAAvdxPQrcYTeB,3hamsLipz5S9lz7lXIVFPP",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "878BD6DA-193E-4046-BDDC-13A71B947EE3",
+                "Comments": ""
+            },
+            "InnerUrl": "0hBT24fjHFWAJDSoZ1loaJ",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "4218CB6A-A6AB-4589-B34D-DFBD7EB05E26",
+                "Comments": ""
+            },
+            "InnerUrl": "1TC_3uYoT5q9y4lmvLfVIj",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "58CC8469-E14F-421B-BEFA-5AC10DE4F33C",
+                "Comments": ""
+            },
+            "InnerUrl": "1x9HomYLf3bfgh4tLSO8hp",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "14C6D365-6EF5-4252-B447-AF9A5C270536",
+                "Comments": ""
+            },
+            "InnerUrl": "07$xJ8K$fC7QsKh11WCMKj",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "5FE7D41B-1367-4C34-A7F8-B7EBD8A32FA0",
+                "Comments": ""
+            },
+            "InnerUrl": "20CkVenGH7DOMKwKErc8K9",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "E50AD79D-403D-4B3D-B4E5-3BCB7EAEC1D3",
+                "Comments": ""
+            },
+            "InnerUrl": "0vvjqrp2HDfxxQvHn33poB",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "9DF8F613-E07E-453D-AFE8-AA021380C4D3",
+                "Comments": ""
+            },
+            "InnerUrl": "1D85yzw$P8t8N0k$xGOelB",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "121F26A9-E865-4F95-A36E-8F7E36FD98D4",
+                "Comments": ""
+            },
+            "InnerUrl": "1GkrOYhyL2CBHOFYevpcZd",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "E0D6D599-BC04-4642-8862-65402A071950",
+                "Comments": ""
+            },
+            "InnerUrl": "0LOtSQrwP6dPK4adk2z32k",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "8370FF51-9B32-450A-AE01-6BC1CAF53EE4",
+                "Comments": ""
+            },
+            "InnerUrl": "1VVe6QqbHDhRyeM9HgmeZj",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "FF302F18-6D18-4A26-8B57-C114E0A86280",
+                "Comments": ""
+            },
+            "InnerUrl": "2qUxIHYRf7eeIL9Unl9RXt",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "B6D30F20-BFB0-43B5-B833-DD5D8D10564A",
+                "Comments": ""
+            },
+            "InnerUrl": "2msS631znBDAHYupoVzrqt",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "8EB4C000-2772-4E83-9611-7FC50530DD6A",
+                "Comments": ""
+            },
+            "InnerUrl": "12P3y409D4eB0T90AhTznK",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "CBC39A77-FACC-4C42-AE25-1807CA72B953",
+                "Comments": ""
+            },
+            "InnerUrl": "0ad7CTlxX3RvlsSYm6U2xT",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "59F7D093-EAA5-4006-A860-F047B59FDECB",
+                "Comments": ""
+            },
+            "InnerUrl": "3KQYApJMLBqOJfp5cRFnbL",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "1EE62815-396D-491F-9BA5-B8D0A089CC8D",
+                "Comments": ""
+            },
+            "InnerUrl": "0OhtKq04P2wAwRyZNvIh$e",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "56983A4F-7ED0-458A-85C3-0BAC973FD56B",
+                "Comments": ""
+            },
+            "InnerUrl": "3Q6pD1dsrCyBqS6hceKhV_",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "C5C6DD05-AA53-4205-8451-8CEA58FD2F7C",
+                "Comments": ""
+            },
+            "InnerUrl": "3u4wccYDzE3wLueB$zg66i",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "413B08D7-1DEA-4F53-873E-C7BCBFB0B24C",
+                "Comments": ""
+            },
+            "InnerUrl": "3oF55TEy93GuzqrCfkJFuf",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "82A000D7-A4AA-4F91-9780-8C3178C88CEE",
+                "Comments": ""
+            },
+            "InnerUrl": "1GoJwwgjDBGwG3TztZD_R$",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "37AF84A5-78F6-4591-8B53-80FB1D3EA3C4",
+                "Comments": ""
+            },
+            "InnerUrl": "3gLjpC3zH79Rr$biRQLvhc",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "3C487077-DC6C-4F69-8951-F09D331DBEBA",
+                "Comments": ""
+            },
+            "InnerUrl": "1ehNyTOzXC4BbV8mmFYvn6",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "7DA44C57-C9CE-4525-ABDD-CD74A61ED370",
+                "Comments": ""
+            },
+            "InnerUrl": "1jTmW3LhHDfhbfrbCVVz1z",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        },
+        {
+            "DataFormat": 1,
+            "Id": {
+                "Code": "432C6E19-D3D0-4218-A481-892ACD6B2338",
+                "Comments": ""
+            },
+            "InnerUrl": "0fLmn5VdT6vBX_hCHqWLvS",
+            "OuterUrl": "./ExternalData/building/household/CIM3dormitory_household.ifc"
+        }
+    ],
+    "Header": {
+        "includes": [
+            {
+                "path": "../../Schema/CIMStandard.json",
+                "type": 0
+            }
+        ],
+        "sceneDate": "2024-05-08 11:06:10",
+        "sceneDescription": "",
+        "sceneName": "",
+        "sceneType": 1
+    }
+}
