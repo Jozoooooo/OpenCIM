@@ -1,0 +1,132 @@
+/* -*-c++-*- */
+/* osgEarth - Geospatial SDK for OpenSceneGraph
+* Copyright 2008-2014 Pelican Mapping
+* http://osgearth.org
+*
+* osgEarth is free software; you can redistribute it and/or modify
+* it under the terms of the GNU Lesser General Public License as published by
+* the Free Software Foundation; either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU Lesser General Public License for more details.
+*
+* You should have received a copy of the GNU Lesser General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+#ifndef OSGEARTH_DRIVERS_REX_TERRAIN_ENGINE_TILE_NODE_REGISTRY
+#define OSGEARTH_DRIVERS_REX_TERRAIN_ENGINE_TILE_NODE_REGISTRY 1
+
+#include "Common"
+#include "TileNode"
+#include <osgEarth/Threading>
+#include <osgEarth/FrameClock>
+#include <osgEarth/Utils>
+
+namespace osgEarth { namespace REX
+{
+    using namespace osgEarth;
+
+    /**
+     * Keeps track of all the tiles resident in the terrain engine.
+     */
+    class TileNodeRegistry
+    {
+    public:
+        using Ptr = std::shared_ptr<TileNodeRegistry>;
+
+        using Tracker = SentryTracker<TileNode*>;
+
+        struct TableEntry
+        {
+            // this needs to be a ref ptr because it's possible for the unloader
+            // to remove a Tile's ancestor from the scene graph, which will turn
+            // this Tile into an orphan. As an orphan it will expire and eventually
+            // be removed anyway, but we need to keep it alive in the meantime...
+            osg::ref_ptr<TileNode> _tile;
+            void* _trackerToken;
+            TableEntry() : _trackerToken(nullptr) { }
+        };
+
+        using TileTable = std::unordered_map<TileKey, TableEntry>;
+
+    public:
+        TileNodeRegistry();
+
+        //! Sets the frame clock to use
+        void setFrameClock(const FrameClock* value) { _clock = value; }
+
+        //! Whether tiles will listen for their neighbors to arrive in order to
+        //! facilitate normal map edge matching.
+        void setNotifyNeighbors(bool value);
+
+        //! Marks all tiles intersecting the extent as dirty. If incremental
+        //! update is enabled, they will automatically reload.
+        //! NOTE: Input extent SRS must match the terrain's SRS exactly.
+        //!       The method does not check.
+        void setDirty(
+            const GeoExtent& extent, 
+            unsigned minLevel, 
+            unsigned maxLevel,
+            const CreateTileManifest& manifest);
+
+        virtual ~TileNodeRegistry();
+
+        //! Adds a tile to the registry. Called by the TileNode itself.
+        void add(TileNode* tile);
+
+        //! Refresh the tile's tracking info. Called by the TileNode itself
+        //! during the cull traversal to let us know it's still active.
+        void touch(TileNode* tile, osg::NodeVisitor& nv);
+
+        //! Number of tiles in the registry.
+        unsigned size() const { return _tiles.size(); }
+
+        //! Empty the registry, releasing all tiles.
+        void releaseAll(osg::State* state);
+
+        //! Collect dormant tiles. This is called by UnloaderGroup
+        //! during update/event to remove dormant scene graphs.
+        void collectDormantTiles(
+            osg::NodeVisitor& nv,
+            double olderThanTime,       // collect only if tile is older than this time
+            unsigned olderThanFrame,    // collect only if tile is older than this frame
+            float fartherThanRange,     // collect only if tile is farther away than this distance (meters)
+            unsigned maxCount,          // maximum number of tiles to collect
+            std::vector<osg::observer_ptr<TileNode> >& output);   // put dormant tiles here
+
+        //! Update traversal
+        void update(osg::NodeVisitor&);
+
+    protected:
+
+        TileTable _tiles;
+        Tracker _tracker;
+        mutable Threading::Mutex _mutex;
+        bool _notifyNeighbors;
+        const FrameClock* _clock;
+
+        // for storing neighbor information
+        using TileKeySet = std::unordered_set<TileKey>;
+        using TileKeyOneToMany = std::unordered_map<TileKey, TileKeySet>;
+        TileKeyOneToMany _notifiers;
+
+        // tile nodes requiring an udpate traversal
+        std::vector<TileKey> _tilesToUpdate;
+
+    private:
+
+        /** Tells the registry to listen for the TileNode for the specific key
+            to arrive, and upon its arrival, notifies the waiter. After notifying
+            the waiter, it removes the listen request. (assumes lock held) */
+        void startListeningFor(const TileKey& keyToWaitFor, TileNode* waiter);
+
+        /** Removes a listen request set by startListeningFor (assumes lock held) */
+        void stopListeningFor(const TileKey& keyToWairFor, const TileKey& waiterKey);
+    };
+
+} }
+
+#endif // OSGEARTH_DRIVERS_REX_TERRAIN_ENGINE_TILE_NODE_REGISTRY

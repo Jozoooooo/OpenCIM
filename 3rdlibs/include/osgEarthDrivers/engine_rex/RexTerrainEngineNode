@@ -1,0 +1,210 @@
+/* -*-c++-*- */
+/* osgEarth - Geospatial SDK for OpenSceneGraph
+ * Copyright 2008-2014 Pelican Mapping
+ * http://osgearth.org
+ *
+ * osgEarth is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+#ifndef OSGEARTH_DRIVERS_REX_TERRAIN_ENGINE_ENGINE_NODE_H
+#define OSGEARTH_DRIVERS_REX_TERRAIN_ENGINE_ENGINE_NODE_H 1
+
+#include <osgEarth/TerrainEngineNode>
+#include <osgEarth/TerrainResources>
+#include <osgEarth/Map>
+#include <osgEarth/Revisioning>
+#include <osgEarth/Threading>
+#include <osgEarth/Containers>
+#include <osgEarth/FrameClock>
+
+#include "EngineContext"
+#include "TileNodeRegistry"
+#include "RenderBindings"
+#include "GeometryPool"
+#include "Loader"
+#include "Unloader"
+#include "SelectionInfo"
+#include "SurfaceNode"
+#include "TileDrawable"
+#include "TerrainCuller"
+
+#include <list>
+#include <map>
+#include <vector>
+
+namespace osgEarth { namespace REX
+{
+    using namespace osgEarth;
+
+    class RexTerrainEngineNode : public osgEarth::TerrainEngineNode
+    {
+    public:
+        META_Node(osgEarth, RexTerrainEngineNode);
+
+        RexTerrainEngineNode();
+
+    protected:
+        virtual ~RexTerrainEngineNode();
+
+    public:
+        
+        //! Forces regeneration of tiles in the given region.
+        void invalidateRegion(
+            const GeoExtent& extent,
+            unsigned minLevel,
+            unsigned maxLevel) override;
+
+        //! Forces regeneration of tiles in the given region for one layer.
+        void invalidateRegion(
+            const std::vector<const Layer*> layers,
+            const GeoExtent& extent,
+            unsigned minLevel,
+            unsigned maxLevel) override;
+
+        //! Access the stateset used to render the entire terrain.
+        osg::StateSet* getTerrainStateSet() override;
+
+        //! Get the stateset used to render the terrain surface.
+        osg::StateSet* getSurfaceStateSet() override;
+
+        //! Unique identifier of this engine instance
+        UID getUID() const override { return _uid; }
+
+        //! Generate a standalone tile geometry
+        osg::Node* createStandaloneTile(
+            const TerrainTileModel* model,
+            int createTileFlags,
+            unsigned referenceLOD,
+            const TileKey& subRegion) override;
+
+        //! Shutdown the engine and any running services
+        void shutdown() override;
+
+        //! Name of the job arena used to load terrain tiles
+        std::string getJobArenaName() const override;
+
+        //! Number of resident terrain tiles
+        unsigned getNumResidentTiles() const override;
+
+    public: // osg::Node
+
+        void traverse(osg::NodeVisitor& nv) override;
+
+        osg::BoundingSphere computeBound() const override;
+
+        void resizeGLObjectBuffers(unsigned maxSize) override;
+
+        void releaseGLObjects(osg::State* state) const override;
+
+    public: // MapCallback adapter functions
+
+        void onMapModelChanged( const MapModelChange& change ); // not virtual!
+
+    protected: // TerrainEngineNode protected
+
+        virtual void setMap(const Map* map, const TerrainOptions& options) override;
+
+        virtual void updateTextureCombining() override { updateState(); }
+        
+        virtual void dirtyState() override;
+
+        virtual void dirtyTerrainOptions() override;
+
+    private:
+
+        void update_traverse(osg::NodeVisitor& nv);
+        void cull_traverse(osg::NodeVisitor& nv);
+
+        //! Reloads all the tiles in the terrain due to a data model change
+        void refresh(bool force =false);
+
+        //! Various methods that trigger when the Map model changes.
+        void addLayer(Layer* layer);
+        void addSurfaceLayer( Layer* layer );
+        void removeImageLayer( ImageLayer* layerRemoved );        
+        void addElevationLayer(Layer* layer);
+        void removeElevationLayer(Layer* layerRemoved );
+        void moveElevationLayer(Layer* layerMoved );
+        
+        //! refresh the statesets of the terrain and the imagelayer tile surface
+        void updateState(); 
+
+        //! one-time allocation of render units for the terrain
+        void setupRenderBindings();
+        
+        //! Adds a Layer to the cachedLayerExtents vector.
+        void cacheLayerExtentInMapSRS(Layer* layer); 
+
+        //! Recompute all cached layer extents
+        void cacheAllLayerExtentsInMapSRS();
+
+        //! computes the heightfield sample size required to match the vertices at the highest
+        //! level of detail in rex if a tile key was requested at the given level of detail.
+        unsigned int computeSampleSize(unsigned int levelOfDetail);
+
+    private:
+        const TerrainOptions* _terrainOptions;
+        const TerrainOptions& options() const { return *_terrainOptions; }
+
+        UID _uid;
+        bool _batchUpdateInProgress;
+        bool _refreshRequired;
+        bool _stateUpdateRequired;
+        bool _morphTerrainSupported;
+
+        // extents of each layer, in the Map's SRS. UID = vector index (for speed)
+        LayerExtentMap _cachedLayerExtents;
+        bool _cachedLayerExtentsComputeRequired;
+
+        TileNodeRegistry::Ptr _tiles; // tiles in the scene graph.
+     
+        EngineContext* getEngineContext() const { return _engineContext.get(); }
+        osg::ref_ptr< EngineContext > _engineContext;
+        friend class EngineContext;
+
+        RenderBindings _renderBindings;
+        osg::ref_ptr<GeometryPool> _geometryPool;
+        osg::ref_ptr<Merger> _merger;
+        osg::ref_ptr<UnloaderGroup> _unloader;
+        
+        osg::ref_ptr<osg::Group> _terrain;
+        bool _morphingSupported;
+
+        bool _renderModelUpdateRequired;
+
+        RexTerrainEngineNode( const RexTerrainEngineNode& rhs, const osg::CopyOp& op =osg::CopyOp::DEEP_COPY_ALL ) { }
+
+        SelectionInfo _selectionInfo;
+
+        osg::ref_ptr<osg::StateSet> _surfaceSS;
+        osg::ref_ptr<osg::StateSet> _imageLayerSS;
+        osg::ref_ptr<osg::StateSet> _terrainSS;
+
+        // Data that we maintain across frames on a per-camera basis.
+        using PersistentDataTable = std::unordered_map<
+            osg::Camera*,
+            TerrainRenderData::PersistentData>;
+
+        Mutexed<PersistentDataTable> _persistent;
+
+        unsigned _frameLastUpdated;
+        FrameClock _clock;
+        std::atomic_bool _updatedThisFrame;
+        UID _ppUID;
+
+        void installColorFilters(VirtualProgram*);
+    };
+
+} } // namespace osgEarth::REX
+
+#endif // OSGEARTH_DRIVERS_REX_TERRAIN_ENGINE_ENGINE_NODE_H

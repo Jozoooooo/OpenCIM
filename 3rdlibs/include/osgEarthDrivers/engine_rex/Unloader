@@ -1,0 +1,98 @@
+/* -*-c++-*- */
+/* osgEarth - Geospatial SDK for OpenSceneGraph
+ * Copyright 2008-2014 Pelican Mapping
+ * http://osgearth.org
+ *
+ * osgEarth is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+#ifndef OSGEARTH_REX_UNLOADER
+#define OSGEARTH_REX_UNLOADER 1
+
+#include "Common"
+#include "TileNode"
+#include <osgEarth/FrameClock>
+#include <osg/Group>
+
+
+namespace osgEarth { namespace REX
+{
+    class TileNodeRegistry;
+
+    /**
+     * Group-based tile unloader.
+     */
+    class UnloaderGroup : public osg::Group
+    {
+    public:
+        //! Construct an unloader for a registry
+        UnloaderGroup(TileNodeRegistry* tiles);
+
+        //! A Tile must be at least this old before it can be removed:
+        void setMaxAge(double value) { 
+            _maxAge = std::max(value, 1.0);
+        }
+        double getMaxAge() const { 
+            return _maxAge;
+        }
+
+        //! Maximum number of tiles to expire per frame
+        void setMaxTilesToUnloadPerFrame(unsigned value) {
+            _maxTilesToUnloadPerFrame = value;
+        }
+        unsigned getMaxTilesToUnloadPerFrame() const {
+            return _maxTilesToUnloadPerFrame;
+        }
+
+        //! A Tile must be at least this far from the camera before it can be unloaded:
+        void setMinimumRange(float value) { 
+            _minRange = std::max(value, 0.0f);
+        }
+        float getMinimumRange() const {
+            return _minRange;
+        }
+
+        //! The engine may keep at least this many tiles in memory 
+        //! before disposing anything
+        void setMinResidentTiles(unsigned value) {
+            _minResidentTiles = value;
+        }
+        unsigned getMinResidentTiles() const {
+            return _minResidentTiles;
+        }
+
+        //! Set the frame clock to use
+        void setFrameClock(const FrameClock* value) { _clock = value; }
+
+    public: // Unloader
+
+        //void unloadChildren(const std::vector<TileKey>& keys);
+
+    public: // osg::Node
+        void traverse(osg::NodeVisitor& nv);
+
+    protected:
+        unsigned _minResidentTiles;
+        double _maxAge;
+        float _minRange;
+        unsigned _maxTilesToUnloadPerFrame;
+        TileNodeRegistry* _tiles;
+        std::vector<osg::observer_ptr<TileNode> > _deadpool;
+        unsigned _frameLastUpdated;
+        const FrameClock* _clock;
+    };
+
+} } // namespace osgEarth::REX
+
+
+#endif // OSGEARTH_REX_UNLOADER

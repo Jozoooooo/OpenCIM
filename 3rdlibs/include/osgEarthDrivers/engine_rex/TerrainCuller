@@ -1,0 +1,107 @@
+/* -*-c++-*- */
+/* osgEarth - Geospatial SDK for OpenSceneGraph
+ * Copyright 2008-2014 Pelican Mapping
+ * http://osgearth.org
+ *
+ * osgEarth is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+#ifndef OSGEARTH_REX_TERRAIN_CULLER_H
+#define OSGEARTH_REX_TERRAIN_CULLER_H 1
+
+#include "EngineContext"
+#include "TerrainRenderData"
+#include "SelectionInfo"
+#include <osgEarth/Containers>
+
+#include <osg/NodeVisitor>
+#include <osgUtil/CullVisitor>
+
+
+using namespace osgEarth;
+
+namespace osgEarth { namespace REX
+{
+    struct LayerExtent
+    {
+        LayerExtent() : _revision(-1) { }
+        osg::observer_ptr<const Layer> _layer;
+        Revision _revision;
+        GeoExtent _extent;
+    };
+    using LayerExtentMap = std::unordered_map<UID, LayerExtent>;
+
+    /**
+     * Node visitor responsible for assembling a TerrainRenderData that 
+     * contains all the information necessary to render the terrain.
+     */
+    class TerrainCuller : public osg::NodeVisitor, public osg::CullStack
+    {
+    public:
+        osgUtil::CullVisitor* _cv;
+        EngineContext* _context;
+        osg::Camera* _camera;
+        TileNode* _currentTileNode;
+        DrawTileCommand* _firstDrawCommandForTile;
+        unsigned _orphanedPassesDetected;
+        LayerExtentMap* _layerExtents;
+        bool _isSpy;
+        std::vector<PatchLayer*> _patchLayers;
+        double _lastTimeVisited;
+        bool _acceptSurfaceNodes;
+        TerrainRenderData _terrain;
+
+    public:
+        //! Construct the culler
+        TerrainCuller();
+
+        //! Reset for the next frame
+        void reset(
+            osgUtil::CullVisitor* parentCullVisitor,
+            TerrainRenderData::PersistentData& pd,
+            EngineContext* context,
+            LayerExtentMap& layerExtents);
+
+        /** The active camera */
+        osg::Camera* getCamera() { return _camera; }
+
+        /** Access to terrain engine resources */
+        EngineContext* getEngineContext() { return _context; }
+
+        /** The CullVIsitor that parents this culler. */
+        osgUtil::CullVisitor& getParent() { return *_cv; }
+
+        bool isCulledToBBox(osg::Transform* node, const osg::BoundingBox& box);
+
+        void removeLayer(const Layer* layer);
+
+    public: // osg::NodeVisitor
+        void apply(osg::Node& node);
+        void apply(TileNode& node);
+        void apply(SurfaceNode& node);
+        
+        float getDistanceToViewPoint(const osg::Vec3& pos, bool withLODScale) const;
+
+    private:
+
+        DrawTileCommand* addDrawCommand(
+            UID sourceUID, 
+            const TileRenderModel* model, 
+            const RenderingPass* pass, 
+            TileNode* node);
+
+    };
+
+} } // namespace 
+
+#endif // OSGEARTH_REX_TERRAIN_CULLER_H
