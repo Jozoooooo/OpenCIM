@@ -32,6 +32,7 @@ namespace NNU::OpenCIM::Core {
     private:
         UniqueID *_id; // 概念唯一标识
         std::string _name; // 概念名
+        std::string _conceptCode; // 概念编码
         std::vector<UniqueID *> _axioms; // 公理集合
         ConceptType _conceptType;
 
@@ -91,6 +92,18 @@ namespace NNU::OpenCIM::Core {
          * @param name 概念名
          */
         [[maybe_unused]] void setName(const std::string &name);
+
+        /**
+        * 概念编码Getter方法
+        * @return 概念编码
+        */
+        [[maybe_unused]] [[nodiscard]] const std::string &getConceptCode() const;
+
+        /**
+         * 概念编码Setter方法
+         * @param name 概念编码
+         */
+        [[maybe_unused]] void setConceptCode(const std::string &conceptCode);
 
         /**
          * 添加公理

@@ -23,6 +23,8 @@ namespace NNU::OpenCIM::Entity {
     class Entity : public Core::Element {
     private:
         std::vector<UniqueID *> _components; // 构成组件集合
+        std::string _entityCode;//实体编码
+        std::string _entityName;//实体名称
 
         Entity();
 
@@ -62,31 +64,16 @@ namespace NNU::OpenCIM::Entity {
          */
         [[maybe_unused]] void removeComponent(const UniqueID *component);
 
-        [[maybe_unused]] UniqueID *getClassificationBelongConcept() {
-            return _belongConcepts[0];
-        }
+        [[maybe_unused]] UniqueID *getBelongConcept();
 
-        [[maybe_unused]] void setClassificationBelongConcept(UniqueID *uniqueId) {
-            if (_belongConcepts.empty()) {
-                _belongConcepts.emplace_back(uniqueId);
-            } else {
-                _belongConcepts[0] = uniqueId;
-            }
-        }
+        [[maybe_unused]] void setBelongConcept(UniqueID *uniqueId);
 
-        [[maybe_unused]] UniqueID *getParticleBelongConcept() {
-            return _belongConcepts[1];
-        }
+        [[maybe_unused]] std::string getEntityCode();
 
-        [[maybe_unused]] void setParticleBelongConcept(UniqueID *uniqueId) {
-            if (_belongConcepts.empty()) {
-                _belongConcepts.emplace_back(new UniqueID);
-                _belongConcepts.emplace_back(uniqueId);
-            } else if (_belongConcepts.size() == 1) {
-                _belongConcepts.emplace_back(uniqueId);
-            } else {
-                _belongConcepts[1] = uniqueId;
-            }
-        }
+        [[maybe_unused]] void setEntityCode(const std::string& entityCode);
+
+        [[maybe_unused]] std::string getEntityName();
+
+        [[maybe_unused]] void setEntityName(const std::string& entityName);
     };
 }

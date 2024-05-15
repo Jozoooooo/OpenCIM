@@ -67,6 +67,8 @@ namespace NNU::OpenCIM{
 
         void setMD5(const char *md5) override;
 
+        int getSyntheticCount() override;
+
     private:
         std::string _name;
         std::string _author;

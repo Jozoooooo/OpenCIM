@@ -67,6 +67,8 @@ namespace NNU::OpenCIM {
 
         virtual void setMD5(const char *md5) = 0; // 设置CIM模型版MD5
 
+        virtual int getSyntheticCount()=0;// 获取CIM模型综合表达模型个数
+
         virtual ICIMSchema* getSchema() = 0; // 获取CIM模型模式层
 
         virtual ICIMSynthetic* getSynthetic(int i) = 0; // 获取CIM模型综合表达模型
